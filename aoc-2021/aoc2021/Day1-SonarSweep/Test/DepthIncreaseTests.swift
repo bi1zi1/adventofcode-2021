@@ -5,11 +5,9 @@ import XCTest
 
 class DepthIncreaseTests: XCTestCase {
     func testDepthIncreaseCount() throws {
-        print(Bundle(for: type(of: self)))
-
         // given
         let depthIncrease = DepthIncrease(measurementsFile: .testDepthMeasurements)
-//
+
         // when
         let totalCount = depthIncrease.depthIncreaseCount()
 
@@ -18,10 +16,22 @@ class DepthIncreaseTests: XCTestCase {
         XCTAssertEqual(totalCount, expectedCount)
     }
 
-//    func testPerformanceDepthIncreaseCount() throws {
-//        let depthIncrease = DepthIncrease(measurementsFile: .testDepthMeasurements)
-//        self.measure {
-//            _ = depthIncrease.depthIncreaseCount()
-//        }
-//    }
+    func testDepthIncreaseCount_SlidingWindow3() throws {
+        // given
+        let depthIncrease = DepthIncrease(measurementsFile: .testDepthMeasurements)
+
+        // when
+        let totalCount = depthIncrease.depthIncreaseCount(with: 3)
+
+        // then
+        let expectedCount = 5
+        XCTAssertEqual(totalCount, expectedCount)
+    }
+
+    func testPerformanceDepthIncreaseCount() throws {
+        let depthIncrease = DepthIncrease(measurementsFile: .testDepthMeasurements)
+        self.measure {
+            _ = depthIncrease.depthIncreaseCount()
+        }
+    }
 }

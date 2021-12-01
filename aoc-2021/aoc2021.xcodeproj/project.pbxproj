@@ -22,6 +22,7 @@
 		FB0EAE8727581D8C0065BEE2 /* test-depth-measurements.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAE312757C3B90065BEE2 /* test-depth-measurements.txt */; };
 		FB0EAE8927581FE40065BEE2 /* test-depth-measurements.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAE312757C3B90065BEE2 /* test-depth-measurements.txt */; };
 		FB0EAE8B2758223B0065BEE2 /* AOCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0EAE6927581CC00065BEE2 /* AOCFramework.framework */; };
+		FB0EAE8D2758251F0065BEE2 /* SlidingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAE8C2758251F0065BEE2 /* SlidingWindow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		FB0EAE6B27581CC00065BEE2 /* AOCFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOCFramework.h; sourceTree = "<group>"; };
 		FB0EAE6C27581CC00065BEE2 /* AOCFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AOCFramework.docc; sourceTree = "<group>"; };
 		FB0EAE7227581CC10065BEE2 /* AOCFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOCFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB0EAE8C2758251F0065BEE2 /* SlidingWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingWindow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 				FB0EAE2A2757898C0065BEE2 /* FileReader.swift */,
 				FB0EAE2C2757BABC0065BEE2 /* Resources.swift */,
 				FB0EAE2E2757BD7F0065BEE2 /* StringExtension.swift */,
+				FB0EAE8C2758251F0065BEE2 /* SlidingWindow.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -311,6 +314,7 @@
 			files = (
 				FB0EAE8427581D3F0065BEE2 /* FileReader.swift in Sources */,
 				FB0EAE8527581D430065BEE2 /* Resources.swift in Sources */,
+				FB0EAE8D2758251F0065BEE2 /* SlidingWindow.swift in Sources */,
 				FB0EAE8627581D460065BEE2 /* StringExtension.swift in Sources */,
 				FB0EAE6D27581CC00065BEE2 /* AOCFramework.docc in Sources */,
 				FB0EAE8027581CEB0065BEE2 /* DepthIncrease.swift in Sources */,
