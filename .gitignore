@@ -88,3 +88,6 @@ fastlane/test_output
 # https://github.com/johnno1962/injectionforxcode
 
 iOSInjectionProject/
+
+aoc-2021/.DS_Store
+aoc-2021/aoc2021/.DS_Store
