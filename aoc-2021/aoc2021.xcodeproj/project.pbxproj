@@ -23,6 +23,11 @@
 		FB0EAE8927581FE40065BEE2 /* test-depth-measurements.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAE312757C3B90065BEE2 /* test-depth-measurements.txt */; };
 		FB0EAE8B2758223B0065BEE2 /* AOCFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FB0EAE6927581CC00065BEE2 /* AOCFramework.framework */; };
 		FB0EAE8D2758251F0065BEE2 /* SlidingWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAE8C2758251F0065BEE2 /* SlidingWindow.swift */; };
+		FB0EAE902758CD1C0065BEE2 /* DiveNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAE8F2758CD1C0065BEE2 /* DiveNavigation.swift */; };
+		FB0EAE942758CE7E0065BEE2 /* test-navigation-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAE922758CDEA0065BEE2 /* test-navigation-data.txt */; };
+		FB0EAE952758CE7F0065BEE2 /* test-navigation-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAE922758CDEA0065BEE2 /* test-navigation-data.txt */; };
+		FB0EAE972758CF8D0065BEE2 /* FormattedFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAE962758CF8D0065BEE2 /* FormattedFileReader.swift */; };
+		FB0EAE992758D6610065BEE2 /* FileColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAE982758D6610065BEE2 /* FileColumn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +70,11 @@
 		FB0EAE6C27581CC00065BEE2 /* AOCFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = AOCFramework.docc; sourceTree = "<group>"; };
 		FB0EAE7227581CC10065BEE2 /* AOCFrameworkTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOCFrameworkTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB0EAE8C2758251F0065BEE2 /* SlidingWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlidingWindow.swift; sourceTree = "<group>"; };
+		FB0EAE8F2758CD1C0065BEE2 /* DiveNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiveNavigation.swift; sourceTree = "<group>"; };
+		FB0EAE922758CDEA0065BEE2 /* test-navigation-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-navigation-data.txt"; sourceTree = "<group>"; };
+		FB0EAE932758CE270065BEE2 /* navigation-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "navigation-data.txt"; sourceTree = "<group>"; };
+		FB0EAE962758CF8D0065BEE2 /* FormattedFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedFileReader.swift; sourceTree = "<group>"; };
+		FB0EAE982758D6610065BEE2 /* FileColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileColumn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +129,7 @@
 			children = (
 				FB0EAE29275789720065BEE2 /* Helpers */,
 				FB0EAE23275787530065BEE2 /* Day1-SonarSweep */,
+				FB0EAE8E2758CCD80065BEE2 /* Day2-Dive */,
 				FB0EAE1C275787390065BEE2 /* main.swift */,
 			);
 			path = aoc2021;
@@ -142,6 +153,8 @@
 				FB0EAE2C2757BABC0065BEE2 /* Resources.swift */,
 				FB0EAE2E2757BD7F0065BEE2 /* StringExtension.swift */,
 				FB0EAE8C2758251F0065BEE2 /* SlidingWindow.swift */,
+				FB0EAE962758CF8D0065BEE2 /* FormattedFileReader.swift */,
+				FB0EAE982758D6610065BEE2 /* FileColumn.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -169,6 +182,24 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FB0EAE8E2758CCD80065BEE2 /* Day2-Dive */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAE8F2758CD1C0065BEE2 /* DiveNavigation.swift */,
+				FB0EAE932758CE270065BEE2 /* navigation-data.txt */,
+				FB0EAE912758CDDC0065BEE2 /* Test */,
+			);
+			path = "Day2-Dive";
+			sourceTree = "<group>";
+		};
+		FB0EAE912758CDDC0065BEE2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAE922758CDEA0065BEE2 /* test-navigation-data.txt */,
+			);
+			path = Test;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,6 +317,7 @@
 			files = (
 				FB0EAE8127581CF40065BEE2 /* depth-measurements.txt in Resources */,
 				FB0EAE8927581FE40065BEE2 /* test-depth-measurements.txt in Resources */,
+				FB0EAE952758CE7F0065BEE2 /* test-navigation-data.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +325,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0EAE942758CE7E0065BEE2 /* test-navigation-data.txt in Resources */,
 				FB0EAE8227581CFF0065BEE2 /* test-depth-measurements.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -314,8 +347,11 @@
 			files = (
 				FB0EAE8427581D3F0065BEE2 /* FileReader.swift in Sources */,
 				FB0EAE8527581D430065BEE2 /* Resources.swift in Sources */,
+				FB0EAE902758CD1C0065BEE2 /* DiveNavigation.swift in Sources */,
 				FB0EAE8D2758251F0065BEE2 /* SlidingWindow.swift in Sources */,
 				FB0EAE8627581D460065BEE2 /* StringExtension.swift in Sources */,
+				FB0EAE992758D6610065BEE2 /* FileColumn.swift in Sources */,
+				FB0EAE972758CF8D0065BEE2 /* FormattedFileReader.swift in Sources */,
 				FB0EAE6D27581CC00065BEE2 /* AOCFramework.docc in Sources */,
 				FB0EAE8027581CEB0065BEE2 /* DepthIncrease.swift in Sources */,
 			);

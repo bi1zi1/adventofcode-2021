@@ -22,7 +22,7 @@ final class FileReader {
         }
 
         let text = try String(contentsOf: file, encoding: .utf8)
-        let lines = text.components(separatedBy: CharacterSet.whitespacesAndNewlines)
+        let lines = text.components(separatedBy: CharacterSet.newlines)
 
         return lines;
     }

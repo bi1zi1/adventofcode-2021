@@ -2,9 +2,11 @@ import Foundation
 
 public enum FileResource: String {
     case depthMeasurements = "depth-measurements.txt"
+    case navigationData = "navigation-data.txt"
 
     // test files
     case testDepthMeasurements = "test-depth-measurements.txt"
+    case testNavigationData = "test-navigation-data.txt"
 }
 
 extension FileResource {
@@ -14,5 +16,23 @@ extension FileResource {
 
     var `extension`: String? {
         rawValue.split(separator: ".").last.map(String.init)
+    }
+}
+
+extension FileResource {
+    var columnDefinition: ColumnDefinition {
+        switch self {
+        case .depthMeasurements, .testDepthMeasurements:
+            return ColumnDefinition(
+                columns: [
+                    ColumnKey(index: 0, name: "depth"): .int
+                ])
+        case .navigationData, .testNavigationData:
+            return ColumnDefinition(
+                columns: [
+                    ColumnKey(index: 0, name: "direction"): .string,
+                    ColumnKey(index: 1, name: "velocity"): .int,
+                ])
+        }
     }
 }

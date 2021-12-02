@@ -1,10 +1,10 @@
 import Foundation
 
 public final class DepthIncrease {
-    private let fileReader: FileReader
+    private let formattedFileReader: FormattedFileReader
 
     public init(measurementsFile: FileResource = .depthMeasurements) {
-        self.fileReader = FileReader(fileResource: measurementsFile)
+        self.formattedFileReader = FormattedFileReader(fileResource: measurementsFile)
     }
 
     public func depthIncreaseCount() -> Int {
@@ -13,17 +13,17 @@ public final class DepthIncrease {
 
     public func depthIncreaseCount(with slidingWindowSize: Int = 3) -> Int {
         let slidingWindowList = slidingWindowList(with: slidingWindowSize)
-        return depthIncreaseCount(with: slidingWindowList)
+        return depthIncreaseCount(for: slidingWindowList)
     }
 
     private func slidingWindowList(with slidingWindowSize: Int) -> [Int] {
         var slidingWindow = SlidingWindow(size: slidingWindowSize)
         var result: [Int] = []
 
-        try? fileReader.lines().lazy.forEach { value in
-            guard let currentValue = Int(value) else { return } // ignore error for now
+        let data = extractDepthValues(from: formattedFileReader.dataRows())
 
-            slidingWindow.push(currentValue)
+        data.lazy.forEach { value in
+            slidingWindow.push(value)
             if slidingWindow.full {
                 result.append(slidingWindow.sum())
             }
@@ -32,7 +32,7 @@ public final class DepthIncrease {
         return result
     }
 
-    private func depthIncreaseCount(with list: [Int]) -> Int {
+    private func depthIncreaseCount(for list: [Int]) -> Int {
         var totalCount = Int.zero
         var previousValue: Int?
 
@@ -51,5 +51,13 @@ public final class DepthIncrease {
         }
 
         return totalCount
+    }
+
+    private func extractDepthValues(from rows: [Row]) -> [Int] {
+        rows.compactMap {
+            let type = $0.columns[0].type
+            let rawValue = $0.columns[0].rawValue
+            return type.value(from: rawValue)
+        }
     }
 }
