@@ -13,6 +13,28 @@ public final class DiveNavigation {
         self.formattedFileReader = FormattedFileReader(fileResource: measurementsFile)
     }
 
+    public func positionAndDepthWithAim() -> (Int, Int) {
+        let data = extractDirectionAndVelocity(from: formattedFileReader.dataRows())
+
+        var aim = Int.zero
+        var position = Int.zero
+        var depth = Int.zero
+
+        data.forEach { (direction, velocity) in
+            switch direction {
+            case .forward:
+                position += velocity
+                depth += aim * velocity
+            case .down:
+                aim += velocity
+            case .up:
+                aim -= velocity
+            }
+        }
+
+        return (position, depth)
+    }
+
     public func positionAndDepth() -> (Int, Int) {
         let data = extractDirectionAndVelocity(from: formattedFileReader.dataRows())
 
