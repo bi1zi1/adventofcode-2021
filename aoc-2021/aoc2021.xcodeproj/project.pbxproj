@@ -28,6 +28,11 @@
 		FB0EAE952758CE7F0065BEE2 /* test-navigation-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAE922758CDEA0065BEE2 /* test-navigation-data.txt */; };
 		FB0EAE972758CF8D0065BEE2 /* FormattedFileReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAE962758CF8D0065BEE2 /* FormattedFileReader.swift */; };
 		FB0EAE992758D6610065BEE2 /* FileColumn.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAE982758D6610065BEE2 /* FileColumn.swift */; };
+		FB0EAE9B27593B2E0065BEE2 /* DiveNavigationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAE9A27593B2E0065BEE2 /* DiveNavigationTests.swift */; };
+		FB0EAE9C27593D660065BEE2 /* navigation-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAE932758CE270065BEE2 /* navigation-data.txt */; };
+		FB0EAE9D27593D660065BEE2 /* test-navigation-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAE922758CDEA0065BEE2 /* test-navigation-data.txt */; };
+		FB0EAE9E27593E680065BEE2 /* navigation-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAE932758CE270065BEE2 /* navigation-data.txt */; };
+		FB0EAE9F27593E6B0065BEE2 /* navigation-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAE932758CE270065BEE2 /* navigation-data.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +52,8 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FB0EAE9C27593D660065BEE2 /* navigation-data.txt in CopyFiles */,
+				FB0EAE9D27593D660065BEE2 /* test-navigation-data.txt in CopyFiles */,
 				FB0EAE8727581D8C0065BEE2 /* test-depth-measurements.txt in CopyFiles */,
 				FB0EAE422757C5040065BEE2 /* depth-measurements.txt in CopyFiles */,
 			);
@@ -75,6 +82,7 @@
 		FB0EAE932758CE270065BEE2 /* navigation-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "navigation-data.txt"; sourceTree = "<group>"; };
 		FB0EAE962758CF8D0065BEE2 /* FormattedFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedFileReader.swift; sourceTree = "<group>"; };
 		FB0EAE982758D6610065BEE2 /* FileColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileColumn.swift; sourceTree = "<group>"; };
+		FB0EAE9A27593B2E0065BEE2 /* DiveNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiveNavigationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -198,6 +206,7 @@
 			isa = PBXGroup;
 			children = (
 				FB0EAE922758CDEA0065BEE2 /* test-navigation-data.txt */,
+				FB0EAE9A27593B2E0065BEE2 /* DiveNavigationTests.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -315,6 +324,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0EAE9E27593E680065BEE2 /* navigation-data.txt in Resources */,
 				FB0EAE8127581CF40065BEE2 /* depth-measurements.txt in Resources */,
 				FB0EAE8927581FE40065BEE2 /* test-depth-measurements.txt in Resources */,
 				FB0EAE952758CE7F0065BEE2 /* test-navigation-data.txt in Resources */,
@@ -325,6 +335,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0EAE9F27593E6B0065BEE2 /* navigation-data.txt in Resources */,
 				FB0EAE942758CE7E0065BEE2 /* test-navigation-data.txt in Resources */,
 				FB0EAE8227581CFF0065BEE2 /* test-depth-measurements.txt in Resources */,
 			);
@@ -362,6 +373,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0EAE8327581D020065BEE2 /* DepthIncreaseTests.swift in Sources */,
+				FB0EAE9B27593B2E0065BEE2 /* DiveNavigationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

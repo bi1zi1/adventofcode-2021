@@ -30,7 +30,7 @@ extension FileResource {
         case .navigationData, .testNavigationData:
             return ColumnDefinition(
                 columns: [
-                    ColumnKey(index: 0, name: "direction"): .string,
+                    ColumnKey(index: 0, name: "direction"): .direction,
                     ColumnKey(index: 1, name: "velocity"): .int,
                 ])
         }

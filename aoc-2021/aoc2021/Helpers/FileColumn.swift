@@ -3,6 +3,7 @@ import Foundation
 enum SupportedDataType {
     case int
     case string
+    case direction
 }
 
 extension SupportedDataType {
@@ -10,17 +11,26 @@ extension SupportedDataType {
         switch self {
         case .int:
             return Int(string)
-        case .string:
+        case .string, .direction:
             return nil
         }
     }
 
     func value(from string: String) -> String? {
         switch self {
-        case .int:
-            return nil
         case .string:
             return string
+        case .int, .direction:
+            return nil
+        }
+    }
+
+    func value(from string: String) -> Direction? {
+        switch self {
+        case .direction:
+            return Direction(rawValue: string)
+        case .int, .string:
+            return nil
         }
     }
 }
