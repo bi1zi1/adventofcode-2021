@@ -4,6 +4,7 @@ enum SupportedDataType {
     case int
     case string
     case direction
+    case binaryNumber
 }
 
 extension SupportedDataType {
@@ -11,7 +12,7 @@ extension SupportedDataType {
         switch self {
         case .int:
             return Int(string)
-        case .string, .direction:
+        case .string, .direction, .binaryNumber:
             return nil
         }
     }
@@ -20,7 +21,7 @@ extension SupportedDataType {
         switch self {
         case .string:
             return string
-        case .int, .direction:
+        case .int, .direction, .binaryNumber:
             return nil
         }
     }
@@ -29,7 +30,16 @@ extension SupportedDataType {
         switch self {
         case .direction:
             return Direction(rawValue: string)
-        case .int, .string:
+        case .int, .string, .binaryNumber:
+            return nil
+        }
+    }
+
+    func value(from string: String) -> BinaryNumber? {
+        switch self {
+        case .binaryNumber:
+            return BinaryNumber(string: string)
+        case .int, .string, .direction:
             return nil
         }
     }

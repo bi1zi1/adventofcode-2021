@@ -33,6 +33,15 @@
 		FB0EAE9D27593D660065BEE2 /* test-navigation-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAE922758CDEA0065BEE2 /* test-navigation-data.txt */; };
 		FB0EAE9E27593E680065BEE2 /* navigation-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAE932758CE270065BEE2 /* navigation-data.txt */; };
 		FB0EAE9F27593E6B0065BEE2 /* navigation-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAE932758CE270065BEE2 /* navigation-data.txt */; };
+		FB0EAEA4275A179A0065BEE2 /* BinaryDiagnostic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAEA3275A179A0065BEE2 /* BinaryDiagnostic.swift */; };
+		FB0EAEA9275A590C0065BEE2 /* BinaryDiagnosticModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAEA8275A590C0065BEE2 /* BinaryDiagnosticModels.swift */; };
+		FB0EAEAB275A63690065BEE2 /* BinaryDiagnosticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAEAA275A63690065BEE2 /* BinaryDiagnosticTests.swift */; };
+		FB0EAEAC275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEA7275A1EB50065BEE2 /* test-binary-diagnostic-data.txt */; };
+		FB0EAEAD275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEA7275A1EB50065BEE2 /* test-binary-diagnostic-data.txt */; };
+		FB0EAEAE275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEA5275A17D60065BEE2 /* binary-diagnostic-data.txt */; };
+		FB0EAEAF275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEA5275A17D60065BEE2 /* binary-diagnostic-data.txt */; };
+		FB0EAEB0275A63850065BEE2 /* binary-diagnostic-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAEA5275A17D60065BEE2 /* binary-diagnostic-data.txt */; };
+		FB0EAEB1275A63850065BEE2 /* test-binary-diagnostic-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAEA7275A1EB50065BEE2 /* test-binary-diagnostic-data.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +61,8 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FB0EAEB0275A63850065BEE2 /* binary-diagnostic-data.txt in CopyFiles */,
+				FB0EAEB1275A63850065BEE2 /* test-binary-diagnostic-data.txt in CopyFiles */,
 				FB0EAE9C27593D660065BEE2 /* navigation-data.txt in CopyFiles */,
 				FB0EAE9D27593D660065BEE2 /* test-navigation-data.txt in CopyFiles */,
 				FB0EAE8727581D8C0065BEE2 /* test-depth-measurements.txt in CopyFiles */,
@@ -84,6 +95,12 @@
 		FB0EAE982758D6610065BEE2 /* FileColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileColumn.swift; sourceTree = "<group>"; };
 		FB0EAE9A27593B2E0065BEE2 /* DiveNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiveNavigationTests.swift; sourceTree = "<group>"; };
 		FB0EAEA0275A14DB0065BEE2 /* Day2-Dive.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day2-Dive.txt"; sourceTree = "<group>"; };
+		FB0EAEA2275A17440065BEE2 /* Day3-BinaryDiagnostic.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day3-BinaryDiagnostic.txt"; sourceTree = "<group>"; };
+		FB0EAEA3275A179A0065BEE2 /* BinaryDiagnostic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryDiagnostic.swift; sourceTree = "<group>"; };
+		FB0EAEA5275A17D60065BEE2 /* binary-diagnostic-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "binary-diagnostic-data.txt"; sourceTree = "<group>"; };
+		FB0EAEA7275A1EB50065BEE2 /* test-binary-diagnostic-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-binary-diagnostic-data.txt"; sourceTree = "<group>"; };
+		FB0EAEA8275A590C0065BEE2 /* BinaryDiagnosticModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryDiagnosticModels.swift; sourceTree = "<group>"; };
+		FB0EAEAA275A63690065BEE2 /* BinaryDiagnosticTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryDiagnosticTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +156,7 @@
 				FB0EAE29275789720065BEE2 /* Helpers */,
 				FB0EAE23275787530065BEE2 /* Day1-SonarSweep */,
 				FB0EAE8E2758CCD80065BEE2 /* Day2-Dive */,
+				FB0EAEA1275A171F0065BEE2 /* Day3-BinaryDiagnostic */,
 				FB0EAE1C275787390065BEE2 /* main.swift */,
 			);
 			path = aoc2021;
@@ -209,6 +227,27 @@
 			children = (
 				FB0EAE922758CDEA0065BEE2 /* test-navigation-data.txt */,
 				FB0EAE9A27593B2E0065BEE2 /* DiveNavigationTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		FB0EAEA1275A171F0065BEE2 /* Day3-BinaryDiagnostic */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAEA2275A17440065BEE2 /* Day3-BinaryDiagnostic.txt */,
+				FB0EAEA8275A590C0065BEE2 /* BinaryDiagnosticModels.swift */,
+				FB0EAEA3275A179A0065BEE2 /* BinaryDiagnostic.swift */,
+				FB0EAEA5275A17D60065BEE2 /* binary-diagnostic-data.txt */,
+				FB0EAEA6275A1EA80065BEE2 /* Test */,
+			);
+			path = "Day3-BinaryDiagnostic";
+			sourceTree = "<group>";
+		};
+		FB0EAEA6275A1EA80065BEE2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAEA7275A1EB50065BEE2 /* test-binary-diagnostic-data.txt */,
+				FB0EAEAA275A63690065BEE2 /* BinaryDiagnosticTests.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -328,6 +367,8 @@
 			files = (
 				FB0EAE9E27593E680065BEE2 /* navigation-data.txt in Resources */,
 				FB0EAE8127581CF40065BEE2 /* depth-measurements.txt in Resources */,
+				FB0EAEAF275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */,
+				FB0EAEAC275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
 				FB0EAE8927581FE40065BEE2 /* test-depth-measurements.txt in Resources */,
 				FB0EAE952758CE7F0065BEE2 /* test-navigation-data.txt in Resources */,
 			);
@@ -337,6 +378,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0EAEAD275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
+				FB0EAEAE275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */,
 				FB0EAE9F27593E6B0065BEE2 /* navigation-data.txt in Resources */,
 				FB0EAE942758CE7E0065BEE2 /* test-navigation-data.txt in Resources */,
 				FB0EAE8227581CFF0065BEE2 /* test-depth-measurements.txt in Resources */,
@@ -361,6 +404,8 @@
 				FB0EAE8427581D3F0065BEE2 /* FileReader.swift in Sources */,
 				FB0EAE8527581D430065BEE2 /* Resources.swift in Sources */,
 				FB0EAE902758CD1C0065BEE2 /* DiveNavigation.swift in Sources */,
+				FB0EAEA9275A590C0065BEE2 /* BinaryDiagnosticModels.swift in Sources */,
+				FB0EAEA4275A179A0065BEE2 /* BinaryDiagnostic.swift in Sources */,
 				FB0EAE8D2758251F0065BEE2 /* SlidingWindow.swift in Sources */,
 				FB0EAE8627581D460065BEE2 /* StringExtension.swift in Sources */,
 				FB0EAE992758D6610065BEE2 /* FileColumn.swift in Sources */,
@@ -374,6 +419,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0EAEAB275A63690065BEE2 /* BinaryDiagnosticTests.swift in Sources */,
 				FB0EAE8327581D020065BEE2 /* DepthIncreaseTests.swift in Sources */,
 				FB0EAE9B27593B2E0065BEE2 /* DiveNavigationTests.swift in Sources */,
 			);
