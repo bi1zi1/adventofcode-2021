@@ -83,6 +83,7 @@
 		FB0EAE962758CF8D0065BEE2 /* FormattedFileReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormattedFileReader.swift; sourceTree = "<group>"; };
 		FB0EAE982758D6610065BEE2 /* FileColumn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileColumn.swift; sourceTree = "<group>"; };
 		FB0EAE9A27593B2E0065BEE2 /* DiveNavigationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiveNavigationTests.swift; sourceTree = "<group>"; };
+		FB0EAEA0275A14DB0065BEE2 /* Day2-Dive.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day2-Dive.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,6 +196,7 @@
 		FB0EAE8E2758CCD80065BEE2 /* Day2-Dive */ = {
 			isa = PBXGroup;
 			children = (
+				FB0EAEA0275A14DB0065BEE2 /* Day2-Dive.txt */,
 				FB0EAE8F2758CD1C0065BEE2 /* DiveNavigation.swift */,
 				FB0EAE932758CE270065BEE2 /* navigation-data.txt */,
 				FB0EAE912758CDDC0065BEE2 /* Test */,
