@@ -4,11 +4,13 @@ public enum FileResource: String {
     case depthMeasurements = "depth-measurements.txt"
     case navigationData = "navigation-data.txt"
     case binaryDiagnosticData = "binary-diagnostic-data.txt"
+    case bingoData = "bingo-data.txt"
 
     // test files
     case testDepthMeasurements = "test-depth-measurements.txt"
     case testNavigationData = "test-navigation-data.txt"
     case testBinaryDiagnosticData = "test-binary-diagnostic-data.txt"
+    case testBingoData = "test-bingo-data.txt"
 }
 
 extension FileResource {
@@ -42,6 +44,10 @@ extension FileResource {
                 columns: [
                     ColumnKey(index: 0, name: "binary"): .binaryNumber
                 ])
+
+        case .bingoData, .testBingoData:
+            // Currently not supported
+            fatalError()
         }
     }
 }
