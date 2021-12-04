@@ -18,6 +18,20 @@ class BinaryDiagnosticTests: XCTestCase {
         XCTAssertEqual(epsilonRate, expectedEpsilonRate)
     }
 
+    func testOxygenGeneratorRatingAndCO2ScrubberRating() throws {
+        // given
+        let binaryDiagnostic = BinaryDiagnostic(measurementsFile: .testBinaryDiagnosticData)
+
+        // when
+        let (oxygenGeneratorRating, co2ScrubberRating) = binaryDiagnostic.oxygenGeneratorRatingAndCO2ScrubberRating()
+
+        // then
+        let expectedOxygenGeneratorRating = 23
+        XCTAssertEqual(oxygenGeneratorRating, expectedOxygenGeneratorRating)
+        let expectedCO2ScrubberRating = 10
+        XCTAssertEqual(co2ScrubberRating, expectedCO2ScrubberRating)
+    }
+
     func testPerformanceExample() throws {
         let binaryDiagnostic = BinaryDiagnostic(measurementsFile: .testBinaryDiagnosticData)
         self.measure {
