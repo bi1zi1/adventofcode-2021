@@ -16,6 +16,18 @@ class BingoCalculatorTests: XCTestCase {
         XCTAssertEqual(finalScore, expectedFinalScore)
     }
 
+    func testLastCardFinalScore() throws {
+        // given
+        let bingoCalculator = BingoCalculator(fileResource: .testBingoData)
+
+        // when
+        let finalScore = bingoCalculator.lastCardFinalScore()
+
+        // then
+        let expectedFinalScore = 1924
+        XCTAssertEqual(finalScore, expectedFinalScore)
+    }
+
     func testPerformanceExample() throws {
         let bingoCalculator = BingoCalculator(fileResource: .testBingoData)
         self.measure {

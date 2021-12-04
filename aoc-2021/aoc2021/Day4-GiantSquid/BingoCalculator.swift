@@ -27,4 +27,28 @@ public final class BingoCalculator {
 
         return .zero
     }
+
+    public func lastCardFinalScore() -> Int {
+        guard let numbersDrawn = BingoDraw(string: bingoFileReader.bingoDraw) else {
+            return .zero
+        }
+
+        let bingoCards = bingoFileReader.bingoCards
+            .compactMap { BingoCard(lines: $0) }
+
+        var lastFinalScore = Int.zero
+        for number in numbersDrawn {
+            for card in bingoCards {
+                if card.containsMatch { continue }
+
+                card.tryMatch(number: number)
+                if card.containsMatch {
+                    print("\(card.score()) * \(number)")
+                    lastFinalScore = card.score() * number
+                }
+            }
+        }
+
+        return lastFinalScore
+    }
 }
