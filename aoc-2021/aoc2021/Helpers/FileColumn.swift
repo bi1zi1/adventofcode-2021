@@ -5,6 +5,7 @@ enum SupportedDataType {
     case string
     case direction
     case binaryNumber
+    case ventLine
 }
 
 extension SupportedDataType {
@@ -12,7 +13,7 @@ extension SupportedDataType {
         switch self {
         case .int:
             return Int(string)
-        case .string, .direction, .binaryNumber:
+        case .string, .direction, .binaryNumber, .ventLine:
             return nil
         }
     }
@@ -21,7 +22,7 @@ extension SupportedDataType {
         switch self {
         case .string:
             return string
-        case .int, .direction, .binaryNumber:
+        case .int, .direction, .binaryNumber, .ventLine:
             return nil
         }
     }
@@ -30,7 +31,7 @@ extension SupportedDataType {
         switch self {
         case .direction:
             return Direction(rawValue: string)
-        case .int, .string, .binaryNumber:
+        case .int, .string, .binaryNumber, .ventLine:
             return nil
         }
     }
@@ -39,7 +40,16 @@ extension SupportedDataType {
         switch self {
         case .binaryNumber:
             return BinaryNumber(string: string)
-        case .int, .string, .direction:
+        case .int, .string, .direction, .ventLine:
+            return nil
+        }
+    }
+
+    func value(from string: String) -> VentLine? {
+        switch self {
+        case .ventLine:
+            return VentLine(string: string)
+        case .binaryNumber, .int, .string, .direction:
             return nil
         }
     }

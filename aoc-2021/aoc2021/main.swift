@@ -25,8 +25,13 @@ print("Hello, World!")
 //print("binaryDiagnostic oxygenGeneratorRating = \(oxygenGeneratorRating), co2ScrubberRating = \(co2ScrubberRating) [\(oxygenGeneratorRating * co2ScrubberRating)]")
 
 // DAY 4
-let bingoCalculator = BingoCalculator()
-let finalScore = bingoCalculator.finalScore()
-print("bingoCalculator finalScore = \(finalScore)")
-let lastCardFinalScore = bingoCalculator.lastCardFinalScore()
-print("bingoCalculator lastCardFinalScore = \(lastCardFinalScore)")
+//let bingoCalculator = BingoCalculator()
+//let finalScore = bingoCalculator.finalScore()
+//print("bingoCalculator finalScore = \(finalScore)")
+//let lastCardFinalScore = bingoCalculator.lastCardFinalScore()
+//print("bingoCalculator lastCardFinalScore = \(lastCardFinalScore)")
+
+// DAY 5
+let hydrothermalDanger = HydrothermalDanger()
+let dangerPointsCount = hydrothermalDanger.dangerPointsCount()
+print("hydrothermalDanger dangerPointsCount = \(dangerPointsCount)")

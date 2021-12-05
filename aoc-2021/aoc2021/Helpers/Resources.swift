@@ -5,12 +5,14 @@ public enum FileResource: String {
     case navigationData = "navigation-data.txt"
     case binaryDiagnosticData = "binary-diagnostic-data.txt"
     case bingoData = "bingo-data.txt"
+    case hydrothermalLinesData = "hydrothermal-lines-data.txt"
 
     // test files
     case testDepthMeasurements = "test-depth-measurements.txt"
     case testNavigationData = "test-navigation-data.txt"
     case testBinaryDiagnosticData = "test-binary-diagnostic-data.txt"
     case testBingoData = "test-bingo-data.txt"
+    case testHydrothermalLinesData = "test-hydrothermal-lines-data.txt"
 }
 
 extension FileResource {
@@ -43,6 +45,12 @@ extension FileResource {
             return ColumnDefinition(
                 columns: [
                     ColumnKey(index: 0, name: "binary"): .binaryNumber
+                ])
+
+        case .hydrothermalLinesData, .testHydrothermalLinesData:
+            return ColumnDefinition(
+                columns: [
+                    ColumnKey(index: 0, name: "vent-line"): .ventLine
                 ])
 
         case .bingoData, .testBingoData:

@@ -18,9 +18,14 @@ final class FormattedFileReader {
     }
 
     func parseRow(index: Int, line: String) -> Row? {
-        let columnStringValues = line
-            .components(separatedBy: CharacterSet.whitespaces)
-            .compactMap({ String($0) })
+        let columnStringValues: [String]
+        if columnDefinition.columns.count > 1 {
+            columnStringValues = line
+                .components(separatedBy: CharacterSet.whitespaces)
+                .compactMap({ String($0) })
+        } else {
+            columnStringValues = [line]
+        }
 
         guard columnStringValues.count == columnDefinition.columns.count else {
             return nil
