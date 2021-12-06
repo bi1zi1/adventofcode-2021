@@ -32,8 +32,16 @@ print("Hello, World!")
 //print("bingoCalculator lastCardFinalScore = \(lastCardFinalScore)")
 
 // DAY 5
-let hydrothermalDanger = HydrothermalDanger()
-let dangerPointsCount = hydrothermalDanger.dangerPointsCount()
-print("hydrothermalDanger dangerPointsCount = \(dangerPointsCount)")
-let dangerPointsWithDiagonalCount = hydrothermalDanger.dangerPointsWithDiagonalCount()
-print("hydrothermalDanger dangerPointsWithDiagonalCount = \(dangerPointsWithDiagonalCount)")
+//let hydrothermalDanger = HydrothermalDanger()
+//let dangerPointsCount = hydrothermalDanger.dangerPointsCount()
+//print("hydrothermalDanger dangerPointsCount = \(dangerPointsCount)")
+//let dangerPointsWithDiagonalCount = hydrothermalDanger.dangerPointsWithDiagonalCount()
+//print("hydrothermalDanger dangerPointsWithDiagonalCount = \(dangerPointsWithDiagonalCount)")
+
+//DAY 6
+let lanternFish = LanternFish()
+let populationCount80day = lanternFish.populationCount80day()
+print("lanternFish populationCount80day = \(populationCount80day)")
+//let dangerPointsWithDiagonalCount = hydrothermalDanger.dangerPointsWithDiagonalCount()
+//print("lanternFish dangerPointsWithDiagonalCount = \(dangerPointsWithDiagonalCount)")
+

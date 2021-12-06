@@ -6,6 +6,7 @@ public enum FileResource: String {
     case binaryDiagnosticData = "binary-diagnostic-data.txt"
     case bingoData = "bingo-data.txt"
     case hydrothermalLinesData = "hydrothermal-lines-data.txt"
+    case lanternfishSpawnData = "lanternfish-spawn-data.txt"
 
     // test files
     case testDepthMeasurements = "test-depth-measurements.txt"
@@ -13,6 +14,7 @@ public enum FileResource: String {
     case testBinaryDiagnosticData = "test-binary-diagnostic-data.txt"
     case testBingoData = "test-bingo-data.txt"
     case testHydrothermalLinesData = "test-hydrothermal-lines-data.txt"
+    case testLanternfishSpawnData = "test-lanternfish-spawn-data.txt"
 }
 
 extension FileResource {
@@ -53,7 +55,8 @@ extension FileResource {
                     ColumnKey(index: 0, name: "vent-line"): .ventLine
                 ])
 
-        case .bingoData, .testBingoData:
+        case .bingoData, .testBingoData,
+                .lanternfishSpawnData, .testLanternfishSpawnData:
             // Currently not supported
             fatalError()
         }
