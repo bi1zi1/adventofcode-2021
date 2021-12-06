@@ -16,6 +16,18 @@ class HydrothermalDangerTests: XCTestCase {
         XCTAssertEqual(dangerPointsCount, expectedDangerPointsCount)
     }
 
+    func testDangerPointsWithDiagonalCount() throws {
+        // given
+        let hydrothermalDanger = HydrothermalDanger(measurementsFile: .testHydrothermalLinesData)
+
+        // when
+        let dangerPointsCount = hydrothermalDanger.dangerPointsWithDiagonalCount()
+
+        // then
+        let expectedDangerPointsCount = 12
+        XCTAssertEqual(dangerPointsCount, expectedDangerPointsCount)
+    }
+
     func testPerformanceExample() throws {
         let hydrothermalDanger = HydrothermalDanger(measurementsFile: .testHydrothermalLinesData)
         self.measure {

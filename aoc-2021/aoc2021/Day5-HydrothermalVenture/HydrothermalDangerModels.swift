@@ -19,7 +19,11 @@ extension VentLine {
         startPoint.y == endPoint.y
     }
 
-    var lineItems: [Point] {
+    var isDiagonal: Bool {
+        abs(endPoint.y - startPoint.y) == abs(endPoint.x - startPoint.x)
+    }
+
+    func lineItems(useDiagonal: Bool) -> [Point] {
         if isVertical {
             let x = startPoint.x
             let rangeStart = min(startPoint.y, endPoint.y)
@@ -32,6 +36,18 @@ extension VentLine {
             let rangeStart = min(startPoint.x, endPoint.x)
             let rangeEnd = max(startPoint.x, endPoint.x)
             return (rangeStart...rangeEnd).map { Point(x: $0, y: y) }
+        }
+
+        if useDiagonal, isDiagonal {
+            let steps = abs(endPoint.x - startPoint.x)
+            let directionX = (endPoint.x - startPoint.x).signum()
+            let directionY = (endPoint.y - startPoint.y).signum()
+            return (0...steps).map {
+                Point(
+                    x: startPoint.x + $0 * directionX,
+                    y: startPoint.y + $0 * directionY
+                )
+            }
         }
 
         return []
