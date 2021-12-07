@@ -68,6 +68,14 @@
 		FB0EAEE3275E0CD20065BEE2 /* lanternfish-spawn-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEDE275DF0500065BEE2 /* lanternfish-spawn-data.txt */; };
 		FB0EAEE4275E0CD20065BEE2 /* lanternfish-spawn-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEDE275DF0500065BEE2 /* lanternfish-spawn-data.txt */; };
 		FB0EAEE5275E0CF90065BEE2 /* lanternfish-spawn-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAEDE275DF0500065BEE2 /* lanternfish-spawn-data.txt */; };
+		FB0EAEEC275F594B0065BEE2 /* PositionAlign.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAEEB275F594B0065BEE2 /* PositionAlign.swift */; };
+		FB0EAEEE275F59740065BEE2 /* PositionAlignTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAEED275F59740065BEE2 /* PositionAlignTests.swift */; };
+		FB0EAEEF275F59790065BEE2 /* test-horizontal-position-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEE9275F58320065BEE2 /* test-horizontal-position-data.txt */; };
+		FB0EAEF0275F59790065BEE2 /* test-horizontal-position-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEE9275F58320065BEE2 /* test-horizontal-position-data.txt */; };
+		FB0EAEF1275F597E0065BEE2 /* horizontal-position-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEEA275F58DC0065BEE2 /* horizontal-position-data.txt */; };
+		FB0EAEF2275F597F0065BEE2 /* horizontal-position-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEEA275F58DC0065BEE2 /* horizontal-position-data.txt */; };
+		FB0EAEF3275F59890065BEE2 /* horizontal-position-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAEEA275F58DC0065BEE2 /* horizontal-position-data.txt */; };
+		FB0EAEF4275F59890065BEE2 /* test-horizontal-position-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAEE9275F58320065BEE2 /* test-horizontal-position-data.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +95,8 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FB0EAEF3275F59890065BEE2 /* horizontal-position-data.txt in CopyFiles */,
+				FB0EAEF4275F59890065BEE2 /* test-horizontal-position-data.txt in CopyFiles */,
 				FB0EAEE5275E0CF90065BEE2 /* lanternfish-spawn-data.txt in CopyFiles */,
 				FB0EAED2275CC52B0065BEE2 /* test-lanternfish-spawn-data.txt in CopyFiles */,
 				FB0EAED3275CC52B0065BEE2 /* test-hydrothermal-lines-data.txt in CopyFiles */,
@@ -149,6 +159,11 @@
 		FB0EAEDE275DF0500065BEE2 /* lanternfish-spawn-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "lanternfish-spawn-data.txt"; sourceTree = "<group>"; };
 		FB0EAEDF275DF1540065BEE2 /* LanternFish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanternFish.swift; sourceTree = "<group>"; };
 		FB0EAEE1275E09A40065BEE2 /* LanternFishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanternFishTests.swift; sourceTree = "<group>"; };
+		FB0EAEE7275F57E80065BEE2 /* Day7-TheTreacheryOfWhales.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day7-TheTreacheryOfWhales.txt"; sourceTree = "<group>"; };
+		FB0EAEE9275F58320065BEE2 /* test-horizontal-position-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-horizontal-position-data.txt"; sourceTree = "<group>"; };
+		FB0EAEEA275F58DC0065BEE2 /* horizontal-position-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "horizontal-position-data.txt"; sourceTree = "<group>"; };
+		FB0EAEEB275F594B0065BEE2 /* PositionAlign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionAlign.swift; sourceTree = "<group>"; };
+		FB0EAEED275F59740065BEE2 /* PositionAlignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionAlignTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -209,6 +224,7 @@
 				FB0EAEC9275CC3FD0065BEE2 /* Day5-HydrothermalVenture */,
 				FB0EAEDA275DEF1B0065BEE2 /* Day6-Lanternfish */,
 				FB0EAE1C275787390065BEE2 /* main.swift */,
+				FB0EAEE6275F57A10065BEE2 /* Day7-TheTreacheryOfWhales */,
 			);
 			path = aoc2021;
 			sourceTree = "<group>";
@@ -365,6 +381,26 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		FB0EAEE6275F57A10065BEE2 /* Day7-TheTreacheryOfWhales */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAEE7275F57E80065BEE2 /* Day7-TheTreacheryOfWhales.txt */,
+				FB0EAEEB275F594B0065BEE2 /* PositionAlign.swift */,
+				FB0EAEEA275F58DC0065BEE2 /* horizontal-position-data.txt */,
+				FB0EAEE8275F58290065BEE2 /* Test */,
+			);
+			path = "Day7-TheTreacheryOfWhales";
+			sourceTree = "<group>";
+		};
+		FB0EAEE8275F58290065BEE2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAEE9275F58320065BEE2 /* test-horizontal-position-data.txt */,
+				FB0EAEED275F59740065BEE2 /* PositionAlignTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -485,6 +521,8 @@
 				FB0EAEAC275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
 				FB0EAEBC275B73BB0065BEE2 /* test-bingo-data.txt in Resources */,
 				FB0EAE8927581FE40065BEE2 /* test-depth-measurements.txt in Resources */,
+				FB0EAEF2275F597F0065BEE2 /* horizontal-position-data.txt in Resources */,
+				FB0EAEF0275F59790065BEE2 /* test-horizontal-position-data.txt in Resources */,
 				FB0EAEC7275C214B0065BEE2 /* bingo-data.txt in Resources */,
 				FB0EAE952758CE7F0065BEE2 /* test-navigation-data.txt in Resources */,
 				FB0EAECF275CC51D0065BEE2 /* test-hydrothermal-lines-data.txt in Resources */,
@@ -500,12 +538,14 @@
 				FB0EAEAD275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
 				FB0EAEB9275B73B70065BEE2 /* Day4-GiantSquid.txt in Resources */,
 				FB0EAEC8275C214C0065BEE2 /* bingo-data.txt in Resources */,
+				FB0EAEF1275F597E0065BEE2 /* horizontal-position-data.txt in Resources */,
 				FB0EAEAE275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */,
 				FB0EAEBB275B73BB0065BEE2 /* test-bingo-data.txt in Resources */,
 				FB0EAED1275CC5200065BEE2 /* test-lanternfish-spawn-data.txt in Resources */,
 				FB0EAE9F27593E6B0065BEE2 /* navigation-data.txt in Resources */,
 				FB0EAE942758CE7E0065BEE2 /* test-navigation-data.txt in Resources */,
 				FB0EAE8227581CFF0065BEE2 /* test-depth-measurements.txt in Resources */,
+				FB0EAEEF275F59790065BEE2 /* test-horizontal-position-data.txt in Resources */,
 				FB0EAEE3275E0CD20065BEE2 /* lanternfish-spawn-data.txt in Resources */,
 				FB0EAECE275CC51D0065BEE2 /* test-hydrothermal-lines-data.txt in Resources */,
 			);
@@ -534,6 +574,7 @@
 				FB0EAED5275CC5850065BEE2 /* HydrothermalDanger.swift in Sources */,
 				FB0EAEA9275A590C0065BEE2 /* BinaryDiagnosticModels.swift in Sources */,
 				FB0EAEA4275A179A0065BEE2 /* BinaryDiagnostic.swift in Sources */,
+				FB0EAEEC275F594B0065BEE2 /* PositionAlign.swift in Sources */,
 				FB0EAEB8275B73B20065BEE2 /* BingoCalculator.swift in Sources */,
 				FB0EAE8D2758251F0065BEE2 /* SlidingWindow.swift in Sources */,
 				FB0EAEE0275DF1540065BEE2 /* LanternFish.swift in Sources */,
@@ -552,6 +593,7 @@
 			files = (
 				FB0EAED7275CC5AB0065BEE2 /* HydrothermalDangerTests.swift in Sources */,
 				FB0EAEAB275A63690065BEE2 /* BinaryDiagnosticTests.swift in Sources */,
+				FB0EAEEE275F59740065BEE2 /* PositionAlignTests.swift in Sources */,
 				FB0EAEE2275E09A40065BEE2 /* LanternFishTests.swift in Sources */,
 				FB0EAEC6275C1A710065BEE2 /* BingoCalculatorTests.swift in Sources */,
 				FB0EAE8327581D020065BEE2 /* DepthIncreaseTests.swift in Sources */,

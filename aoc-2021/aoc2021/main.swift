@@ -39,8 +39,16 @@ print("Hello, World!")
 //print("hydrothermalDanger dangerPointsWithDiagonalCount = \(dangerPointsWithDiagonalCount)")
 
 //DAY 6
-let lanternFish = LanternFish()
-let populationCount80day = lanternFish.populationCount80day()
-print("lanternFish populationCount80day = \(populationCount80day)")
-let populationCount256day = lanternFish.populationCount256day()
-print("lanternFish populationCount256day = \(populationCount256day)")
+//let lanternFish = LanternFish()
+//let populationCount80day = lanternFish.populationCount80day()
+//print("lanternFish populationCount80day = \(populationCount80day)")
+//let populationCount256day = lanternFish.populationCount256day()
+//print("lanternFish populationCount256day = \(populationCount256day)")
+
+
+//DAY 7
+let positionAlign = PositionAlign()
+let minFuel = positionAlign.minFuel()
+print("positionAlign minFuel = \(minFuel)")
+//let minFuel = positionAlign.minFuel()
+//print("positionAlign minFuel = \(minFuel)")
