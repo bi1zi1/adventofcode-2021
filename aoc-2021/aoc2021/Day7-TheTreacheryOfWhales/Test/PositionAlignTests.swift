@@ -16,6 +16,18 @@ class PositionAlignTests: XCTestCase {
         XCTAssertEqual(minFuel, expectedMinFuel)
     }
 
+    func testMinFuelDynamicSpend() throws {
+        // given
+        let positionAlign = PositionAlign(measurementsFile: .testHorizontalPositionData)
+
+        // when
+        let minFuel = positionAlign.minFuelDynamicSpend()
+
+        // then
+        let expectedMinFuel = 168
+        XCTAssertEqual(minFuel, expectedMinFuel)
+    }
+
     func testPerformanceExample() throws {
         let positionAlign = PositionAlign(measurementsFile: .testHorizontalPositionData)
         self.measure {
