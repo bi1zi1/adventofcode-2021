@@ -47,8 +47,15 @@ print("Hello, World!")
 
 
 //DAY 7
-let positionAlign = PositionAlign()
-let minFuel = positionAlign.minFuel()
-print("positionAlign minFuel = \(minFuel)")
-let minFuelDynamicSpend = positionAlign.minFuelDynamicSpend()
-print("positionAlign minFuelDynamicSpend = \(minFuelDynamicSpend)")
+//let positionAlign = PositionAlign()
+//let minFuel = positionAlign.minFuel()
+//print("positionAlign minFuel = \(minFuel)")
+//let minFuelDynamicSpend = positionAlign.minFuelDynamicSpend()
+//print("positionAlign minFuelDynamicSpend = \(minFuelDynamicSpend)")
+
+//DAY 8
+let sevenSegmentSearch = SevenSegmentSearch()
+let count_1_4_7_8 = sevenSegmentSearch.count_1_4_7_8()
+print("sevenSegmentSearch count_1_4_7_8 = \(count_1_4_7_8)")
+//let count_1_4_7_8 = sevenSegmentSearch.count_1_4_7_8()
+//print("sevenSegmentSearch count_1_4_7_8 = \(count_1_4_7_8)")

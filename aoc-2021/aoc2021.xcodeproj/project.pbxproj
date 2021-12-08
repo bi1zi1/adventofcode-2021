@@ -76,6 +76,14 @@
 		FB0EAEF2275F597F0065BEE2 /* horizontal-position-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEEA275F58DC0065BEE2 /* horizontal-position-data.txt */; };
 		FB0EAEF3275F59890065BEE2 /* horizontal-position-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAEEA275F58DC0065BEE2 /* horizontal-position-data.txt */; };
 		FB0EAEF4275F59890065BEE2 /* test-horizontal-position-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAEE9275F58320065BEE2 /* test-horizontal-position-data.txt */; };
+		FB0EAEFB2760A92E0065BEE2 /* SevenSegmentSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAEFA2760A92E0065BEE2 /* SevenSegmentSearch.swift */; };
+		FB0EAEFD2760B6E10065BEE2 /* SevenSegmentSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAEFC2760B6E10065BEE2 /* SevenSegmentSearchTests.swift */; };
+		FB0EAEFE2760B7E40065BEE2 /* test-7segment-display-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEF92760A6070065BEE2 /* test-7segment-display-data.txt */; };
+		FB0EAEFF2760B7E40065BEE2 /* test-7segment-display-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEF92760A6070065BEE2 /* test-7segment-display-data.txt */; };
+		FB0EAF002760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEF72760A5010065BEE2 /* 7segment-display-data.txt */; };
+		FB0EAF012760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEF72760A5010065BEE2 /* 7segment-display-data.txt */; };
+		FB0EAF022760B8060065BEE2 /* 7segment-display-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAEF72760A5010065BEE2 /* 7segment-display-data.txt */; };
+		FB0EAF032760B8060065BEE2 /* test-7segment-display-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAEF92760A6070065BEE2 /* test-7segment-display-data.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +103,8 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FB0EAF022760B8060065BEE2 /* 7segment-display-data.txt in CopyFiles */,
+				FB0EAF032760B8060065BEE2 /* test-7segment-display-data.txt in CopyFiles */,
 				FB0EAEF3275F59890065BEE2 /* horizontal-position-data.txt in CopyFiles */,
 				FB0EAEF4275F59890065BEE2 /* test-horizontal-position-data.txt in CopyFiles */,
 				FB0EAEE5275E0CF90065BEE2 /* lanternfish-spawn-data.txt in CopyFiles */,
@@ -164,6 +174,11 @@
 		FB0EAEEA275F58DC0065BEE2 /* horizontal-position-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "horizontal-position-data.txt"; sourceTree = "<group>"; };
 		FB0EAEEB275F594B0065BEE2 /* PositionAlign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionAlign.swift; sourceTree = "<group>"; };
 		FB0EAEED275F59740065BEE2 /* PositionAlignTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionAlignTests.swift; sourceTree = "<group>"; };
+		FB0EAEF62760A2230065BEE2 /* Day8-SevenSegmentSearch.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day8-SevenSegmentSearch.txt"; sourceTree = "<group>"; };
+		FB0EAEF72760A5010065BEE2 /* 7segment-display-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "7segment-display-data.txt"; sourceTree = "<group>"; };
+		FB0EAEF92760A6070065BEE2 /* test-7segment-display-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-7segment-display-data.txt"; sourceTree = "<group>"; };
+		FB0EAEFA2760A92E0065BEE2 /* SevenSegmentSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenSegmentSearch.swift; sourceTree = "<group>"; };
+		FB0EAEFC2760B6E10065BEE2 /* SevenSegmentSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenSegmentSearchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -223,8 +238,9 @@
 				FB0EAEB2275B71AD0065BEE2 /* Day4-GiantSquid */,
 				FB0EAEC9275CC3FD0065BEE2 /* Day5-HydrothermalVenture */,
 				FB0EAEDA275DEF1B0065BEE2 /* Day6-Lanternfish */,
-				FB0EAE1C275787390065BEE2 /* main.swift */,
 				FB0EAEE6275F57A10065BEE2 /* Day7-TheTreacheryOfWhales */,
+				FB0EAEF52760A1E10065BEE2 /* Day8-SevenSegmentSearch */,
+				FB0EAE1C275787390065BEE2 /* main.swift */,
 			);
 			path = aoc2021;
 			sourceTree = "<group>";
@@ -401,6 +417,26 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		FB0EAEF52760A1E10065BEE2 /* Day8-SevenSegmentSearch */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAEF62760A2230065BEE2 /* Day8-SevenSegmentSearch.txt */,
+				FB0EAEFA2760A92E0065BEE2 /* SevenSegmentSearch.swift */,
+				FB0EAEF72760A5010065BEE2 /* 7segment-display-data.txt */,
+				FB0EAEF82760A6010065BEE2 /* Test */,
+			);
+			path = "Day8-SevenSegmentSearch";
+			sourceTree = "<group>";
+		};
+		FB0EAEF82760A6010065BEE2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAEF92760A6070065BEE2 /* test-7segment-display-data.txt */,
+				FB0EAEFC2760B6E10065BEE2 /* SevenSegmentSearchTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -516,6 +552,7 @@
 			files = (
 				FB0EAE9E27593E680065BEE2 /* navigation-data.txt in Resources */,
 				FB0EAE8127581CF40065BEE2 /* depth-measurements.txt in Resources */,
+				FB0EAEFF2760B7E40065BEE2 /* test-7segment-display-data.txt in Resources */,
 				FB0EAEAF275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */,
 				FB0EAED0275CC5200065BEE2 /* test-lanternfish-spawn-data.txt in Resources */,
 				FB0EAEAC275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
@@ -524,6 +561,7 @@
 				FB0EAEF2275F597F0065BEE2 /* horizontal-position-data.txt in Resources */,
 				FB0EAEF0275F59790065BEE2 /* test-horizontal-position-data.txt in Resources */,
 				FB0EAEC7275C214B0065BEE2 /* bingo-data.txt in Resources */,
+				FB0EAF012760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
 				FB0EAE952758CE7F0065BEE2 /* test-navigation-data.txt in Resources */,
 				FB0EAECF275CC51D0065BEE2 /* test-hydrothermal-lines-data.txt in Resources */,
 				FB0EAEBA275B73B70065BEE2 /* Day4-GiantSquid.txt in Resources */,
@@ -541,7 +579,9 @@
 				FB0EAEF1275F597E0065BEE2 /* horizontal-position-data.txt in Resources */,
 				FB0EAEAE275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */,
 				FB0EAEBB275B73BB0065BEE2 /* test-bingo-data.txt in Resources */,
+				FB0EAF002760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
 				FB0EAED1275CC5200065BEE2 /* test-lanternfish-spawn-data.txt in Resources */,
+				FB0EAEFE2760B7E40065BEE2 /* test-7segment-display-data.txt in Resources */,
 				FB0EAE9F27593E6B0065BEE2 /* navigation-data.txt in Resources */,
 				FB0EAE942758CE7E0065BEE2 /* test-navigation-data.txt in Resources */,
 				FB0EAE8227581CFF0065BEE2 /* test-depth-measurements.txt in Resources */,
@@ -580,6 +620,7 @@
 				FB0EAEE0275DF1540065BEE2 /* LanternFish.swift in Sources */,
 				FB0EAEC2275BC0EB0065BEE2 /* BingoFileReader.swift in Sources */,
 				FB0EAE8627581D460065BEE2 /* StringExtension.swift in Sources */,
+				FB0EAEFB2760A92E0065BEE2 /* SevenSegmentSearch.swift in Sources */,
 				FB0EAE992758D6610065BEE2 /* FileColumn.swift in Sources */,
 				FB0EAE972758CF8D0065BEE2 /* FormattedFileReader.swift in Sources */,
 				FB0EAE6D27581CC00065BEE2 /* AOCFramework.docc in Sources */,
@@ -596,6 +637,7 @@
 				FB0EAEEE275F59740065BEE2 /* PositionAlignTests.swift in Sources */,
 				FB0EAEE2275E09A40065BEE2 /* LanternFishTests.swift in Sources */,
 				FB0EAEC6275C1A710065BEE2 /* BingoCalculatorTests.swift in Sources */,
+				FB0EAEFD2760B6E10065BEE2 /* SevenSegmentSearchTests.swift in Sources */,
 				FB0EAE8327581D020065BEE2 /* DepthIncreaseTests.swift in Sources */,
 				FB0EAE9B27593B2E0065BEE2 /* DiveNavigationTests.swift in Sources */,
 			);
