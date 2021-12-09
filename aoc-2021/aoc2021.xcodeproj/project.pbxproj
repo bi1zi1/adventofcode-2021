@@ -84,6 +84,7 @@
 		FB0EAF012760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAEF72760A5010065BEE2 /* 7segment-display-data.txt */; };
 		FB0EAF022760B8060065BEE2 /* 7segment-display-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAEF72760A5010065BEE2 /* 7segment-display-data.txt */; };
 		FB0EAF032760B8060065BEE2 /* test-7segment-display-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAEF92760A6070065BEE2 /* test-7segment-display-data.txt */; };
+		FB0EAF052760F8C30065BEE2 /* SevenSegmentSearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF042760F8C30065BEE2 /* SevenSegmentSearchModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,6 +180,7 @@
 		FB0EAEF92760A6070065BEE2 /* test-7segment-display-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-7segment-display-data.txt"; sourceTree = "<group>"; };
 		FB0EAEFA2760A92E0065BEE2 /* SevenSegmentSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenSegmentSearch.swift; sourceTree = "<group>"; };
 		FB0EAEFC2760B6E10065BEE2 /* SevenSegmentSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenSegmentSearchTests.swift; sourceTree = "<group>"; };
+		FB0EAF042760F8C30065BEE2 /* SevenSegmentSearchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenSegmentSearchModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -422,6 +424,7 @@
 			children = (
 				FB0EAEF62760A2230065BEE2 /* Day8-SevenSegmentSearch.txt */,
 				FB0EAEFA2760A92E0065BEE2 /* SevenSegmentSearch.swift */,
+				FB0EAF042760F8C30065BEE2 /* SevenSegmentSearchModels.swift */,
 				FB0EAEF72760A5010065BEE2 /* 7segment-display-data.txt */,
 				FB0EAEF82760A6010065BEE2 /* Test */,
 			);
@@ -609,6 +612,7 @@
 				FB0EAE8427581D3F0065BEE2 /* FileReader.swift in Sources */,
 				FB0EAED9275D71AD0065BEE2 /* HydrothermalDangerModels.swift in Sources */,
 				FB0EAEC0275B74EC0065BEE2 /* BingoCalculatorModels.swift in Sources */,
+				FB0EAF052760F8C30065BEE2 /* SevenSegmentSearchModels.swift in Sources */,
 				FB0EAE8527581D430065BEE2 /* Resources.swift in Sources */,
 				FB0EAE902758CD1C0065BEE2 /* DiveNavigation.swift in Sources */,
 				FB0EAED5275CC5850065BEE2 /* HydrothermalDanger.swift in Sources */,

@@ -16,6 +16,18 @@ class SevenSegmentSearchTests: XCTestCase {
         XCTAssertEqual(count_1_4_7_8, expectedCount_1_4_7_8)
     }
 
+    func testSumDecipheredNumbers() throws {
+        // given
+        let sevenSegmentSearch = SevenSegmentSearch(measurementsFile: .testSevenSegmentDisplayData)
+
+        // when
+        let sumDecipheredNumbers = sevenSegmentSearch.sumDecipheredNumbers()
+
+        // then
+        let expectedSumDecipheredNumbers = 61229
+        XCTAssertEqual(sumDecipheredNumbers, expectedSumDecipheredNumbers)
+    }
+
     func testPerformanceExample() throws {
         let sevenSegmentSearch = SevenSegmentSearch(measurementsFile: .testSevenSegmentDisplayData)
         self.measure {
