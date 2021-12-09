@@ -16,6 +16,18 @@ class SmokeBasinTests: XCTestCase {
         XCTAssertEqual(lowPointsRiskLevelSum, expectedLowPointsRiskLevelSum)
     }
 
+    func testBasinTop3Multiply() throws {
+        // given
+        let smokeBasin = SmokeBasin(measurementsFile: .testAreaPointsData)
+
+        // when
+        let basinTop3Multiply = smokeBasin.basinTop3Multiply()
+
+        // then
+        let expectedBasinTop3Multiply = 1134
+        XCTAssertEqual(basinTop3Multiply, expectedBasinTop3Multiply)
+    }
+
     func testPerformanceExample() throws {
         let smokeBasin = SmokeBasin(measurementsFile: .testAreaPointsData)
         self.measure {

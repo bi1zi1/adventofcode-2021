@@ -1,10 +1,5 @@
 import Foundation
 
-struct Point: Hashable {
-    let x: Int
-    let y: Int
-}
-
 struct VentLine {
     let startPoint: Point
     let endPoint: Point
@@ -74,24 +69,5 @@ extension VentLine {
         }
 
         self.init(startPoint: startPoint, endPoint: endPoint)
-    }
-}
-
-extension Point {
-    init?(string: String) {
-        let coordinates = string
-            .components(separatedBy: ",")
-            .compactMap({ Int($0) })
-
-        assert(coordinates.count == 2)
-
-        guard
-            let x = coordinates.first,
-            let y = coordinates.last
-        else {
-            return nil
-        }
-
-        self.init(x: x, y: y)
     }
 }

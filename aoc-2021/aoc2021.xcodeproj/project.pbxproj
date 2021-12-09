@@ -94,6 +94,7 @@
 		FB0EAF182762AD780065BEE2 /* SmokeBasinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF172762AD780065BEE2 /* SmokeBasinTests.swift */; };
 		FB0EAF192762B42A0065BEE2 /* area-points-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF0C276267590065BEE2 /* area-points-data.txt */; };
 		FB0EAF1A2762B42B0065BEE2 /* area-points-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF0C276267590065BEE2 /* area-points-data.txt */; };
+		FB0EAF1D2762BA8B0065BEE2 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF1C2762BA8B0065BEE2 /* Point.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -198,6 +199,7 @@
 		FB0EAF0D276293DB0065BEE2 /* SmokeBasin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeBasin.swift; sourceTree = "<group>"; };
 		FB0EAF0F276295370065BEE2 /* SmokeBasinModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeBasinModels.swift; sourceTree = "<group>"; };
 		FB0EAF172762AD780065BEE2 /* SmokeBasinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeBasinTests.swift; sourceTree = "<group>"; };
+		FB0EAF1C2762BA8B0065BEE2 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -279,6 +281,7 @@
 		FB0EAE29275789720065BEE2 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				FB0EAF1B2762BA730065BEE2 /* CommonModels */,
 				FB0EAE2A2757898C0065BEE2 /* FileReader.swift */,
 				FB0EAE2C2757BABC0065BEE2 /* Resources.swift */,
 				FB0EAE2E2757BD7F0065BEE2 /* StringExtension.swift */,
@@ -479,6 +482,14 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		FB0EAF1B2762BA730065BEE2 /* CommonModels */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAF1C2762BA8B0065BEE2 /* Point.swift */,
+			);
+			path = CommonModels;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -674,6 +685,7 @@
 				FB0EAE972758CF8D0065BEE2 /* FormattedFileReader.swift in Sources */,
 				FB0EAE6D27581CC00065BEE2 /* AOCFramework.docc in Sources */,
 				FB0EAE8027581CEB0065BEE2 /* DepthIncrease.swift in Sources */,
+				FB0EAF1D2762BA8B0065BEE2 /* Point.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
