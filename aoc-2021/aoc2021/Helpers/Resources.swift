@@ -9,6 +9,7 @@ public enum FileResource: String {
     case lanternfishSpawnData = "lanternfish-spawn-data.txt"
     case horizontalPositionData = "horizontal-position-data.txt"
     case sevenSegmentDisplayData = "7segment-display-data.txt"
+    case areaPointsData = "area-points-data.txt"
 
     // test files
     case testDepthMeasurements = "test-depth-measurements.txt"
@@ -19,6 +20,7 @@ public enum FileResource: String {
     case testLanternfishSpawnData = "test-lanternfish-spawn-data.txt"
     case testHorizontalPositionData = "test-horizontal-position-data.txt"
     case testSevenSegmentDisplayData = "test-7segment-display-data.txt"
+    case testAreaPointsData = "test-area-points-data.txt"
 }
 
 extension FileResource {
@@ -62,7 +64,8 @@ extension FileResource {
         case .bingoData, .testBingoData,
                 .lanternfishSpawnData, .testLanternfishSpawnData,
                 .horizontalPositionData, .testHorizontalPositionData,
-                .sevenSegmentDisplayData, .testSevenSegmentDisplayData:
+                .sevenSegmentDisplayData, .testSevenSegmentDisplayData,
+                .areaPointsData, .testAreaPointsData:
             // Currently not supported
             fatalError()
         }

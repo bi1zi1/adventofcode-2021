@@ -54,8 +54,15 @@ print("Hello, World!")
 //print("positionAlign minFuelDynamicSpend = \(minFuelDynamicSpend)")
 
 //DAY 8
-let sevenSegmentSearch = SevenSegmentSearch()
-let count_1_4_7_8 = sevenSegmentSearch.count_1_4_7_8()
-print("sevenSegmentSearch count_1_4_7_8 = \(count_1_4_7_8)")
-let sumDecipheredNumbers = sevenSegmentSearch.sumDecipheredNumbers()
-print("sevenSegmentSearch sumDecipheredNumbers = \(sumDecipheredNumbers)")
+//let sevenSegmentSearch = SevenSegmentSearch()
+//let count_1_4_7_8 = sevenSegmentSearch.count_1_4_7_8()
+//print("sevenSegmentSearch count_1_4_7_8 = \(count_1_4_7_8)")
+//let sumDecipheredNumbers = sevenSegmentSearch.sumDecipheredNumbers()
+//print("sevenSegmentSearch sumDecipheredNumbers = \(sumDecipheredNumbers)")
+
+//DAY 9
+let smokeBasin = SmokeBasin()
+let lowPointsRiskLevelSum = smokeBasin.lowPointsRiskLevelSum()
+print("smokeBasin lowPointsRiskLevelSum = \(lowPointsRiskLevelSum)")
+//let lowPointsRiskLevelSum = smokeBasin.lowPointsRiskLevelSum()
+//print("smokeBasin lowPointsRiskLevelSum = \(lowPointsRiskLevelSum)")

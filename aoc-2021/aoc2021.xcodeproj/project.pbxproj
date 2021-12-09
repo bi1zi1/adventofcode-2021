@@ -85,6 +85,15 @@
 		FB0EAF022760B8060065BEE2 /* 7segment-display-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAEF72760A5010065BEE2 /* 7segment-display-data.txt */; };
 		FB0EAF032760B8060065BEE2 /* test-7segment-display-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAEF92760A6070065BEE2 /* test-7segment-display-data.txt */; };
 		FB0EAF052760F8C30065BEE2 /* SevenSegmentSearchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF042760F8C30065BEE2 /* SevenSegmentSearchModels.swift */; };
+		FB0EAF0E276293DB0065BEE2 /* SmokeBasin.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF0D276293DB0065BEE2 /* SmokeBasin.swift */; };
+		FB0EAF10276295370065BEE2 /* SmokeBasinModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF0F276295370065BEE2 /* SmokeBasinModels.swift */; };
+		FB0EAF13276295410065BEE2 /* test-area-points-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF0B276267480065BEE2 /* test-area-points-data.txt */; };
+		FB0EAF14276295420065BEE2 /* test-area-points-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF0B276267480065BEE2 /* test-area-points-data.txt */; };
+		FB0EAF152762954E0065BEE2 /* area-points-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF0C276267590065BEE2 /* area-points-data.txt */; };
+		FB0EAF162762954E0065BEE2 /* test-area-points-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF0B276267480065BEE2 /* test-area-points-data.txt */; };
+		FB0EAF182762AD780065BEE2 /* SmokeBasinTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF172762AD780065BEE2 /* SmokeBasinTests.swift */; };
+		FB0EAF192762B42A0065BEE2 /* area-points-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF0C276267590065BEE2 /* area-points-data.txt */; };
+		FB0EAF1A2762B42B0065BEE2 /* area-points-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF0C276267590065BEE2 /* area-points-data.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -104,6 +113,8 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FB0EAF152762954E0065BEE2 /* area-points-data.txt in CopyFiles */,
+				FB0EAF162762954E0065BEE2 /* test-area-points-data.txt in CopyFiles */,
 				FB0EAF022760B8060065BEE2 /* 7segment-display-data.txt in CopyFiles */,
 				FB0EAF032760B8060065BEE2 /* test-7segment-display-data.txt in CopyFiles */,
 				FB0EAEF3275F59890065BEE2 /* horizontal-position-data.txt in CopyFiles */,
@@ -181,6 +192,12 @@
 		FB0EAEFA2760A92E0065BEE2 /* SevenSegmentSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenSegmentSearch.swift; sourceTree = "<group>"; };
 		FB0EAEFC2760B6E10065BEE2 /* SevenSegmentSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenSegmentSearchTests.swift; sourceTree = "<group>"; };
 		FB0EAF042760F8C30065BEE2 /* SevenSegmentSearchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SevenSegmentSearchModels.swift; sourceTree = "<group>"; };
+		FB0EAF082762672F0065BEE2 /* Day9-SmokeBasin.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day9-SmokeBasin.txt"; sourceTree = "<group>"; };
+		FB0EAF0B276267480065BEE2 /* test-area-points-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-area-points-data.txt"; sourceTree = "<group>"; };
+		FB0EAF0C276267590065BEE2 /* area-points-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "area-points-data.txt"; sourceTree = "<group>"; };
+		FB0EAF0D276293DB0065BEE2 /* SmokeBasin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeBasin.swift; sourceTree = "<group>"; };
+		FB0EAF0F276295370065BEE2 /* SmokeBasinModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeBasinModels.swift; sourceTree = "<group>"; };
+		FB0EAF172762AD780065BEE2 /* SmokeBasinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeBasinTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +231,7 @@
 			isa = PBXGroup;
 			children = (
 				FB0EAE1B275787390065BEE2 /* aoc2021 */,
+				FB0EAE1C275787390065BEE2 /* main.swift */,
 				FB0EAE6A27581CC00065BEE2 /* AOCFramework */,
 				FB0EAE1A275787390065BEE2 /* Products */,
 				FB0EAE8A2758223B0065BEE2 /* Frameworks */,
@@ -242,7 +260,7 @@
 				FB0EAEDA275DEF1B0065BEE2 /* Day6-Lanternfish */,
 				FB0EAEE6275F57A10065BEE2 /* Day7-TheTreacheryOfWhales */,
 				FB0EAEF52760A1E10065BEE2 /* Day8-SevenSegmentSearch */,
-				FB0EAE1C275787390065BEE2 /* main.swift */,
+				FB0EAF07276267210065BEE2 /* Day9-SmokeBasin */,
 			);
 			path = aoc2021;
 			sourceTree = "<group>";
@@ -440,6 +458,27 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		FB0EAF07276267210065BEE2 /* Day9-SmokeBasin */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAF082762672F0065BEE2 /* Day9-SmokeBasin.txt */,
+				FB0EAF0F276295370065BEE2 /* SmokeBasinModels.swift */,
+				FB0EAF0D276293DB0065BEE2 /* SmokeBasin.swift */,
+				FB0EAF0C276267590065BEE2 /* area-points-data.txt */,
+				FB0EAF09276267470065BEE2 /* Test */,
+			);
+			path = "Day9-SmokeBasin";
+			sourceTree = "<group>";
+		};
+		FB0EAF09276267470065BEE2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAF0B276267480065BEE2 /* test-area-points-data.txt */,
+				FB0EAF172762AD780065BEE2 /* SmokeBasinTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -553,6 +592,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB0EAF14276295420065BEE2 /* test-area-points-data.txt in Resources */,
 				FB0EAE9E27593E680065BEE2 /* navigation-data.txt in Resources */,
 				FB0EAE8127581CF40065BEE2 /* depth-measurements.txt in Resources */,
 				FB0EAEFF2760B7E40065BEE2 /* test-7segment-display-data.txt in Resources */,
@@ -564,6 +604,7 @@
 				FB0EAEF2275F597F0065BEE2 /* horizontal-position-data.txt in Resources */,
 				FB0EAEF0275F59790065BEE2 /* test-horizontal-position-data.txt in Resources */,
 				FB0EAEC7275C214B0065BEE2 /* bingo-data.txt in Resources */,
+				FB0EAF1A2762B42B0065BEE2 /* area-points-data.txt in Resources */,
 				FB0EAF012760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
 				FB0EAE952758CE7F0065BEE2 /* test-navigation-data.txt in Resources */,
 				FB0EAECF275CC51D0065BEE2 /* test-hydrothermal-lines-data.txt in Resources */,
@@ -577,6 +618,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0EAEAD275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
+				FB0EAF13276295410065BEE2 /* test-area-points-data.txt in Resources */,
 				FB0EAEB9275B73B70065BEE2 /* Day4-GiantSquid.txt in Resources */,
 				FB0EAEC8275C214C0065BEE2 /* bingo-data.txt in Resources */,
 				FB0EAEF1275F597E0065BEE2 /* horizontal-position-data.txt in Resources */,
@@ -590,6 +632,7 @@
 				FB0EAE8227581CFF0065BEE2 /* test-depth-measurements.txt in Resources */,
 				FB0EAEEF275F59790065BEE2 /* test-horizontal-position-data.txt in Resources */,
 				FB0EAEE3275E0CD20065BEE2 /* lanternfish-spawn-data.txt in Resources */,
+				FB0EAF192762B42A0065BEE2 /* area-points-data.txt in Resources */,
 				FB0EAECE275CC51D0065BEE2 /* test-hydrothermal-lines-data.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -611,6 +654,7 @@
 			files = (
 				FB0EAE8427581D3F0065BEE2 /* FileReader.swift in Sources */,
 				FB0EAED9275D71AD0065BEE2 /* HydrothermalDangerModels.swift in Sources */,
+				FB0EAF0E276293DB0065BEE2 /* SmokeBasin.swift in Sources */,
 				FB0EAEC0275B74EC0065BEE2 /* BingoCalculatorModels.swift in Sources */,
 				FB0EAF052760F8C30065BEE2 /* SevenSegmentSearchModels.swift in Sources */,
 				FB0EAE8527581D430065BEE2 /* Resources.swift in Sources */,
@@ -619,6 +663,7 @@
 				FB0EAEA9275A590C0065BEE2 /* BinaryDiagnosticModels.swift in Sources */,
 				FB0EAEA4275A179A0065BEE2 /* BinaryDiagnostic.swift in Sources */,
 				FB0EAEEC275F594B0065BEE2 /* PositionAlign.swift in Sources */,
+				FB0EAF10276295370065BEE2 /* SmokeBasinModels.swift in Sources */,
 				FB0EAEB8275B73B20065BEE2 /* BingoCalculator.swift in Sources */,
 				FB0EAE8D2758251F0065BEE2 /* SlidingWindow.swift in Sources */,
 				FB0EAEE0275DF1540065BEE2 /* LanternFish.swift in Sources */,
@@ -641,6 +686,7 @@
 				FB0EAEEE275F59740065BEE2 /* PositionAlignTests.swift in Sources */,
 				FB0EAEE2275E09A40065BEE2 /* LanternFishTests.swift in Sources */,
 				FB0EAEC6275C1A710065BEE2 /* BingoCalculatorTests.swift in Sources */,
+				FB0EAF182762AD780065BEE2 /* SmokeBasinTests.swift in Sources */,
 				FB0EAEFD2760B6E10065BEE2 /* SevenSegmentSearchTests.swift in Sources */,
 				FB0EAE8327581D020065BEE2 /* DepthIncreaseTests.swift in Sources */,
 				FB0EAE9B27593B2E0065BEE2 /* DiveNavigationTests.swift in Sources */,
