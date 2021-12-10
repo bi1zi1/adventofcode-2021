@@ -95,6 +95,15 @@
 		FB0EAF192762B42A0065BEE2 /* area-points-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF0C276267590065BEE2 /* area-points-data.txt */; };
 		FB0EAF1A2762B42B0065BEE2 /* area-points-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF0C276267590065BEE2 /* area-points-data.txt */; };
 		FB0EAF1D2762BA8B0065BEE2 /* Point.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF1C2762BA8B0065BEE2 /* Point.swift */; };
+		FB0EAF2127637D7F0065BEE2 /* SyntaxScoring.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF2027637D7F0065BEE2 /* SyntaxScoring.swift */; };
+		FB0EAF262763F2470065BEE2 /* SyntaxScoringModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF252763F2470065BEE2 /* SyntaxScoringModels.swift */; };
+		FB0EAF272763F24B0065BEE2 /* syntax-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF2327637DC60065BEE2 /* syntax-data.txt */; };
+		FB0EAF282763F24C0065BEE2 /* syntax-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF2327637DC60065BEE2 /* syntax-data.txt */; };
+		FB0EAF292763F2500065BEE2 /* test-syntax-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF2427637DE00065BEE2 /* test-syntax-data.txt */; };
+		FB0EAF2A2763F2510065BEE2 /* test-syntax-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF2427637DE00065BEE2 /* test-syntax-data.txt */; };
+		FB0EAF2B2763F2630065BEE2 /* syntax-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF2327637DC60065BEE2 /* syntax-data.txt */; };
+		FB0EAF2C2763F2630065BEE2 /* test-syntax-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF2427637DE00065BEE2 /* test-syntax-data.txt */; };
+		FB0EAF2E2763F9920065BEE2 /* SyntaxScoringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF2D2763F9920065BEE2 /* SyntaxScoringTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -114,6 +123,8 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FB0EAF2B2763F2630065BEE2 /* syntax-data.txt in CopyFiles */,
+				FB0EAF2C2763F2630065BEE2 /* test-syntax-data.txt in CopyFiles */,
 				FB0EAF152762954E0065BEE2 /* area-points-data.txt in CopyFiles */,
 				FB0EAF162762954E0065BEE2 /* test-area-points-data.txt in CopyFiles */,
 				FB0EAF022760B8060065BEE2 /* 7segment-display-data.txt in CopyFiles */,
@@ -200,6 +211,12 @@
 		FB0EAF0F276295370065BEE2 /* SmokeBasinModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeBasinModels.swift; sourceTree = "<group>"; };
 		FB0EAF172762AD780065BEE2 /* SmokeBasinTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmokeBasinTests.swift; sourceTree = "<group>"; };
 		FB0EAF1C2762BA8B0065BEE2 /* Point.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Point.swift; sourceTree = "<group>"; };
+		FB0EAF1F27637D4C0065BEE2 /* Day10-SyntaxScoring.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day10-SyntaxScoring.txt"; sourceTree = "<group>"; };
+		FB0EAF2027637D7F0065BEE2 /* SyntaxScoring.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxScoring.swift; sourceTree = "<group>"; };
+		FB0EAF2327637DC60065BEE2 /* syntax-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "syntax-data.txt"; sourceTree = "<group>"; };
+		FB0EAF2427637DE00065BEE2 /* test-syntax-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-syntax-data.txt"; sourceTree = "<group>"; };
+		FB0EAF252763F2470065BEE2 /* SyntaxScoringModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxScoringModels.swift; sourceTree = "<group>"; };
+		FB0EAF2D2763F9920065BEE2 /* SyntaxScoringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxScoringTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +251,7 @@
 			children = (
 				FB0EAE1B275787390065BEE2 /* aoc2021 */,
 				FB0EAE1C275787390065BEE2 /* main.swift */,
+				FB0EAF1E27635B9E0065BEE2 /* Day10-SyntaxScoring */,
 				FB0EAE6A27581CC00065BEE2 /* AOCFramework */,
 				FB0EAE1A275787390065BEE2 /* Products */,
 				FB0EAE8A2758223B0065BEE2 /* Frameworks */,
@@ -490,6 +508,27 @@
 			path = CommonModels;
 			sourceTree = "<group>";
 		};
+		FB0EAF1E27635B9E0065BEE2 /* Day10-SyntaxScoring */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAF1F27637D4C0065BEE2 /* Day10-SyntaxScoring.txt */,
+				FB0EAF252763F2470065BEE2 /* SyntaxScoringModels.swift */,
+				FB0EAF2027637D7F0065BEE2 /* SyntaxScoring.swift */,
+				FB0EAF2327637DC60065BEE2 /* syntax-data.txt */,
+				FB0EAF2227637D880065BEE2 /* Test */,
+			);
+			path = "Day10-SyntaxScoring";
+			sourceTree = "<group>";
+		};
+		FB0EAF2227637D880065BEE2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAF2427637DE00065BEE2 /* test-syntax-data.txt */,
+				FB0EAF2D2763F9920065BEE2 /* SyntaxScoringTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -612,6 +651,7 @@
 				FB0EAEAC275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
 				FB0EAEBC275B73BB0065BEE2 /* test-bingo-data.txt in Resources */,
 				FB0EAE8927581FE40065BEE2 /* test-depth-measurements.txt in Resources */,
+				FB0EAF2A2763F2510065BEE2 /* test-syntax-data.txt in Resources */,
 				FB0EAEF2275F597F0065BEE2 /* horizontal-position-data.txt in Resources */,
 				FB0EAEF0275F59790065BEE2 /* test-horizontal-position-data.txt in Resources */,
 				FB0EAEC7275C214B0065BEE2 /* bingo-data.txt in Resources */,
@@ -619,6 +659,7 @@
 				FB0EAF012760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
 				FB0EAE952758CE7F0065BEE2 /* test-navigation-data.txt in Resources */,
 				FB0EAECF275CC51D0065BEE2 /* test-hydrothermal-lines-data.txt in Resources */,
+				FB0EAF282763F24C0065BEE2 /* syntax-data.txt in Resources */,
 				FB0EAEBA275B73B70065BEE2 /* Day4-GiantSquid.txt in Resources */,
 				FB0EAEE4275E0CD20065BEE2 /* lanternfish-spawn-data.txt in Resources */,
 			);
@@ -633,6 +674,7 @@
 				FB0EAEB9275B73B70065BEE2 /* Day4-GiantSquid.txt in Resources */,
 				FB0EAEC8275C214C0065BEE2 /* bingo-data.txt in Resources */,
 				FB0EAEF1275F597E0065BEE2 /* horizontal-position-data.txt in Resources */,
+				FB0EAF272763F24B0065BEE2 /* syntax-data.txt in Resources */,
 				FB0EAEAE275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */,
 				FB0EAEBB275B73BB0065BEE2 /* test-bingo-data.txt in Resources */,
 				FB0EAF002760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
@@ -644,6 +686,7 @@
 				FB0EAEEF275F59790065BEE2 /* test-horizontal-position-data.txt in Resources */,
 				FB0EAEE3275E0CD20065BEE2 /* lanternfish-spawn-data.txt in Resources */,
 				FB0EAF192762B42A0065BEE2 /* area-points-data.txt in Resources */,
+				FB0EAF292763F2500065BEE2 /* test-syntax-data.txt in Resources */,
 				FB0EAECE275CC51D0065BEE2 /* test-hydrothermal-lines-data.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -666,6 +709,7 @@
 				FB0EAE8427581D3F0065BEE2 /* FileReader.swift in Sources */,
 				FB0EAED9275D71AD0065BEE2 /* HydrothermalDangerModels.swift in Sources */,
 				FB0EAF0E276293DB0065BEE2 /* SmokeBasin.swift in Sources */,
+				FB0EAF262763F2470065BEE2 /* SyntaxScoringModels.swift in Sources */,
 				FB0EAEC0275B74EC0065BEE2 /* BingoCalculatorModels.swift in Sources */,
 				FB0EAF052760F8C30065BEE2 /* SevenSegmentSearchModels.swift in Sources */,
 				FB0EAE8527581D430065BEE2 /* Resources.swift in Sources */,
@@ -673,6 +717,7 @@
 				FB0EAED5275CC5850065BEE2 /* HydrothermalDanger.swift in Sources */,
 				FB0EAEA9275A590C0065BEE2 /* BinaryDiagnosticModels.swift in Sources */,
 				FB0EAEA4275A179A0065BEE2 /* BinaryDiagnostic.swift in Sources */,
+				FB0EAF2127637D7F0065BEE2 /* SyntaxScoring.swift in Sources */,
 				FB0EAEEC275F594B0065BEE2 /* PositionAlign.swift in Sources */,
 				FB0EAF10276295370065BEE2 /* SmokeBasinModels.swift in Sources */,
 				FB0EAEB8275B73B20065BEE2 /* BingoCalculator.swift in Sources */,
@@ -695,6 +740,7 @@
 			files = (
 				FB0EAED7275CC5AB0065BEE2 /* HydrothermalDangerTests.swift in Sources */,
 				FB0EAEAB275A63690065BEE2 /* BinaryDiagnosticTests.swift in Sources */,
+				FB0EAF2E2763F9920065BEE2 /* SyntaxScoringTests.swift in Sources */,
 				FB0EAEEE275F59740065BEE2 /* PositionAlignTests.swift in Sources */,
 				FB0EAEE2275E09A40065BEE2 /* LanternFishTests.swift in Sources */,
 				FB0EAEC6275C1A710065BEE2 /* BingoCalculatorTests.swift in Sources */,

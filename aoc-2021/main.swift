@@ -61,8 +61,13 @@ print("Hello, World!")
 //print("sevenSegmentSearch sumDecipheredNumbers = \(sumDecipheredNumbers)")
 
 //DAY 9
-let smokeBasin = SmokeBasin()
-let lowPointsRiskLevelSum = smokeBasin.lowPointsRiskLevelSum()
-print("smokeBasin lowPointsRiskLevelSum = \(lowPointsRiskLevelSum)")
-let basinTop3Multiply = smokeBasin.basinTop3Multiply()
-print("smokeBasin basinTop3Multiply = \(basinTop3Multiply)")
+//let smokeBasin = SmokeBasin()
+//let lowPointsRiskLevelSum = smokeBasin.lowPointsRiskLevelSum()
+//print("smokeBasin lowPointsRiskLevelSum = \(lowPointsRiskLevelSum)")
+//let basinTop3Multiply = smokeBasin.basinTop3Multiply()
+//print("smokeBasin basinTop3Multiply = \(basinTop3Multiply)")
+
+//DAY 10
+let syntaxScoring = SyntaxScoring()
+let syntaxErrorCount = syntaxScoring.syntaxErrorCount()
+print("syntaxScoring syntaxErrorCount = \(syntaxErrorCount)")
