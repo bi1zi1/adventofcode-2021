@@ -17,9 +17,16 @@ let closedToOpenBracketPair = [
     Character(">"): Character("<"),
 ]
 
-let closedTBracketErrorValue = [
+let closedBracketErrorValue = [
     Character(")"): 3,
     Character("]"): 57,
     Character("}"): 1197,
     Character(">"): 25137,
+]
+
+let closedBracketScoreValue = [
+    Character(")"): 1,
+    Character("]"): 2,
+    Character("}"): 3,
+    Character(">"): 4,
 ]

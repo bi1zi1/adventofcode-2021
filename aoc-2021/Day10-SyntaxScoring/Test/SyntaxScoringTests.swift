@@ -4,7 +4,7 @@ import Foundation
 import XCTest
 
 class SyntaxScoringTests: XCTestCase {
-    func testExample() throws {
+    func testSyntaxErrorCount() throws {
         // given
         let syntaxScoring = SyntaxScoring(measurementsFile: .testSyntaxData)
 
@@ -14,6 +14,18 @@ class SyntaxScoringTests: XCTestCase {
         // then
         let expectedSyntaxErrorCount = 26397
         XCTAssertEqual(syntaxErrorCount, expectedSyntaxErrorCount)
+    }
+
+    func testClosingCharactersMiddleSum() throws {
+        // given
+        let syntaxScoring = SyntaxScoring(measurementsFile: .testSyntaxData)
+
+        // when
+        let closingCharactersMiddleSum = syntaxScoring.closingCharactersMiddleSum()
+
+        // then
+        let expectedClosingCharactersMiddleSum = 288957
+        XCTAssertEqual(closingCharactersMiddleSum, expectedClosingCharactersMiddleSum)
     }
 
     func testPerformanceExample() throws {
