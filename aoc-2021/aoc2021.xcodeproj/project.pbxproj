@@ -251,7 +251,6 @@
 			children = (
 				FB0EAE1B275787390065BEE2 /* aoc2021 */,
 				FB0EAE1C275787390065BEE2 /* main.swift */,
-				FB0EAF1E27635B9E0065BEE2 /* Day10-SyntaxScoring */,
 				FB0EAE6A27581CC00065BEE2 /* AOCFramework */,
 				FB0EAE1A275787390065BEE2 /* Products */,
 				FB0EAE8A2758223B0065BEE2 /* Frameworks */,
@@ -281,6 +280,7 @@
 				FB0EAEE6275F57A10065BEE2 /* Day7-TheTreacheryOfWhales */,
 				FB0EAEF52760A1E10065BEE2 /* Day8-SevenSegmentSearch */,
 				FB0EAF07276267210065BEE2 /* Day9-SmokeBasin */,
+				FB0EAF1E27635B9E0065BEE2 /* Day10-SyntaxScoring */,
 			);
 			path = aoc2021;
 			sourceTree = "<group>";
