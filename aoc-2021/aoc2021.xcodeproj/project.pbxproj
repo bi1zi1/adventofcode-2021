@@ -104,6 +104,15 @@
 		FB0EAF2B2763F2630065BEE2 /* syntax-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF2327637DC60065BEE2 /* syntax-data.txt */; };
 		FB0EAF2C2763F2630065BEE2 /* test-syntax-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF2427637DE00065BEE2 /* test-syntax-data.txt */; };
 		FB0EAF2E2763F9920065BEE2 /* SyntaxScoringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF2D2763F9920065BEE2 /* SyntaxScoringTests.swift */; };
+		FB0EAF3727648DA30065BEE2 /* EnergyLevelCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF3627648DA30065BEE2 /* EnergyLevelCalculator.swift */; };
+		FB0EAF3927648DC00065BEE2 /* EnergyLevelCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF3827648DC00065BEE2 /* EnergyLevelCalculatorTests.swift */; };
+		FB0EAF3B27648F780065BEE2 /* EnergyLevelCalculatorModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF3A27648F780065BEE2 /* EnergyLevelCalculatorModels.swift */; };
+		FB0EAF3C27648F830065BEE2 /* energy-levels-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF3327648D3A0065BEE2 /* energy-levels-data.txt */; };
+		FB0EAF3D27648F840065BEE2 /* energy-levels-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF3327648D3A0065BEE2 /* energy-levels-data.txt */; };
+		FB0EAF3E27648F870065BEE2 /* test-energy-levels-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF3527648D580065BEE2 /* test-energy-levels-data.txt */; };
+		FB0EAF3F27648F880065BEE2 /* test-energy-levels-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF3527648D580065BEE2 /* test-energy-levels-data.txt */; };
+		FB0EAF4027648F920065BEE2 /* energy-levels-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF3327648D3A0065BEE2 /* energy-levels-data.txt */; };
+		FB0EAF4127648F920065BEE2 /* test-energy-levels-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF3527648D580065BEE2 /* test-energy-levels-data.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -123,6 +132,8 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FB0EAF4027648F920065BEE2 /* energy-levels-data.txt in CopyFiles */,
+				FB0EAF4127648F920065BEE2 /* test-energy-levels-data.txt in CopyFiles */,
 				FB0EAF2B2763F2630065BEE2 /* syntax-data.txt in CopyFiles */,
 				FB0EAF2C2763F2630065BEE2 /* test-syntax-data.txt in CopyFiles */,
 				FB0EAF152762954E0065BEE2 /* area-points-data.txt in CopyFiles */,
@@ -217,6 +228,12 @@
 		FB0EAF2427637DE00065BEE2 /* test-syntax-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-syntax-data.txt"; sourceTree = "<group>"; };
 		FB0EAF252763F2470065BEE2 /* SyntaxScoringModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxScoringModels.swift; sourceTree = "<group>"; };
 		FB0EAF2D2763F9920065BEE2 /* SyntaxScoringTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyntaxScoringTests.swift; sourceTree = "<group>"; };
+		FB0EAF3227648B980065BEE2 /* Day11-DumboOctopus.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day11-DumboOctopus.txt"; sourceTree = "<group>"; };
+		FB0EAF3327648D3A0065BEE2 /* energy-levels-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "energy-levels-data.txt"; sourceTree = "<group>"; };
+		FB0EAF3527648D580065BEE2 /* test-energy-levels-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-energy-levels-data.txt"; sourceTree = "<group>"; };
+		FB0EAF3627648DA30065BEE2 /* EnergyLevelCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyLevelCalculator.swift; sourceTree = "<group>"; };
+		FB0EAF3827648DC00065BEE2 /* EnergyLevelCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyLevelCalculatorTests.swift; sourceTree = "<group>"; };
+		FB0EAF3A27648F780065BEE2 /* EnergyLevelCalculatorModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyLevelCalculatorModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -281,6 +298,7 @@
 				FB0EAEF52760A1E10065BEE2 /* Day8-SevenSegmentSearch */,
 				FB0EAF07276267210065BEE2 /* Day9-SmokeBasin */,
 				FB0EAF1E27635B9E0065BEE2 /* Day10-SyntaxScoring */,
+				FB0EAF3127648B0C0065BEE2 /* Day11-DumboOctopus */,
 			);
 			path = aoc2021;
 			sourceTree = "<group>";
@@ -529,6 +547,27 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		FB0EAF3127648B0C0065BEE2 /* Day11-DumboOctopus */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAF3227648B980065BEE2 /* Day11-DumboOctopus.txt */,
+				FB0EAF3A27648F780065BEE2 /* EnergyLevelCalculatorModels.swift */,
+				FB0EAF3627648DA30065BEE2 /* EnergyLevelCalculator.swift */,
+				FB0EAF3327648D3A0065BEE2 /* energy-levels-data.txt */,
+				FB0EAF3427648D540065BEE2 /* Test */,
+			);
+			path = "Day11-DumboOctopus";
+			sourceTree = "<group>";
+		};
+		FB0EAF3427648D540065BEE2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAF3527648D580065BEE2 /* test-energy-levels-data.txt */,
+				FB0EAF3827648DC00065BEE2 /* EnergyLevelCalculatorTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -649,6 +688,7 @@
 				FB0EAEAF275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */,
 				FB0EAED0275CC5200065BEE2 /* test-lanternfish-spawn-data.txt in Resources */,
 				FB0EAEAC275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
+				FB0EAF3F27648F880065BEE2 /* test-energy-levels-data.txt in Resources */,
 				FB0EAEBC275B73BB0065BEE2 /* test-bingo-data.txt in Resources */,
 				FB0EAE8927581FE40065BEE2 /* test-depth-measurements.txt in Resources */,
 				FB0EAF2A2763F2510065BEE2 /* test-syntax-data.txt in Resources */,
@@ -656,6 +696,7 @@
 				FB0EAEF0275F59790065BEE2 /* test-horizontal-position-data.txt in Resources */,
 				FB0EAEC7275C214B0065BEE2 /* bingo-data.txt in Resources */,
 				FB0EAF1A2762B42B0065BEE2 /* area-points-data.txt in Resources */,
+				FB0EAF3D27648F840065BEE2 /* energy-levels-data.txt in Resources */,
 				FB0EAF012760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
 				FB0EAE952758CE7F0065BEE2 /* test-navigation-data.txt in Resources */,
 				FB0EAECF275CC51D0065BEE2 /* test-hydrothermal-lines-data.txt in Resources */,
@@ -674,10 +715,12 @@
 				FB0EAEB9275B73B70065BEE2 /* Day4-GiantSquid.txt in Resources */,
 				FB0EAEC8275C214C0065BEE2 /* bingo-data.txt in Resources */,
 				FB0EAEF1275F597E0065BEE2 /* horizontal-position-data.txt in Resources */,
+				FB0EAF3C27648F830065BEE2 /* energy-levels-data.txt in Resources */,
 				FB0EAF272763F24B0065BEE2 /* syntax-data.txt in Resources */,
 				FB0EAEAE275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */,
 				FB0EAEBB275B73BB0065BEE2 /* test-bingo-data.txt in Resources */,
 				FB0EAF002760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
+				FB0EAF3E27648F870065BEE2 /* test-energy-levels-data.txt in Resources */,
 				FB0EAED1275CC5200065BEE2 /* test-lanternfish-spawn-data.txt in Resources */,
 				FB0EAEFE2760B7E40065BEE2 /* test-7segment-display-data.txt in Resources */,
 				FB0EAE9F27593E6B0065BEE2 /* navigation-data.txt in Resources */,
@@ -709,6 +752,7 @@
 				FB0EAE8427581D3F0065BEE2 /* FileReader.swift in Sources */,
 				FB0EAED9275D71AD0065BEE2 /* HydrothermalDangerModels.swift in Sources */,
 				FB0EAF0E276293DB0065BEE2 /* SmokeBasin.swift in Sources */,
+				FB0EAF3B27648F780065BEE2 /* EnergyLevelCalculatorModels.swift in Sources */,
 				FB0EAF262763F2470065BEE2 /* SyntaxScoringModels.swift in Sources */,
 				FB0EAEC0275B74EC0065BEE2 /* BingoCalculatorModels.swift in Sources */,
 				FB0EAF052760F8C30065BEE2 /* SevenSegmentSearchModels.swift in Sources */,
@@ -722,6 +766,7 @@
 				FB0EAF10276295370065BEE2 /* SmokeBasinModels.swift in Sources */,
 				FB0EAEB8275B73B20065BEE2 /* BingoCalculator.swift in Sources */,
 				FB0EAE8D2758251F0065BEE2 /* SlidingWindow.swift in Sources */,
+				FB0EAF3727648DA30065BEE2 /* EnergyLevelCalculator.swift in Sources */,
 				FB0EAEE0275DF1540065BEE2 /* LanternFish.swift in Sources */,
 				FB0EAEC2275BC0EB0065BEE2 /* BingoFileReader.swift in Sources */,
 				FB0EAE8627581D460065BEE2 /* StringExtension.swift in Sources */,
@@ -741,6 +786,7 @@
 				FB0EAED7275CC5AB0065BEE2 /* HydrothermalDangerTests.swift in Sources */,
 				FB0EAEAB275A63690065BEE2 /* BinaryDiagnosticTests.swift in Sources */,
 				FB0EAF2E2763F9920065BEE2 /* SyntaxScoringTests.swift in Sources */,
+				FB0EAF3927648DC00065BEE2 /* EnergyLevelCalculatorTests.swift in Sources */,
 				FB0EAEEE275F59740065BEE2 /* PositionAlignTests.swift in Sources */,
 				FB0EAEE2275E09A40065BEE2 /* LanternFishTests.swift in Sources */,
 				FB0EAEC6275C1A710065BEE2 /* BingoCalculatorTests.swift in Sources */,

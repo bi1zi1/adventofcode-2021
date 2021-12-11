@@ -68,8 +68,13 @@ print("Hello, World!")
 //print("smokeBasin basinTop3Multiply = \(basinTop3Multiply)")
 
 //DAY 10
-let syntaxScoring = SyntaxScoring()
-let syntaxErrorCount = syntaxScoring.syntaxErrorCount()
-print("syntaxScoring syntaxErrorCount = \(syntaxErrorCount)")
-let closingCharactersMiddleSum = syntaxScoring.closingCharactersMiddleSum()
-print("syntaxScoring closingCharactersMiddleSum = \(closingCharactersMiddleSum)")
+//let syntaxScoring = SyntaxScoring()
+//let syntaxErrorCount = syntaxScoring.syntaxErrorCount()
+//print("syntaxScoring syntaxErrorCount = \(syntaxErrorCount)")
+//let closingCharactersMiddleSum = syntaxScoring.closingCharactersMiddleSum()
+//print("syntaxScoring closingCharactersMiddleSum = \(closingCharactersMiddleSum)")
+
+//DAY 11
+let energyLevelCalculator = EnergyLevelCalculator()
+let totalFlashes100steps = energyLevelCalculator.totalFlashes100steps()
+print("energyLevelCalculator totalFlashes100steps = \(totalFlashes100steps)")
