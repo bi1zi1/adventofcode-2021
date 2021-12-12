@@ -16,6 +16,18 @@ class EnergyLevelCalculatorTests: XCTestCase {
         XCTAssertEqual(totalFlashes100steps, expectedTotalFlashes100steps)
     }
 
+    func testAllFlash() throws {
+        // given
+        let energyLevelCalculator = EnergyLevelCalculator(measurementsFile: .testEnergyLevelsData)
+
+        // when
+        let allFlash = energyLevelCalculator.allFlash()
+
+        // then
+        let expectedAllFlash = 195
+        XCTAssertEqual(allFlash, expectedAllFlash)
+    }
+
     func testPerformanceExample() throws {
         let energyLevelCalculator = EnergyLevelCalculator(measurementsFile: .testEnergyLevelsData)
         self.measure {

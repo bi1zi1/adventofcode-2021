@@ -19,6 +19,22 @@ public final class EnergyLevelCalculator {
         }
     }
 
+    public func allFlash() -> Int {
+        guard let data = try? fileReader.lines().filter({ !$0.isEmpty }) else {
+            assertionFailure("data missing")
+            return .zero
+        }
+
+        let energyLevels = EnergyLevels(lines: data)
+        var stepNo = Int.zero
+        while true {
+            stepNo += 1
+            if step(energyLevels: energyLevels, id: stepNo) == 100 {
+                return stepNo
+            }
+        }
+    }
+
     func step(energyLevels: EnergyLevels, id: Int) -> Int {
         // ignore id
         var reprocessPoints: Set<Point> = []
