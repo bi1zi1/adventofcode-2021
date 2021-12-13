@@ -113,6 +113,21 @@
 		FB0EAF3F27648F880065BEE2 /* test-energy-levels-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF3527648D580065BEE2 /* test-energy-levels-data.txt */; };
 		FB0EAF4027648F920065BEE2 /* energy-levels-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF3327648D3A0065BEE2 /* energy-levels-data.txt */; };
 		FB0EAF4127648F920065BEE2 /* test-energy-levels-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF3527648D580065BEE2 /* test-energy-levels-data.txt */; };
+		FB0EAF472766A8460065BEE2 /* PassagePathing.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF462766A8460065BEE2 /* PassagePathing.swift */; };
+		FB0EAF4B2766AE410065BEE2 /* cave-path-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF452766A68C0065BEE2 /* cave-path-data.txt */; };
+		FB0EAF4C2766AE410065BEE2 /* test10-cave-path-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF492766AD6B0065BEE2 /* test10-cave-path-data.txt */; };
+		FB0EAF4D2766AE410065BEE2 /* test19-cave-path-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF4A2766AD8A0065BEE2 /* test19-cave-path-data.txt */; };
+		FB0EAF4E2766AE410065BEE2 /* test226-cave-path-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF482766A8D40065BEE2 /* test226-cave-path-data.txt */; };
+		FB0EAF4F2766AE420065BEE2 /* cave-path-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF452766A68C0065BEE2 /* cave-path-data.txt */; };
+		FB0EAF502766AE420065BEE2 /* test10-cave-path-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF492766AD6B0065BEE2 /* test10-cave-path-data.txt */; };
+		FB0EAF512766AE420065BEE2 /* test19-cave-path-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF4A2766AD8A0065BEE2 /* test19-cave-path-data.txt */; };
+		FB0EAF522766AE420065BEE2 /* test226-cave-path-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF482766A8D40065BEE2 /* test226-cave-path-data.txt */; };
+		FB0EAF532766AE4F0065BEE2 /* cave-path-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF452766A68C0065BEE2 /* cave-path-data.txt */; };
+		FB0EAF542766AE4F0065BEE2 /* test10-cave-path-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF492766AD6B0065BEE2 /* test10-cave-path-data.txt */; };
+		FB0EAF552766AE4F0065BEE2 /* test19-cave-path-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF4A2766AD8A0065BEE2 /* test19-cave-path-data.txt */; };
+		FB0EAF562766AE4F0065BEE2 /* test226-cave-path-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF482766A8D40065BEE2 /* test226-cave-path-data.txt */; };
+		FB0EAF582766B1E70065BEE2 /* PassagePathingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF572766B1E70065BEE2 /* PassagePathingModels.swift */; };
+		FB0EAF5A2766CF650065BEE2 /* PassagePathingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF592766CF650065BEE2 /* PassagePathingTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -132,6 +147,10 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FB0EAF532766AE4F0065BEE2 /* cave-path-data.txt in CopyFiles */,
+				FB0EAF542766AE4F0065BEE2 /* test10-cave-path-data.txt in CopyFiles */,
+				FB0EAF552766AE4F0065BEE2 /* test19-cave-path-data.txt in CopyFiles */,
+				FB0EAF562766AE4F0065BEE2 /* test226-cave-path-data.txt in CopyFiles */,
 				FB0EAF4027648F920065BEE2 /* energy-levels-data.txt in CopyFiles */,
 				FB0EAF4127648F920065BEE2 /* test-energy-levels-data.txt in CopyFiles */,
 				FB0EAF2B2763F2630065BEE2 /* syntax-data.txt in CopyFiles */,
@@ -234,6 +253,14 @@
 		FB0EAF3627648DA30065BEE2 /* EnergyLevelCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyLevelCalculator.swift; sourceTree = "<group>"; };
 		FB0EAF3827648DC00065BEE2 /* EnergyLevelCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyLevelCalculatorTests.swift; sourceTree = "<group>"; };
 		FB0EAF3A27648F780065BEE2 /* EnergyLevelCalculatorModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnergyLevelCalculatorModels.swift; sourceTree = "<group>"; };
+		FB0EAF432766A5230065BEE2 /* Day12-PassagePathing.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day12-PassagePathing.txt"; sourceTree = "<group>"; };
+		FB0EAF452766A68C0065BEE2 /* cave-path-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "cave-path-data.txt"; sourceTree = "<group>"; };
+		FB0EAF462766A8460065BEE2 /* PassagePathing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassagePathing.swift; sourceTree = "<group>"; };
+		FB0EAF482766A8D40065BEE2 /* test226-cave-path-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test226-cave-path-data.txt"; sourceTree = "<group>"; };
+		FB0EAF492766AD6B0065BEE2 /* test10-cave-path-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test10-cave-path-data.txt"; sourceTree = "<group>"; };
+		FB0EAF4A2766AD8A0065BEE2 /* test19-cave-path-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test19-cave-path-data.txt"; sourceTree = "<group>"; };
+		FB0EAF572766B1E70065BEE2 /* PassagePathingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassagePathingModels.swift; sourceTree = "<group>"; };
+		FB0EAF592766CF650065BEE2 /* PassagePathingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassagePathingTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,6 +326,7 @@
 				FB0EAF07276267210065BEE2 /* Day9-SmokeBasin */,
 				FB0EAF1E27635B9E0065BEE2 /* Day10-SyntaxScoring */,
 				FB0EAF3127648B0C0065BEE2 /* Day11-DumboOctopus */,
+				FB0EAF422766A4F10065BEE2 /* Day12-PassagePathing */,
 			);
 			path = aoc2021;
 			sourceTree = "<group>";
@@ -568,6 +596,29 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		FB0EAF422766A4F10065BEE2 /* Day12-PassagePathing */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAF432766A5230065BEE2 /* Day12-PassagePathing.txt */,
+				FB0EAF572766B1E70065BEE2 /* PassagePathingModels.swift */,
+				FB0EAF462766A8460065BEE2 /* PassagePathing.swift */,
+				FB0EAF452766A68C0065BEE2 /* cave-path-data.txt */,
+				FB0EAF442766A5640065BEE2 /* Test */,
+			);
+			path = "Day12-PassagePathing";
+			sourceTree = "<group>";
+		};
+		FB0EAF442766A5640065BEE2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAF492766AD6B0065BEE2 /* test10-cave-path-data.txt */,
+				FB0EAF4A2766AD8A0065BEE2 /* test19-cave-path-data.txt */,
+				FB0EAF482766A8D40065BEE2 /* test226-cave-path-data.txt */,
+				FB0EAF592766CF650065BEE2 /* PassagePathingTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -690,11 +741,15 @@
 				FB0EAEAC275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
 				FB0EAF3F27648F880065BEE2 /* test-energy-levels-data.txt in Resources */,
 				FB0EAEBC275B73BB0065BEE2 /* test-bingo-data.txt in Resources */,
+				FB0EAF512766AE420065BEE2 /* test19-cave-path-data.txt in Resources */,
 				FB0EAE8927581FE40065BEE2 /* test-depth-measurements.txt in Resources */,
 				FB0EAF2A2763F2510065BEE2 /* test-syntax-data.txt in Resources */,
 				FB0EAEF2275F597F0065BEE2 /* horizontal-position-data.txt in Resources */,
 				FB0EAEF0275F59790065BEE2 /* test-horizontal-position-data.txt in Resources */,
+				FB0EAF502766AE420065BEE2 /* test10-cave-path-data.txt in Resources */,
+				FB0EAF522766AE420065BEE2 /* test226-cave-path-data.txt in Resources */,
 				FB0EAEC7275C214B0065BEE2 /* bingo-data.txt in Resources */,
+				FB0EAF4F2766AE420065BEE2 /* cave-path-data.txt in Resources */,
 				FB0EAF1A2762B42B0065BEE2 /* area-points-data.txt in Resources */,
 				FB0EAF3D27648F840065BEE2 /* energy-levels-data.txt in Resources */,
 				FB0EAF012760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
@@ -711,7 +766,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0EAEAD275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
+				FB0EAF4E2766AE410065BEE2 /* test226-cave-path-data.txt in Resources */,
 				FB0EAF13276295410065BEE2 /* test-area-points-data.txt in Resources */,
+				FB0EAF4B2766AE410065BEE2 /* cave-path-data.txt in Resources */,
 				FB0EAEB9275B73B70065BEE2 /* Day4-GiantSquid.txt in Resources */,
 				FB0EAEC8275C214C0065BEE2 /* bingo-data.txt in Resources */,
 				FB0EAEF1275F597E0065BEE2 /* horizontal-position-data.txt in Resources */,
@@ -720,6 +777,7 @@
 				FB0EAEAE275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */,
 				FB0EAEBB275B73BB0065BEE2 /* test-bingo-data.txt in Resources */,
 				FB0EAF002760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
+				FB0EAF4C2766AE410065BEE2 /* test10-cave-path-data.txt in Resources */,
 				FB0EAF3E27648F870065BEE2 /* test-energy-levels-data.txt in Resources */,
 				FB0EAED1275CC5200065BEE2 /* test-lanternfish-spawn-data.txt in Resources */,
 				FB0EAEFE2760B7E40065BEE2 /* test-7segment-display-data.txt in Resources */,
@@ -730,6 +788,7 @@
 				FB0EAEE3275E0CD20065BEE2 /* lanternfish-spawn-data.txt in Resources */,
 				FB0EAF192762B42A0065BEE2 /* area-points-data.txt in Resources */,
 				FB0EAF292763F2500065BEE2 /* test-syntax-data.txt in Resources */,
+				FB0EAF4D2766AE410065BEE2 /* test19-cave-path-data.txt in Resources */,
 				FB0EAECE275CC51D0065BEE2 /* test-hydrothermal-lines-data.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -758,12 +817,14 @@
 				FB0EAF052760F8C30065BEE2 /* SevenSegmentSearchModels.swift in Sources */,
 				FB0EAE8527581D430065BEE2 /* Resources.swift in Sources */,
 				FB0EAE902758CD1C0065BEE2 /* DiveNavigation.swift in Sources */,
+				FB0EAF472766A8460065BEE2 /* PassagePathing.swift in Sources */,
 				FB0EAED5275CC5850065BEE2 /* HydrothermalDanger.swift in Sources */,
 				FB0EAEA9275A590C0065BEE2 /* BinaryDiagnosticModels.swift in Sources */,
 				FB0EAEA4275A179A0065BEE2 /* BinaryDiagnostic.swift in Sources */,
 				FB0EAF2127637D7F0065BEE2 /* SyntaxScoring.swift in Sources */,
 				FB0EAEEC275F594B0065BEE2 /* PositionAlign.swift in Sources */,
 				FB0EAF10276295370065BEE2 /* SmokeBasinModels.swift in Sources */,
+				FB0EAF582766B1E70065BEE2 /* PassagePathingModels.swift in Sources */,
 				FB0EAEB8275B73B20065BEE2 /* BingoCalculator.swift in Sources */,
 				FB0EAE8D2758251F0065BEE2 /* SlidingWindow.swift in Sources */,
 				FB0EAF3727648DA30065BEE2 /* EnergyLevelCalculator.swift in Sources */,
@@ -793,6 +854,7 @@
 				FB0EAF182762AD780065BEE2 /* SmokeBasinTests.swift in Sources */,
 				FB0EAEFD2760B6E10065BEE2 /* SevenSegmentSearchTests.swift in Sources */,
 				FB0EAE8327581D020065BEE2 /* DepthIncreaseTests.swift in Sources */,
+				FB0EAF5A2766CF650065BEE2 /* PassagePathingTests.swift in Sources */,
 				FB0EAE9B27593B2E0065BEE2 /* DiveNavigationTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

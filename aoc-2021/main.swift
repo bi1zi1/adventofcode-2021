@@ -75,8 +75,13 @@ print("Hello, World!")
 //print("syntaxScoring closingCharactersMiddleSum = \(closingCharactersMiddleSum)")
 
 //DAY 11
-let energyLevelCalculator = EnergyLevelCalculator()
-let totalFlashes100steps = energyLevelCalculator.totalFlashes100steps()
-print("energyLevelCalculator totalFlashes100steps = \(totalFlashes100steps)")
-let allFlash = energyLevelCalculator.allFlash()
-print("energyLevelCalculator allFlash = \(allFlash)")
+//let energyLevelCalculator = EnergyLevelCalculator()
+//let totalFlashes100steps = energyLevelCalculator.totalFlashes100steps()
+//print("energyLevelCalculator totalFlashes100steps = \(totalFlashes100steps)")
+//let allFlash = energyLevelCalculator.allFlash()
+//print("energyLevelCalculator allFlash = \(allFlash)")
+
+//DAY 12
+let passagePathing = PassagePathing()
+let pathOptionsCount = passagePathing.pathOptionsCount()
+print("passagePathing pathOptionsCount = \(pathOptionsCount)")
