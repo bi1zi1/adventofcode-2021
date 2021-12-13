@@ -6,6 +6,108 @@ public final class PassagePathing {
         fileReader = FileReader(fileResource: measurementsFile)
     }
 
+    public func pathOptionsTwiceAllowedCount() -> Int {
+        guard let data = try? fileReader.lines().filter({ !$0.isEmpty }) else {
+            assertionFailure("data missing")
+            return .zero
+        }
+
+        let nameDict = dict(data: data)
+        let caves = caves(nameDict: nameDict)
+
+        guard let startCave = caves
+                .first(where: { $0.name == "start" }),
+              let endCave = caves
+                .first(where: { $0.name == "end" })
+        else {
+            return .zero
+        }
+
+        let smallCaves = caves.filter { cave in
+            if cave == startCave { return false }
+            if cave == endCave { return false }
+
+            switch cave.size {
+            case .small:
+                return true
+            case .big:
+                return false
+            }
+        }
+
+        var paths: Set<[Cave]> = []
+        smallCaves.forEach { smallCave in
+            findAllPaths(
+                from: startCave,
+                till: endCave,
+                blocked: [startCave],
+                twiceAllowed: smallCave,
+                path: [],
+                result: &paths
+            )
+        }
+
+        return paths.count
+    }
+
+    func findAllPaths(
+        from start: Cave,
+        till end: Cave,
+        blocked: [Cave],
+        twiceAllowed: Cave?,
+        path: [Cave],
+        result: inout Set<[Cave]>
+    ) {
+//        print("==============================")
+//        print("start", start)
+//        print("blocked", blocked)
+//        print("path", path)
+//        print("==============================")
+
+        let newPath = path + [start]
+
+        if start == end {
+            // found exit
+            result.insert(newPath)
+            return
+        }
+
+        let allowedCaves = start.caves
+            .filter { !blocked.contains($0) }
+
+
+        let newTwiceAllowed: Cave?
+        let newBlocked: [Cave]
+        switch start.size {
+        case .small:
+            if start == twiceAllowed {
+                newTwiceAllowed = nil
+                newBlocked = blocked
+            } else {
+                newTwiceAllowed = twiceAllowed
+                newBlocked = blocked + [start]
+            }
+        case .big:
+            newTwiceAllowed = twiceAllowed
+            newBlocked = blocked
+        }
+
+        if allowedCaves.isEmpty {
+            // dead end
+            return
+        }
+
+        allowedCaves.forEach { nextCave in
+            findAllPaths(
+                from: nextCave,
+                till: end,
+                blocked: newBlocked,
+                twiceAllowed: newTwiceAllowed,
+                path: newPath,
+                result: &result)
+        }
+    }
+
     public func pathOptionsCount() -> Int {
         guard let data = try? fileReader.lines().filter({ !$0.isEmpty }) else {
             assertionFailure("data missing")

@@ -1,7 +1,7 @@
 import Foundation
 
 class Cave {
-    enum Size: Equatable {
+    enum Size: Equatable, Hashable {
         case small
         case big
     }
@@ -34,5 +34,11 @@ extension Cave: CustomDebugStringConvertible {
 
     var debugDescription: String {
         "|\(name)|"
+    }
+}
+
+extension Cave: Hashable {
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(name)
     }
 }

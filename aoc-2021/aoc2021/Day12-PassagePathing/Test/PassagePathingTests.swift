@@ -40,6 +40,42 @@ class PassagePathingTests: XCTestCase {
         XCTAssertEqual(pathOptionsCount, expectedPathOptionsCount)
     }
 
+    func testPathOptionsTwiceAllowedCount_shouldBe36() throws {
+        // given
+        let passagePathing = PassagePathing(measurementsFile: .test10CavePathData)
+
+        // when
+        let pathOptionsCount = passagePathing.pathOptionsTwiceAllowedCount()
+
+        // then
+        let expectedPathOptionsCount = 36
+        XCTAssertEqual(pathOptionsCount, expectedPathOptionsCount)
+    }
+
+    func testPathOptionsTwiceAllowedCount_shouldBe103() throws {
+        // given
+        let passagePathing = PassagePathing(measurementsFile: .test19CavePathData)
+
+        // when
+        let pathOptionsCount = passagePathing.pathOptionsTwiceAllowedCount()
+
+        // then
+        let expectedPathOptionsCount = 103
+        XCTAssertEqual(pathOptionsCount, expectedPathOptionsCount)
+    }
+
+    func testPathOptionsTwiceAllowedCount_shouldBe3509() throws {
+        // given
+        let passagePathing = PassagePathing(measurementsFile: .test226CavePathData)
+
+        // when
+        let pathOptionsCount = passagePathing.pathOptionsTwiceAllowedCount()
+
+        // then
+        let expectedPathOptionsCount = 3509
+        XCTAssertEqual(pathOptionsCount, expectedPathOptionsCount)
+    }
+
     func testPerformanceExample() throws {
         let passagePathing = PassagePathing(measurementsFile: .test226CavePathData)
         self.measure {
