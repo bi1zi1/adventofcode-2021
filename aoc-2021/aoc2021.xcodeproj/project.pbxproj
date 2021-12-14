@@ -137,6 +137,14 @@
 		FB0EAF6D2767E3540065BEE2 /* test-paper-dots-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF5F2767B8580065BEE2 /* test-paper-dots-data.txt */; };
 		FB0EAF6E2767E35E0065BEE2 /* paper-dots-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF5E2767B84E0065BEE2 /* paper-dots-data.txt */; };
 		FB0EAF6F2767E35E0065BEE2 /* test-paper-dots-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF5F2767B8580065BEE2 /* test-paper-dots-data.txt */; };
+		FB0EAF762768C8D70065BEE2 /* ExtendedPolymerization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF752768C8D70065BEE2 /* ExtendedPolymerization.swift */; };
+		FB0EAF772768C8E10065BEE2 /* polymer-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF732768C8260065BEE2 /* polymer-data.txt */; };
+		FB0EAF782768C8E10065BEE2 /* test-polymer-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF742768C8360065BEE2 /* test-polymer-data.txt */; };
+		FB0EAF792768C8E20065BEE2 /* polymer-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF732768C8260065BEE2 /* polymer-data.txt */; };
+		FB0EAF7A2768C8E20065BEE2 /* test-polymer-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF742768C8360065BEE2 /* test-polymer-data.txt */; };
+		FB0EAF7B2768C8EC0065BEE2 /* polymer-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF732768C8260065BEE2 /* polymer-data.txt */; };
+		FB0EAF7C2768C8EC0065BEE2 /* test-polymer-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF742768C8360065BEE2 /* test-polymer-data.txt */; };
+		FB0EAF7E2768C9960065BEE2 /* ExtendedPolymerizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF7D2768C9960065BEE2 /* ExtendedPolymerizationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -156,6 +164,8 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FB0EAF7B2768C8EC0065BEE2 /* polymer-data.txt in CopyFiles */,
+				FB0EAF7C2768C8EC0065BEE2 /* test-polymer-data.txt in CopyFiles */,
 				FB0EAF6E2767E35E0065BEE2 /* paper-dots-data.txt in CopyFiles */,
 				FB0EAF6F2767E35E0065BEE2 /* test-paper-dots-data.txt in CopyFiles */,
 				FB0EAF532766AE4F0065BEE2 /* cave-path-data.txt in CopyFiles */,
@@ -278,6 +288,11 @@
 		FB0EAF642767E1E70065BEE2 /* TransparentOrigami.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentOrigami.swift; sourceTree = "<group>"; };
 		FB0EAF662767E2020065BEE2 /* TransparentOrigamiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentOrigamiTests.swift; sourceTree = "<group>"; };
 		FB0EAF682767E34D0065BEE2 /* TransparentOrigamiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentOrigamiModels.swift; sourceTree = "<group>"; };
+		FB0EAF712768C4980065BEE2 /* Day14-ExtendedPolymerization.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day14-ExtendedPolymerization.txt"; sourceTree = "<group>"; };
+		FB0EAF732768C8260065BEE2 /* polymer-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "polymer-data.txt"; sourceTree = "<group>"; };
+		FB0EAF742768C8360065BEE2 /* test-polymer-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-polymer-data.txt"; sourceTree = "<group>"; };
+		FB0EAF752768C8D70065BEE2 /* ExtendedPolymerization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedPolymerization.swift; sourceTree = "<group>"; };
+		FB0EAF7D2768C9960065BEE2 /* ExtendedPolymerizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtendedPolymerizationTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,6 +360,7 @@
 				FB0EAF3127648B0C0065BEE2 /* Day11-DumboOctopus */,
 				FB0EAF422766A4F10065BEE2 /* Day12-PassagePathing */,
 				FB0EAF5B2767B57A0065BEE2 /* Day13-TransparentOrigami */,
+				FB0EAF702768C4790065BEE2 /* Day14-ExtendedPolymerization */,
 			);
 			path = aoc2021;
 			sourceTree = "<group>";
@@ -658,6 +674,26 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		FB0EAF702768C4790065BEE2 /* Day14-ExtendedPolymerization */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAF712768C4980065BEE2 /* Day14-ExtendedPolymerization.txt */,
+				FB0EAF752768C8D70065BEE2 /* ExtendedPolymerization.swift */,
+				FB0EAF732768C8260065BEE2 /* polymer-data.txt */,
+				FB0EAF722768C7F50065BEE2 /* Test */,
+			);
+			path = "Day14-ExtendedPolymerization";
+			sourceTree = "<group>";
+		};
+		FB0EAF722768C7F50065BEE2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAF742768C8360065BEE2 /* test-polymer-data.txt */,
+				FB0EAF7D2768C9960065BEE2 /* ExtendedPolymerizationTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -790,6 +826,7 @@
 				FB0EAEC7275C214B0065BEE2 /* bingo-data.txt in Resources */,
 				FB0EAF4F2766AE420065BEE2 /* cave-path-data.txt in Resources */,
 				FB0EAF6A2767E3520065BEE2 /* paper-dots-data.txt in Resources */,
+				FB0EAF7A2768C8E20065BEE2 /* test-polymer-data.txt in Resources */,
 				FB0EAF1A2762B42B0065BEE2 /* area-points-data.txt in Resources */,
 				FB0EAF3D27648F840065BEE2 /* energy-levels-data.txt in Resources */,
 				FB0EAF6B2767E3520065BEE2 /* test-paper-dots-data.txt in Resources */,
@@ -797,6 +834,7 @@
 				FB0EAE952758CE7F0065BEE2 /* test-navigation-data.txt in Resources */,
 				FB0EAECF275CC51D0065BEE2 /* test-hydrothermal-lines-data.txt in Resources */,
 				FB0EAF282763F24C0065BEE2 /* syntax-data.txt in Resources */,
+				FB0EAF792768C8E20065BEE2 /* polymer-data.txt in Resources */,
 				FB0EAEBA275B73B70065BEE2 /* Day4-GiantSquid.txt in Resources */,
 				FB0EAEE4275E0CD20065BEE2 /* lanternfish-spawn-data.txt in Resources */,
 			);
@@ -811,6 +849,7 @@
 				FB0EAF13276295410065BEE2 /* test-area-points-data.txt in Resources */,
 				FB0EAF6C2767E3540065BEE2 /* paper-dots-data.txt in Resources */,
 				FB0EAF4B2766AE410065BEE2 /* cave-path-data.txt in Resources */,
+				FB0EAF772768C8E10065BEE2 /* polymer-data.txt in Resources */,
 				FB0EAEB9275B73B70065BEE2 /* Day4-GiantSquid.txt in Resources */,
 				FB0EAEC8275C214C0065BEE2 /* bingo-data.txt in Resources */,
 				FB0EAEF1275F597E0065BEE2 /* horizontal-position-data.txt in Resources */,
@@ -822,6 +861,7 @@
 				FB0EAF002760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
 				FB0EAF4C2766AE410065BEE2 /* test10-cave-path-data.txt in Resources */,
 				FB0EAF3E27648F870065BEE2 /* test-energy-levels-data.txt in Resources */,
+				FB0EAF782768C8E10065BEE2 /* test-polymer-data.txt in Resources */,
 				FB0EAED1275CC5200065BEE2 /* test-lanternfish-spawn-data.txt in Resources */,
 				FB0EAEFE2760B7E40065BEE2 /* test-7segment-display-data.txt in Resources */,
 				FB0EAE9F27593E6B0065BEE2 /* navigation-data.txt in Resources */,
@@ -865,6 +905,7 @@
 				FB0EAED5275CC5850065BEE2 /* HydrothermalDanger.swift in Sources */,
 				FB0EAEA9275A590C0065BEE2 /* BinaryDiagnosticModels.swift in Sources */,
 				FB0EAEA4275A179A0065BEE2 /* BinaryDiagnostic.swift in Sources */,
+				FB0EAF762768C8D70065BEE2 /* ExtendedPolymerization.swift in Sources */,
 				FB0EAF2127637D7F0065BEE2 /* SyntaxScoring.swift in Sources */,
 				FB0EAF692767E34D0065BEE2 /* TransparentOrigamiModels.swift in Sources */,
 				FB0EAEEC275F594B0065BEE2 /* PositionAlign.swift in Sources */,
@@ -899,6 +940,7 @@
 				FB0EAEC6275C1A710065BEE2 /* BingoCalculatorTests.swift in Sources */,
 				FB0EAF182762AD780065BEE2 /* SmokeBasinTests.swift in Sources */,
 				FB0EAEFD2760B6E10065BEE2 /* SevenSegmentSearchTests.swift in Sources */,
+				FB0EAF7E2768C9960065BEE2 /* ExtendedPolymerizationTests.swift in Sources */,
 				FB0EAE8327581D020065BEE2 /* DepthIncreaseTests.swift in Sources */,
 				FB0EAF5A2766CF650065BEE2 /* PassagePathingTests.swift in Sources */,
 				FB0EAE9B27593B2E0065BEE2 /* DiveNavigationTests.swift in Sources */,

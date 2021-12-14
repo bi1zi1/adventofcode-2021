@@ -89,7 +89,12 @@ print("Hello, World!")
 //print("passagePathing pathOptionsTwiceAllowedCount = \(pathOptionsTwiceAllowedCount)")
 
 //DAY 13
-let transparentOrigami = TransparentOrigami()
-let visibleDotsFirstFold = transparentOrigami.visibleDotsFirstFold()
-print("transparentOrigami visibleDotsFirstFold = \(visibleDotsFirstFold)")
-transparentOrigami.foldAll()
+//let transparentOrigami = TransparentOrigami()
+//let visibleDotsFirstFold = transparentOrigami.visibleDotsFirstFold()
+//print("transparentOrigami visibleDotsFirstFold = \(visibleDotsFirstFold)")
+//transparentOrigami.foldAll()
+
+//DAY 14
+let extendedPolymerization = ExtendedPolymerization()
+let quantityDiff10steps = extendedPolymerization.quantityDiff10steps()
+print("extendedPolymerization quantityDiff10steps = \(quantityDiff10steps)")
