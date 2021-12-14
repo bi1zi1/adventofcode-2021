@@ -128,6 +128,15 @@
 		FB0EAF562766AE4F0065BEE2 /* test226-cave-path-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF482766A8D40065BEE2 /* test226-cave-path-data.txt */; };
 		FB0EAF582766B1E70065BEE2 /* PassagePathingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF572766B1E70065BEE2 /* PassagePathingModels.swift */; };
 		FB0EAF5A2766CF650065BEE2 /* PassagePathingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF592766CF650065BEE2 /* PassagePathingTests.swift */; };
+		FB0EAF652767E1E70065BEE2 /* TransparentOrigami.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF642767E1E70065BEE2 /* TransparentOrigami.swift */; };
+		FB0EAF672767E2020065BEE2 /* TransparentOrigamiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF662767E2020065BEE2 /* TransparentOrigamiTests.swift */; };
+		FB0EAF692767E34D0065BEE2 /* TransparentOrigamiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF682767E34D0065BEE2 /* TransparentOrigamiModels.swift */; };
+		FB0EAF6A2767E3520065BEE2 /* paper-dots-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF5E2767B84E0065BEE2 /* paper-dots-data.txt */; };
+		FB0EAF6B2767E3520065BEE2 /* test-paper-dots-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF5F2767B8580065BEE2 /* test-paper-dots-data.txt */; };
+		FB0EAF6C2767E3540065BEE2 /* paper-dots-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF5E2767B84E0065BEE2 /* paper-dots-data.txt */; };
+		FB0EAF6D2767E3540065BEE2 /* test-paper-dots-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF5F2767B8580065BEE2 /* test-paper-dots-data.txt */; };
+		FB0EAF6E2767E35E0065BEE2 /* paper-dots-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF5E2767B84E0065BEE2 /* paper-dots-data.txt */; };
+		FB0EAF6F2767E35E0065BEE2 /* test-paper-dots-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF5F2767B8580065BEE2 /* test-paper-dots-data.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -147,6 +156,8 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FB0EAF6E2767E35E0065BEE2 /* paper-dots-data.txt in CopyFiles */,
+				FB0EAF6F2767E35E0065BEE2 /* test-paper-dots-data.txt in CopyFiles */,
 				FB0EAF532766AE4F0065BEE2 /* cave-path-data.txt in CopyFiles */,
 				FB0EAF542766AE4F0065BEE2 /* test10-cave-path-data.txt in CopyFiles */,
 				FB0EAF552766AE4F0065BEE2 /* test19-cave-path-data.txt in CopyFiles */,
@@ -261,6 +272,12 @@
 		FB0EAF4A2766AD8A0065BEE2 /* test19-cave-path-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test19-cave-path-data.txt"; sourceTree = "<group>"; };
 		FB0EAF572766B1E70065BEE2 /* PassagePathingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassagePathingModels.swift; sourceTree = "<group>"; };
 		FB0EAF592766CF650065BEE2 /* PassagePathingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassagePathingTests.swift; sourceTree = "<group>"; };
+		FB0EAF5C2767B5AA0065BEE2 /* Day13-TransparentOrigami.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day13-TransparentOrigami.txt"; sourceTree = "<group>"; };
+		FB0EAF5E2767B84E0065BEE2 /* paper-dots-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "paper-dots-data.txt"; sourceTree = "<group>"; };
+		FB0EAF5F2767B8580065BEE2 /* test-paper-dots-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-paper-dots-data.txt"; sourceTree = "<group>"; };
+		FB0EAF642767E1E70065BEE2 /* TransparentOrigami.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentOrigami.swift; sourceTree = "<group>"; };
+		FB0EAF662767E2020065BEE2 /* TransparentOrigamiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentOrigamiTests.swift; sourceTree = "<group>"; };
+		FB0EAF682767E34D0065BEE2 /* TransparentOrigamiModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentOrigamiModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -314,6 +331,7 @@
 		FB0EAE1B275787390065BEE2 /* aoc2021 */ = {
 			isa = PBXGroup;
 			children = (
+				FB0EAF5B2767B57A0065BEE2 /* Day13-TransparentOrigami */,
 				FB0EAE29275789720065BEE2 /* Helpers */,
 				FB0EAE23275787530065BEE2 /* Day1-SonarSweep */,
 				FB0EAE8E2758CCD80065BEE2 /* Day2-Dive */,
@@ -619,6 +637,27 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		FB0EAF5B2767B57A0065BEE2 /* Day13-TransparentOrigami */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAF5C2767B5AA0065BEE2 /* Day13-TransparentOrigami.txt */,
+				FB0EAF682767E34D0065BEE2 /* TransparentOrigamiModels.swift */,
+				FB0EAF642767E1E70065BEE2 /* TransparentOrigami.swift */,
+				FB0EAF5E2767B84E0065BEE2 /* paper-dots-data.txt */,
+				FB0EAF5D2767B5D80065BEE2 /* Test */,
+			);
+			path = "Day13-TransparentOrigami";
+			sourceTree = "<group>";
+		};
+		FB0EAF5D2767B5D80065BEE2 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FB0EAF5F2767B8580065BEE2 /* test-paper-dots-data.txt */,
+				FB0EAF662767E2020065BEE2 /* TransparentOrigamiTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -750,8 +789,10 @@
 				FB0EAF522766AE420065BEE2 /* test226-cave-path-data.txt in Resources */,
 				FB0EAEC7275C214B0065BEE2 /* bingo-data.txt in Resources */,
 				FB0EAF4F2766AE420065BEE2 /* cave-path-data.txt in Resources */,
+				FB0EAF6A2767E3520065BEE2 /* paper-dots-data.txt in Resources */,
 				FB0EAF1A2762B42B0065BEE2 /* area-points-data.txt in Resources */,
 				FB0EAF3D27648F840065BEE2 /* energy-levels-data.txt in Resources */,
+				FB0EAF6B2767E3520065BEE2 /* test-paper-dots-data.txt in Resources */,
 				FB0EAF012760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
 				FB0EAE952758CE7F0065BEE2 /* test-navigation-data.txt in Resources */,
 				FB0EAECF275CC51D0065BEE2 /* test-hydrothermal-lines-data.txt in Resources */,
@@ -768,10 +809,12 @@
 				FB0EAEAD275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
 				FB0EAF4E2766AE410065BEE2 /* test226-cave-path-data.txt in Resources */,
 				FB0EAF13276295410065BEE2 /* test-area-points-data.txt in Resources */,
+				FB0EAF6C2767E3540065BEE2 /* paper-dots-data.txt in Resources */,
 				FB0EAF4B2766AE410065BEE2 /* cave-path-data.txt in Resources */,
 				FB0EAEB9275B73B70065BEE2 /* Day4-GiantSquid.txt in Resources */,
 				FB0EAEC8275C214C0065BEE2 /* bingo-data.txt in Resources */,
 				FB0EAEF1275F597E0065BEE2 /* horizontal-position-data.txt in Resources */,
+				FB0EAF6D2767E3540065BEE2 /* test-paper-dots-data.txt in Resources */,
 				FB0EAF3C27648F830065BEE2 /* energy-levels-data.txt in Resources */,
 				FB0EAF272763F24B0065BEE2 /* syntax-data.txt in Resources */,
 				FB0EAEAE275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */,
@@ -817,11 +860,13 @@
 				FB0EAF052760F8C30065BEE2 /* SevenSegmentSearchModels.swift in Sources */,
 				FB0EAE8527581D430065BEE2 /* Resources.swift in Sources */,
 				FB0EAE902758CD1C0065BEE2 /* DiveNavigation.swift in Sources */,
+				FB0EAF652767E1E70065BEE2 /* TransparentOrigami.swift in Sources */,
 				FB0EAF472766A8460065BEE2 /* PassagePathing.swift in Sources */,
 				FB0EAED5275CC5850065BEE2 /* HydrothermalDanger.swift in Sources */,
 				FB0EAEA9275A590C0065BEE2 /* BinaryDiagnosticModels.swift in Sources */,
 				FB0EAEA4275A179A0065BEE2 /* BinaryDiagnostic.swift in Sources */,
 				FB0EAF2127637D7F0065BEE2 /* SyntaxScoring.swift in Sources */,
+				FB0EAF692767E34D0065BEE2 /* TransparentOrigamiModels.swift in Sources */,
 				FB0EAEEC275F594B0065BEE2 /* PositionAlign.swift in Sources */,
 				FB0EAF10276295370065BEE2 /* SmokeBasinModels.swift in Sources */,
 				FB0EAF582766B1E70065BEE2 /* PassagePathingModels.swift in Sources */,
@@ -847,6 +892,7 @@
 				FB0EAED7275CC5AB0065BEE2 /* HydrothermalDangerTests.swift in Sources */,
 				FB0EAEAB275A63690065BEE2 /* BinaryDiagnosticTests.swift in Sources */,
 				FB0EAF2E2763F9920065BEE2 /* SyntaxScoringTests.swift in Sources */,
+				FB0EAF672767E2020065BEE2 /* TransparentOrigamiTests.swift in Sources */,
 				FB0EAF3927648DC00065BEE2 /* EnergyLevelCalculatorTests.swift in Sources */,
 				FB0EAEEE275F59740065BEE2 /* PositionAlignTests.swift in Sources */,
 				FB0EAEE2275E09A40065BEE2 /* LanternFishTests.swift in Sources */,

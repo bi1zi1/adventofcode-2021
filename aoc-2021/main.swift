@@ -82,8 +82,14 @@ print("Hello, World!")
 //print("energyLevelCalculator allFlash = \(allFlash)")
 
 //DAY 12
-let passagePathing = PassagePathing()
-let pathOptionsCount = passagePathing.pathOptionsCount()
-print("passagePathing pathOptionsCount = \(pathOptionsCount)")
-let pathOptionsTwiceAllowedCount = passagePathing.pathOptionsTwiceAllowedCount()
-print("passagePathing pathOptionsTwiceAllowedCount = \(pathOptionsTwiceAllowedCount)")
+//let passagePathing = PassagePathing()
+//let pathOptionsCount = passagePathing.pathOptionsCount()
+//print("passagePathing pathOptionsCount = \(pathOptionsCount)")
+//let pathOptionsTwiceAllowedCount = passagePathing.pathOptionsTwiceAllowedCount()
+//print("passagePathing pathOptionsTwiceAllowedCount = \(pathOptionsTwiceAllowedCount)")
+
+//DAY 13
+let transparentOrigami = TransparentOrigami()
+let visibleDotsFirstFold = transparentOrigami.visibleDotsFirstFold()
+print("transparentOrigami visibleDotsFirstFold = \(visibleDotsFirstFold)")
+
