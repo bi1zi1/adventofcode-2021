@@ -92,4 +92,4 @@ print("Hello, World!")
 let transparentOrigami = TransparentOrigami()
 let visibleDotsFirstFold = transparentOrigami.visibleDotsFirstFold()
 print("transparentOrigami visibleDotsFirstFold = \(visibleDotsFirstFold)")
-
+transparentOrigami.foldAll()

@@ -331,7 +331,6 @@
 		FB0EAE1B275787390065BEE2 /* aoc2021 */ = {
 			isa = PBXGroup;
 			children = (
-				FB0EAF5B2767B57A0065BEE2 /* Day13-TransparentOrigami */,
 				FB0EAE29275789720065BEE2 /* Helpers */,
 				FB0EAE23275787530065BEE2 /* Day1-SonarSweep */,
 				FB0EAE8E2758CCD80065BEE2 /* Day2-Dive */,
@@ -345,6 +344,7 @@
 				FB0EAF1E27635B9E0065BEE2 /* Day10-SyntaxScoring */,
 				FB0EAF3127648B0C0065BEE2 /* Day11-DumboOctopus */,
 				FB0EAF422766A4F10065BEE2 /* Day12-PassagePathing */,
+				FB0EAF5B2767B57A0065BEE2 /* Day13-TransparentOrigami */,
 			);
 			path = aoc2021;
 			sourceTree = "<group>";

@@ -24,6 +24,22 @@ public final class TransparentOrigami {
         return paper.dotsCount
     }
 
+    public func foldAll() {
+        guard let data = try? fileReader.lines() else {
+            assertionFailure("data missing")
+            return
+        }
+
+        let (points, folds) = parseData(data: data)
+        let paper = Paper(points: points)
+
+        folds.forEach { fold in
+            paper.fold(fold)
+        }
+
+        paper.visualise()
+    }
+
     func parseData(data: [String]) -> ([Point], [Fold]) {
         var parseFolds = false
         var points: [Point] = []

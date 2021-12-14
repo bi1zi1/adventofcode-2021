@@ -47,9 +47,6 @@ class Paper {
         (0..<countX).reduce(.zero) { partial, x in
             partial + (0..<countY).reduce(.zero) { $0 + (mx[$1][x] ? 1 : 0) }
         }
-//        mx.reduce(.zero) { partialResult, line in
-//            partialResult + line.reduce(.zero, { $0 + ($1 ? 1 : 0) })
-//        }
     }
 
     init(points: [Point]) {
@@ -100,7 +97,8 @@ class Paper {
         }
 
         if (maxX - x) >= (x - minX) {
-            minX = x + 1
+            let diff = (x + 1) - minX
+            maxX -= diff
         } else {
             maxX = x - 1
         }
@@ -122,7 +120,8 @@ class Paper {
         }
 
         if (maxY - y) >= (y - minY) {
-            minY = y + 1
+            let diff = (y + 1) - minY
+            maxY -= diff
         } else {
             maxY = y - 1
         }
@@ -143,5 +142,16 @@ class Paper {
 }
 
 extension Paper {
+    func visualise() {
+        let printString =
+        (0..<countY).reduce("\n") { partialY, y in
+            partialY
+            + (0..<countX).reduce("", { partialX, x in
+                partialX + "\(mx[y][x] ? "#" : " " )"
+            })
+            + "\n"
+        }
 
+        print(printString)
+    }
 }
