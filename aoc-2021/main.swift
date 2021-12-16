@@ -95,10 +95,16 @@ print("Hello, World!")
 //transparentOrigami.foldAll()
 
 //DAY 14
-let extendedPolymerization = ExtendedPolymerization()
-let quantityDiff10steps = extendedPolymerization.quantityDiff10steps()
-print("extendedPolymerization quantityDiff10steps = \(quantityDiff10steps)")
-let quantityDiff10stepsV2 = extendedPolymerization.quantityDiff10stepsV2()
-print("extendedPolymerization quantityDiff10stepsV2 = \(quantityDiff10stepsV2)")
-let quantityDiff40stepsV2 = extendedPolymerization.quantityDiff40stepsV2()
-print("extendedPolymerization quantityDiff40stepsV2 = \(quantityDiff40stepsV2)")
+//let extendedPolymerization = ExtendedPolymerization()
+//let quantityDiff10steps = extendedPolymerization.quantityDiff10steps()
+//print("extendedPolymerization quantityDiff10steps = \(quantityDiff10steps)")
+//let quantityDiff10stepsV2 = extendedPolymerization.quantityDiff10stepsV2()
+//print("extendedPolymerization quantityDiff10stepsV2 = \(quantityDiff10stepsV2)")
+//let quantityDiff40stepsV2 = extendedPolymerization.quantityDiff40stepsV2()
+//print("extendedPolymerization quantityDiff40stepsV2 = \(quantityDiff40stepsV2)")
+
+//DAY 15
+let chitonPathCalculator = ChitonPathCalculator()
+//let chitonPathCalculator = ChitonPathCalculator(measurementsFile: .testChitonRiskLevelData)
+let lowestRiskPath = chitonPathCalculator.lowestRiskPath()
+print("chitonPathCalculator lowestRiskPath = \(lowestRiskPath)")

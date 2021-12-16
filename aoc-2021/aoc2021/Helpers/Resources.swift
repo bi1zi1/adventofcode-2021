@@ -15,6 +15,7 @@ public enum FileResource: String {
     case cavePathData = "cave-path-data.txt"
     case paperDotsData = "paper-dots-data.txt"
     case polymerData = "polymer-data.txt"
+    case chitonRiskLevelData = "chiton-risk-level-data.txt"
 
     // test files
     case testDepthMeasurements = "test-depth-measurements.txt"
@@ -33,6 +34,7 @@ public enum FileResource: String {
     case test226CavePathData = "test226-cave-path-data.txt"
     case testPaperDotsData = "test-paper-dots-data.txt"
     case testPolymerData = "test-polymer-data.txt"
+    case testChitonRiskLevelData = "test-chiton-risk-level-data.txt"
 }
 
 extension FileResource {
@@ -82,7 +84,8 @@ extension FileResource {
                 .energyLevelsData, .testEnergyLevelsData,
                 .cavePathData, .test10CavePathData, .test19CavePathData, .test226CavePathData,
                 .paperDotsData, .testPaperDotsData,
-                .polymerData, .testPolymerData:
+                .polymerData, .testPolymerData,
+                .chitonRiskLevelData, .testChitonRiskLevelData:
             // Currently not supported
             fatalError()
         }
