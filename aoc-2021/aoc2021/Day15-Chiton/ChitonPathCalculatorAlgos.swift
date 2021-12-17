@@ -39,4 +39,47 @@ extension ChitonPathCalculator {
 
         return lowestRiskPath
     }
+
+    func minPath(
+        start: Point,
+        end: Point,
+        pathMatrix: Extended5x5Matrix2DInt,
+        visitedPoints: Set<Point>,
+        subpathValueMap: inout [Point: Int]
+    ) -> Int {
+        if start == end {
+            return .zero
+        }
+
+        let nextSteps = start.nextAvailable4(
+            exMX: pathMatrix, visitedPoints: visitedPoints
+        )
+
+        let lowestRiskPath = nextSteps.reduce(into: Int.max / 2) { partialResult, point in
+            let pointValue = pathMatrix[point]
+            let nextPointPathValue = subpathValueMap[point]
+            ?? minPath(
+                start: point,
+                end: end,
+                pathMatrix: pathMatrix,
+                visitedPoints: visitedPoints.union([start]),
+                subpathValueMap: &subpathValueMap
+            )
+            let pathValue = pointValue + nextPointPathValue
+
+            subpathValueMap[point] = nextPointPathValue
+
+            partialResult = min(
+                partialResult,
+                pathValue
+            )
+        }
+
+        subpathValueMap[start] = min(
+            subpathValueMap[start, default: Int.max],
+            lowestRiskPath
+        )
+
+        return lowestRiskPath
+    }
 }

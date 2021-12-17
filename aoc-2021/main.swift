@@ -105,6 +105,7 @@ print("Hello, World!")
 
 //DAY 15
 let chitonPathCalculator = ChitonPathCalculator()
-//let chitonPathCalculator = ChitonPathCalculator(measurementsFile: .testChitonRiskLevelData)
 let lowestRiskPath = chitonPathCalculator.lowestRiskPath()
 print("chitonPathCalculator lowestRiskPath = \(lowestRiskPath)")
+let lowestRiskPath5x5 = chitonPathCalculator.lowestRiskPath5x5()
+print("chitonPathCalculator lowestRiskPath5x5 = \(lowestRiskPath5x5)")

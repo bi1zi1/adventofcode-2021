@@ -154,6 +154,12 @@
 		FB0EAF8C276A922C0065BEE2 /* chiton-risk-level-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF81276A50640065BEE2 /* chiton-risk-level-data.txt */; };
 		FB0EAF8D276A922C0065BEE2 /* test-chiton-risk-level-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF83276A50CE0065BEE2 /* test-chiton-risk-level-data.txt */; };
 		FB240260276B6D190023BCCF /* ChitonPathCalculatorAlgos.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB24025F276B6D190023BCCF /* ChitonPathCalculatorAlgos.swift */; };
+		FB240262276BE1110023BCCF /* Matrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB240261276BE1110023BCCF /* Matrix.swift */; };
+		FB240264276BE53D0023BCCF /* Matrix2DInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB240263276BE53D0023BCCF /* Matrix2DInt.swift */; };
+		FB240266276BEDEA0023BCCF /* Extended5x5Matrix2DInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB240265276BEDEA0023BCCF /* Extended5x5Matrix2DInt.swift */; };
+		FB240268276C15070023BCCF /* chiton-risk-level-5x5-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */; };
+		FB240269276C15080023BCCF /* chiton-risk-level-5x5-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */; };
+		FB24026A276C15120023BCCF /* chiton-risk-level-5x5-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -173,6 +179,7 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FB24026A276C15120023BCCF /* chiton-risk-level-5x5-data.txt in CopyFiles */,
 				FB0EAF8C276A922C0065BEE2 /* chiton-risk-level-data.txt in CopyFiles */,
 				FB0EAF8D276A922C0065BEE2 /* test-chiton-risk-level-data.txt in CopyFiles */,
 				FB0EAF7B2768C8EC0065BEE2 /* polymer-data.txt in CopyFiles */,
@@ -310,6 +317,10 @@
 		FB0EAF84276A51580065BEE2 /* ChitonPathCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChitonPathCalculator.swift; sourceTree = "<group>"; };
 		FB0EAF86276A517C0065BEE2 /* ChitonPathCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChitonPathCalculatorTests.swift; sourceTree = "<group>"; };
 		FB24025F276B6D190023BCCF /* ChitonPathCalculatorAlgos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChitonPathCalculatorAlgos.swift; sourceTree = "<group>"; };
+		FB240261276BE1110023BCCF /* Matrix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix.swift; sourceTree = "<group>"; };
+		FB240263276BE53D0023BCCF /* Matrix2DInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix2DInt.swift; sourceTree = "<group>"; };
+		FB240265276BEDEA0023BCCF /* Extended5x5Matrix2DInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extended5x5Matrix2DInt.swift; sourceTree = "<group>"; };
+		FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "chiton-risk-level-5x5-data.txt"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -602,6 +613,8 @@
 			isa = PBXGroup;
 			children = (
 				FB0EAF1C2762BA8B0065BEE2 /* Point.swift */,
+				FB240261276BE1110023BCCF /* Matrix.swift */,
+				FB240263276BE53D0023BCCF /* Matrix2DInt.swift */,
 			);
 			path = CommonModels;
 			sourceTree = "<group>";
@@ -716,9 +729,11 @@
 			isa = PBXGroup;
 			children = (
 				FB0EAF80276A50430065BEE2 /* Day15-Chiton.txt */,
+				FB240265276BEDEA0023BCCF /* Extended5x5Matrix2DInt.swift */,
 				FB0EAF84276A51580065BEE2 /* ChitonPathCalculator.swift */,
 				FB24025F276B6D190023BCCF /* ChitonPathCalculatorAlgos.swift */,
 				FB0EAF81276A50640065BEE2 /* chiton-risk-level-data.txt */,
+				FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */,
 				FB0EAF82276A506A0065BEE2 /* Test */,
 			);
 			path = "Day15-Chiton";
@@ -855,6 +870,7 @@
 				FB0EAEAC275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
 				FB0EAF3F27648F880065BEE2 /* test-energy-levels-data.txt in Resources */,
 				FB0EAF8A276A92200065BEE2 /* chiton-risk-level-data.txt in Resources */,
+				FB240268276C15070023BCCF /* chiton-risk-level-5x5-data.txt in Resources */,
 				FB0EAEBC275B73BB0065BEE2 /* test-bingo-data.txt in Resources */,
 				FB0EAF512766AE420065BEE2 /* test19-cave-path-data.txt in Resources */,
 				FB0EAE8927581FE40065BEE2 /* test-depth-measurements.txt in Resources */,
@@ -903,6 +919,7 @@
 				FB0EAF002760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
 				FB0EAF4C2766AE410065BEE2 /* test10-cave-path-data.txt in Resources */,
 				FB0EAF3E27648F870065BEE2 /* test-energy-levels-data.txt in Resources */,
+				FB240269276C15080023BCCF /* chiton-risk-level-5x5-data.txt in Resources */,
 				FB0EAF782768C8E10065BEE2 /* test-polymer-data.txt in Resources */,
 				FB0EAED1275CC5200065BEE2 /* test-lanternfish-spawn-data.txt in Resources */,
 				FB0EAEFE2760B7E40065BEE2 /* test-7segment-display-data.txt in Resources */,
@@ -943,6 +960,7 @@
 				FB0EAF052760F8C30065BEE2 /* SevenSegmentSearchModels.swift in Sources */,
 				FB0EAE8527581D430065BEE2 /* Resources.swift in Sources */,
 				FB0EAE902758CD1C0065BEE2 /* DiveNavigation.swift in Sources */,
+				FB240266276BEDEA0023BCCF /* Extended5x5Matrix2DInt.swift in Sources */,
 				FB0EAF652767E1E70065BEE2 /* TransparentOrigami.swift in Sources */,
 				FB0EAF472766A8460065BEE2 /* PassagePathing.swift in Sources */,
 				FB0EAF85276A51580065BEE2 /* ChitonPathCalculator.swift in Sources */,
@@ -952,9 +970,11 @@
 				FB0EAF762768C8D70065BEE2 /* ExtendedPolymerization.swift in Sources */,
 				FB0EAF2127637D7F0065BEE2 /* SyntaxScoring.swift in Sources */,
 				FB0EAF692767E34D0065BEE2 /* TransparentOrigamiModels.swift in Sources */,
+				FB240264276BE53D0023BCCF /* Matrix2DInt.swift in Sources */,
 				FB0EAEEC275F594B0065BEE2 /* PositionAlign.swift in Sources */,
 				FB0EAF10276295370065BEE2 /* SmokeBasinModels.swift in Sources */,
 				FB0EAF582766B1E70065BEE2 /* PassagePathingModels.swift in Sources */,
+				FB240262276BE1110023BCCF /* Matrix.swift in Sources */,
 				FB0EAEB8275B73B20065BEE2 /* BingoCalculator.swift in Sources */,
 				FB240260276B6D190023BCCF /* ChitonPathCalculatorAlgos.swift in Sources */,
 				FB0EAE8D2758251F0065BEE2 /* SlidingWindow.swift in Sources */,
