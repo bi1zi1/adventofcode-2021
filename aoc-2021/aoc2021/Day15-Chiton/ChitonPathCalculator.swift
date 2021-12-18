@@ -35,35 +35,14 @@ public final class ChitonPathCalculator {
         let start = Point(x: 0, y: 0)
         let end = Point(x: exMX.rowCount - 1, y: exMX.columnCount - 1)
 
-//        (start.x...end.x).forEach { x in
-//            print("row: \(x)")
-//            (start.y...end.y).forEach { y in
-//                print(exMX[x,y], terminator: "")
-//            }
-//            print("")
-//        }
+        let pathValues = weightMx(start: start, end: end, pathMatrix: exMX)
 
-        var subpathValueMap: [Point: Int] = [:]
-        return minPath(
-            start: start,
-            end: end,
-            pathMatrix: exMX,
-            visitedPoints: Set([start]),
-            subpathValueMap: &subpathValueMap
-        )
+        return pathValues[end] ?? .zero
     }
 
     func calculateLowestRisk(mx: [[Int]]) -> Int {
         let start = Point(x: 0, y: 0)
         let end = Point(x: mx.count - 1, y: mx.last!.count - 1)
-
-//        (start.x...end.x).forEach { x in
-//            print("row: \(x)")
-//            (start.y...end.y).forEach { y in
-//                print(mx[x][y], terminator: " ")
-//            }
-//            print("")
-//        }
 
         var subpathValueMap: [Point: Int] = [:]
         return minPath(
@@ -103,6 +82,23 @@ extension Point {
         }
     }
 
+    func nextAvailable4(mx: [[Int]], visitedPoints: Set<Point>) -> [Point] {
+        [
+            Point(x: x + 1, y: y),
+            Point(x: x, y: y + 1),
+            Point(x: x, y: y - 1),
+            Point(x: x - 1, y: y),
+        ].filter { point in
+            !visitedPoints.contains(point)
+            && point.x >= .zero
+            && point.y >= .zero
+            && point.x < mx.count
+            && point.y < mx[x].count
+        }.sorted { lhs, rhs in
+            mx[lhs.x][lhs.y] < mx[rhs.x][rhs.y]
+        }
+    }
+
     func nextAvailable2(exMX: Extended5x5Matrix2DInt) -> [Point] {
         [
             Point(x: x + 1, y: y),
@@ -120,18 +116,16 @@ extension Point {
         visitedPoints: Set<Point>
     ) -> [Point] {
         [
-            Point(x: x - 1, y: y),
+            Point(x: x, y: y + 1),
             Point(x: x + 1, y: y),
             Point(x: x, y: y - 1),
-            Point(x: x, y: y + 1),
+            Point(x: x - 1, y: y),
         ].filter { point in
             !visitedPoints.contains(point)
             && point.x >= .zero
             && point.y >= .zero
             && point.x < exMX.rowCount
             && point.y < exMX.columnCount
-        }.sorted { lhs, rhs in
-            exMX[lhs] < exMX[rhs]
         }
     }
 }

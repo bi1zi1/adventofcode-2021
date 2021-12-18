@@ -28,3 +28,9 @@ extension Point {
         y = point.1
     }
 }
+
+extension Point {
+    func pathDistance(to point: Point) -> Int {
+        abs(x - point.x) + abs(y - point.y)
+    }
+}

@@ -67,8 +67,6 @@ extension ChitonPathCalculator {
             )
             let pathValue = pointValue + nextPointPathValue
 
-            subpathValueMap[point] = nextPointPathValue
-
             partialResult = min(
                 partialResult,
                 pathValue
@@ -80,6 +78,70 @@ extension ChitonPathCalculator {
             lowestRiskPath
         )
 
-        return lowestRiskPath
+        return subpathValueMap[start]!
+    }
+}
+
+extension ChitonPathCalculator {
+    func weightMx(
+        start: Point,
+        end: Point,
+        pathMatrix: Extended5x5Matrix2DInt
+    ) -> [Point: Int] {
+        var visitedPoints: Set<Point> = []
+        var pointsLeft = Set(pathMatrix.coordsToPoints())
+        var subpathValueMap = [
+            start: Int.zero
+        ]
+
+        var filteredSubpathValueMap = [
+            start: Int.zero
+        ]
+
+//        let startTime = Date()
+//        var lastProcessedTime = Date()
+
+        while !pointsLeft.isEmpty {
+            guard let current = filteredSubpathValueMap.keys
+                    .min(by: { lhs, rhs in
+                        subpathValueMap[lhs]! < subpathValueMap[rhs]!
+                    })
+            else {
+                assertionFailure("Boom")
+                return [:]
+            }
+
+            pointsLeft.remove(current)
+            visitedPoints.insert(current)
+            filteredSubpathValueMap.removeValue(forKey: current)
+
+//            let pointsCount = visitedPoints.count
+//            if pointsCount % 1000 == 0 {
+//                let lastTimeDiff = Date().timeIntervalSince(lastProcessedTime)
+//                let lastSpeed = 1000.0 / lastTimeDiff
+//
+//                lastProcessedTime = Date()
+//                let timeDiff = lastProcessedTime.timeIntervalSince(startTime)
+//                let speed = Double(pointsCount) / timeDiff
+//
+//                print("speed = \(speed) points/sec [\(lastSpeed)] [\(pointsCount)] [\(Date())]")
+//            }
+
+            current.nextAvailable4(
+                exMX: pathMatrix,
+                visitedPoints: visitedPoints
+            ).forEach { nextPoint in
+                let calcVal = subpathValueMap[current]! + pathMatrix[nextPoint]
+                if calcVal < subpathValueMap[nextPoint, default: Int.max] {
+                    subpathValueMap[nextPoint] = calcVal
+
+                    if !visitedPoints.contains(nextPoint) {
+                        filteredSubpathValueMap[nextPoint] = calcVal
+                    }
+                }
+            }
+        }
+
+        return subpathValueMap
     }
 }

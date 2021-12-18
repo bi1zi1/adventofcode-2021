@@ -44,3 +44,15 @@ extension Int {
         (self + value) % 10 + (self + value) / 10
     }
 }
+
+extension Extended5x5Matrix2DInt {
+    func coordsToPoints() -> [Point] {
+        var points: [Point] = []
+        (0...rowCount - 1).forEach { x in
+            (0...columnCount - 1).forEach { y in
+                points.append(Point(x: x, y: y))
+            }
+        }
+        return points
+    }
+}
