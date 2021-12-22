@@ -172,6 +172,10 @@
 		FBFA0669276EAAA500FFEFCA /* test-hex-packet-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FBFA065B276DF1B300FFEFCA /* test-hex-packet-data.txt */; };
 		FBFA066B276FF0E000FFEFCA /* PacketDecoderStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA066A276FF0E000FFEFCA /* PacketDecoderStateMachine.swift */; };
 		FBFA066D276FFD9C00FFEFCA /* PacketBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA066C276FFD9C00FFEFCA /* PacketBuilder.swift */; };
+		FBFA06702772A7EB00FFEFCA /* test-hex-packet-value-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FBFA066E2772A72900FFEFCA /* test-hex-packet-value-data.txt */; };
+		FBFA06712772A7EC00FFEFCA /* test-hex-packet-value-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FBFA066E2772A72900FFEFCA /* test-hex-packet-value-data.txt */; };
+		FBFA06722772A7F500FFEFCA /* test-hex-packet-value-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FBFA066E2772A72900FFEFCA /* test-hex-packet-value-data.txt */; };
+		FBFA06742773DA2100FFEFCA /* ArrayToVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA06732773DA2100FFEFCA /* ArrayToVariadic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -191,6 +195,7 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FBFA06722772A7F500FFEFCA /* test-hex-packet-value-data.txt in CopyFiles */,
 				FBFA0669276EAAA500FFEFCA /* test-hex-packet-data.txt in CopyFiles */,
 				FBFA0668276EAA9D00FFEFCA /* paper-dots-data.txt in CopyFiles */,
 				FB24026A276C15120023BCCF /* chiton-risk-level-5x5-data.txt in CopyFiles */,
@@ -344,6 +349,8 @@
 		FBFA0662276EAA7000FFEFCA /* HexMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexMap.swift; sourceTree = "<group>"; };
 		FBFA066A276FF0E000FFEFCA /* PacketDecoderStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketDecoderStateMachine.swift; sourceTree = "<group>"; };
 		FBFA066C276FFD9C00FFEFCA /* PacketBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketBuilder.swift; sourceTree = "<group>"; };
+		FBFA066E2772A72900FFEFCA /* test-hex-packet-value-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-hex-packet-value-data.txt"; sourceTree = "<group>"; };
+		FBFA06732773DA2100FFEFCA /* ArrayToVariadic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayToVariadic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -776,6 +783,7 @@
 			isa = PBXGroup;
 			children = (
 				FBFA0658276DEECC00FFEFCA /* Day16-PacketDecoder.txt */,
+				FBFA06732773DA2100FFEFCA /* ArrayToVariadic.swift */,
 				FBFA065C276DF1FF00FFEFCA /* PacketDecoder.swift */,
 				FBFA066A276FF0E000FFEFCA /* PacketDecoderStateMachine.swift */,
 				FBFA0660276E8FB600FFEFCA /* PacketDecoderModels.swift */,
@@ -791,6 +799,7 @@
 			isa = PBXGroup;
 			children = (
 				FBFA065B276DF1B300FFEFCA /* test-hex-packet-data.txt */,
+				FBFA066E2772A72900FFEFCA /* test-hex-packet-value-data.txt */,
 				FBFA065E276DF21F00FFEFCA /* PacketDecoderTests.swift */,
 			);
 			path = Test;
@@ -917,6 +926,7 @@
 				FB0EAED0275CC5200065BEE2 /* test-lanternfish-spawn-data.txt in Resources */,
 				FB0EAEAC275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
 				FB0EAF3F27648F880065BEE2 /* test-energy-levels-data.txt in Resources */,
+				FBFA06712772A7EC00FFEFCA /* test-hex-packet-value-data.txt in Resources */,
 				FB0EAF8A276A92200065BEE2 /* chiton-risk-level-data.txt in Resources */,
 				FB240268276C15070023BCCF /* chiton-risk-level-5x5-data.txt in Resources */,
 				FB0EAEBC275B73BB0065BEE2 /* test-bingo-data.txt in Resources */,
@@ -953,6 +963,7 @@
 			files = (
 				FB0EAEAD275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
 				FB0EAF4E2766AE410065BEE2 /* test226-cave-path-data.txt in Resources */,
+				FBFA06702772A7EB00FFEFCA /* test-hex-packet-value-data.txt in Resources */,
 				FB0EAF13276295410065BEE2 /* test-area-points-data.txt in Resources */,
 				FB0EAF6C2767E3540065BEE2 /* hex-packet-data.txt in Resources */,
 				FB0EAF4B2766AE410065BEE2 /* cave-path-data.txt in Resources */,
@@ -1005,6 +1016,7 @@
 			files = (
 				FB0EAE8427581D3F0065BEE2 /* FileReader.swift in Sources */,
 				FB0EAED9275D71AD0065BEE2 /* HydrothermalDangerModels.swift in Sources */,
+				FBFA06742773DA2100FFEFCA /* ArrayToVariadic.swift in Sources */,
 				FBFA066B276FF0E000FFEFCA /* PacketDecoderStateMachine.swift in Sources */,
 				FB0EAF0E276293DB0065BEE2 /* SmokeBasin.swift in Sources */,
 				FB0EAF3B27648F780065BEE2 /* EnergyLevelCalculatorModels.swift in Sources */,

@@ -1,6 +1,7 @@
 import Foundation
 
 class PacketBuilder {
+    let uuid: String
     var version: Int?
     var type: PacketHeader.TypeId?
     var literalSegments: [Int] = []
@@ -8,6 +9,18 @@ class PacketBuilder {
     var numberOfSubPackets: Int?
     var mode: OperatorData.Mode?
     var packetBuilders: [PacketBuilder] = []
+
+    init(uuid: String, version: Int? = nil, type: PacketHeader.TypeId? = nil, literalSegments: [Int] = [], lengthInBits: Int? = nil, numberOfSubPackets: Int? = nil, mode: OperatorData.Mode? = nil, packetBuilders: [PacketBuilder] = []) {
+        
+        self.uuid = uuid
+        self.version = version
+        self.type = type
+        self.literalSegments = literalSegments
+        self.lengthInBits = lengthInBits
+        self.numberOfSubPackets = numberOfSubPackets
+        self.mode = mode
+        self.packetBuilders = packetBuilders
+    }
 }
 
 extension PacketBuilder {
@@ -50,7 +63,7 @@ extension PacketBuilder {
         if let lengthInBits = lengthInBits {
             return .operators(
                 OperatorData(
-                    type: .operators(lengthInBits),
+                    type: type!,
                     mode: OperatorData.Mode.lengthInBits(lengthInBits)
                 ))
         }
@@ -58,7 +71,7 @@ extension PacketBuilder {
         if let numberOfSubPackets = numberOfSubPackets {
             return .operators(
                 OperatorData(
-                    type: .operators(numberOfSubPackets),
+                    type: type!,
                     mode: .numberOfSubPackets(numberOfSubPackets)
                 ))
         }

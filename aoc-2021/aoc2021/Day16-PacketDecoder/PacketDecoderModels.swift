@@ -18,7 +18,18 @@ import Foundation
 struct PacketHeader {
     enum TypeId {
         case literalValue // 0b100 / 4
-        case operators(Int) // This stands for any other value, like a `default`
+        case operators(OperatorId) // This stands for any other value, like a `default`
+    }
+
+    enum OperatorId: Int {
+        case sum = 0
+        case product = 1
+        case min = 2
+        case max = 3
+        // 4 is literal
+        case greater = 5
+        case less = 6
+        case equal = 7
     }
 
     let version: Int // 3 bits
@@ -57,5 +68,91 @@ extension Packet {
             packetHeader.version,
             { $0 + $1.versionSum() }
         )
+    }
+}
+
+extension LiteralValueData {
+    var value: Int {
+        return segments.reduce(.zero) {
+            $0 * 0b10000 + $1
+        }
+    }
+}
+
+extension Packet {
+    func value() -> Int {
+        switch payload {
+        case .literal(let literalValueData):
+            return literalValueData.value
+        case .operators(let operatorData):
+            guard let operation = operatorData.operation() else {
+                assertionFailure()
+                return -1
+            }
+
+//            operatorData.type.display()
+            let values = packets.map { $0.value() }
+
+//            operatorData.type.display()
+
+            let calculatedValue =  callWithVariadic(items: values, method: operation)
+            return calculatedValue
+        }
+    }
+}
+
+extension OperatorData {
+    func operation() -> ((Int ...) -> Int)? {
+        guard case .operators(let operatorId) = type else {
+            return nil
+        }
+
+        switch operatorId {
+        case .sum:
+            return sum(items:)
+        case .product:
+            return product(items:)
+        case .min:
+            return min(items:)
+        case .max:
+            return max(items:)
+        case .greater:
+            return greater(items:)
+        case .less:
+            return less(items:)
+        case .equal:
+            return equal(items:)
+        }
+    }
+
+    func sum(items: Int ...) -> Int {
+        items.reduce(.zero, +)
+    }
+
+    func product(items: Int ...) -> Int {
+        items.reduce(1, *)
+    }
+
+    func min(items: Int ...) -> Int {
+        return items.reduce(.max, Swift.min)
+    }
+
+    func max(items: Int ...) -> Int {
+        return items.reduce(.min, Swift.max)
+    }
+
+    func greater(items: Int ...) -> Int {
+        assert(items.count == 2)
+        return items.first! > items.last! ? 1 : 0
+    }
+
+    func less(items: Int ...) -> Int {
+        assert(items.count == 2)
+        return items.first! < items.last! ? 1 : 0
+    }
+
+    func equal(items: Int ...) -> Int {
+        assert(items.count == 2)
+        return items.first! == items.last! ? 1 : 0
     }
 }

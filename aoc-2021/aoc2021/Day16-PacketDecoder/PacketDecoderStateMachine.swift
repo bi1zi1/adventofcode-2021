@@ -17,7 +17,7 @@ class PacketDecoderStateMachine {
     let index: Int
     lazy var uuid = "<\(level)-\(index)>"
 
-    let packetBuilder = PacketBuilder()
+    lazy var packetBuilder = PacketBuilder(uuid: uuid)
     private var state: States
     private var binaryBuffer: BinaryBuffer
     private var bitsProcessed: Int = .zero
@@ -95,7 +95,9 @@ extension PacketDecoderStateMachine {
             packetBuilder.type = .literalValue
             return .literal
         default:
-            packetBuilder.type = .operators(typeValue)
+            packetBuilder.type = .operators(
+                PacketHeader.OperatorId(rawValue: typeValue)!
+            )
             return .operatorType
         }
     }
