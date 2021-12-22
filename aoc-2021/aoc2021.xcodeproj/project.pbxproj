@@ -131,11 +131,11 @@
 		FB0EAF652767E1E70065BEE2 /* TransparentOrigami.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF642767E1E70065BEE2 /* TransparentOrigami.swift */; };
 		FB0EAF672767E2020065BEE2 /* TransparentOrigamiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF662767E2020065BEE2 /* TransparentOrigamiTests.swift */; };
 		FB0EAF692767E34D0065BEE2 /* TransparentOrigamiModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF682767E34D0065BEE2 /* TransparentOrigamiModels.swift */; };
-		FB0EAF6A2767E3520065BEE2 /* paper-dots-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF5E2767B84E0065BEE2 /* paper-dots-data.txt */; };
+		FB0EAF6A2767E3520065BEE2 /* hex-packet-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF5E2767B84E0065BEE2 /* hex-packet-data.txt */; };
 		FB0EAF6B2767E3520065BEE2 /* test-paper-dots-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF5F2767B8580065BEE2 /* test-paper-dots-data.txt */; };
-		FB0EAF6C2767E3540065BEE2 /* paper-dots-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF5E2767B84E0065BEE2 /* paper-dots-data.txt */; };
+		FB0EAF6C2767E3540065BEE2 /* hex-packet-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF5E2767B84E0065BEE2 /* hex-packet-data.txt */; };
 		FB0EAF6D2767E3540065BEE2 /* test-paper-dots-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF5F2767B8580065BEE2 /* test-paper-dots-data.txt */; };
-		FB0EAF6E2767E35E0065BEE2 /* paper-dots-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF5E2767B84E0065BEE2 /* paper-dots-data.txt */; };
+		FB0EAF6E2767E35E0065BEE2 /* hex-packet-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF5E2767B84E0065BEE2 /* hex-packet-data.txt */; };
 		FB0EAF6F2767E35E0065BEE2 /* test-paper-dots-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB0EAF5F2767B8580065BEE2 /* test-paper-dots-data.txt */; };
 		FB0EAF762768C8D70065BEE2 /* ExtendedPolymerization.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0EAF752768C8D70065BEE2 /* ExtendedPolymerization.swift */; };
 		FB0EAF772768C8E10065BEE2 /* polymer-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB0EAF732768C8260065BEE2 /* polymer-data.txt */; };
@@ -160,6 +160,18 @@
 		FB240268276C15070023BCCF /* chiton-risk-level-5x5-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */; };
 		FB240269276C15080023BCCF /* chiton-risk-level-5x5-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */; };
 		FB24026A276C15120023BCCF /* chiton-risk-level-5x5-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */; };
+		FBFA065D276DF1FF00FFEFCA /* PacketDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA065C276DF1FF00FFEFCA /* PacketDecoder.swift */; };
+		FBFA065F276DF21F00FFEFCA /* PacketDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA065E276DF21F00FFEFCA /* PacketDecoderTests.swift */; };
+		FBFA0661276E8FB600FFEFCA /* PacketDecoderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA0660276E8FB600FFEFCA /* PacketDecoderModels.swift */; };
+		FBFA0663276EAA7000FFEFCA /* HexMap.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA0662276EAA7000FFEFCA /* HexMap.swift */; };
+		FBFA0664276EAA7800FFEFCA /* test-hex-packet-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FBFA065B276DF1B300FFEFCA /* test-hex-packet-data.txt */; };
+		FBFA0665276EAA7900FFEFCA /* test-hex-packet-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FBFA065B276DF1B300FFEFCA /* test-hex-packet-data.txt */; };
+		FBFA0666276EAA8700FFEFCA /* paper-dots-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FBFA065A276DF13900FFEFCA /* paper-dots-data.txt */; };
+		FBFA0667276EAA8700FFEFCA /* paper-dots-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FBFA065A276DF13900FFEFCA /* paper-dots-data.txt */; };
+		FBFA0668276EAA9D00FFEFCA /* paper-dots-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FBFA065A276DF13900FFEFCA /* paper-dots-data.txt */; };
+		FBFA0669276EAAA500FFEFCA /* test-hex-packet-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FBFA065B276DF1B300FFEFCA /* test-hex-packet-data.txt */; };
+		FBFA066B276FF0E000FFEFCA /* PacketDecoderStateMachine.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA066A276FF0E000FFEFCA /* PacketDecoderStateMachine.swift */; };
+		FBFA066D276FFD9C00FFEFCA /* PacketBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA066C276FFD9C00FFEFCA /* PacketBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -179,12 +191,14 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FBFA0669276EAAA500FFEFCA /* test-hex-packet-data.txt in CopyFiles */,
+				FBFA0668276EAA9D00FFEFCA /* paper-dots-data.txt in CopyFiles */,
 				FB24026A276C15120023BCCF /* chiton-risk-level-5x5-data.txt in CopyFiles */,
 				FB0EAF8C276A922C0065BEE2 /* chiton-risk-level-data.txt in CopyFiles */,
 				FB0EAF8D276A922C0065BEE2 /* test-chiton-risk-level-data.txt in CopyFiles */,
 				FB0EAF7B2768C8EC0065BEE2 /* polymer-data.txt in CopyFiles */,
 				FB0EAF7C2768C8EC0065BEE2 /* test-polymer-data.txt in CopyFiles */,
-				FB0EAF6E2767E35E0065BEE2 /* paper-dots-data.txt in CopyFiles */,
+				FB0EAF6E2767E35E0065BEE2 /* hex-packet-data.txt in CopyFiles */,
 				FB0EAF6F2767E35E0065BEE2 /* test-paper-dots-data.txt in CopyFiles */,
 				FB0EAF532766AE4F0065BEE2 /* cave-path-data.txt in CopyFiles */,
 				FB0EAF542766AE4F0065BEE2 /* test10-cave-path-data.txt in CopyFiles */,
@@ -301,7 +315,7 @@
 		FB0EAF572766B1E70065BEE2 /* PassagePathingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassagePathingModels.swift; sourceTree = "<group>"; };
 		FB0EAF592766CF650065BEE2 /* PassagePathingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassagePathingTests.swift; sourceTree = "<group>"; };
 		FB0EAF5C2767B5AA0065BEE2 /* Day13-TransparentOrigami.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day13-TransparentOrigami.txt"; sourceTree = "<group>"; };
-		FB0EAF5E2767B84E0065BEE2 /* paper-dots-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "paper-dots-data.txt"; sourceTree = "<group>"; };
+		FB0EAF5E2767B84E0065BEE2 /* hex-packet-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "hex-packet-data.txt"; sourceTree = "<group>"; };
 		FB0EAF5F2767B8580065BEE2 /* test-paper-dots-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-paper-dots-data.txt"; sourceTree = "<group>"; };
 		FB0EAF642767E1E70065BEE2 /* TransparentOrigami.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentOrigami.swift; sourceTree = "<group>"; };
 		FB0EAF662767E2020065BEE2 /* TransparentOrigamiTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransparentOrigamiTests.swift; sourceTree = "<group>"; };
@@ -321,6 +335,15 @@
 		FB240263276BE53D0023BCCF /* Matrix2DInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix2DInt.swift; sourceTree = "<group>"; };
 		FB240265276BEDEA0023BCCF /* Extended5x5Matrix2DInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extended5x5Matrix2DInt.swift; sourceTree = "<group>"; };
 		FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "chiton-risk-level-5x5-data.txt"; sourceTree = "<group>"; };
+		FBFA0658276DEECC00FFEFCA /* Day16-PacketDecoder.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day16-PacketDecoder.txt"; sourceTree = "<group>"; };
+		FBFA065A276DF13900FFEFCA /* paper-dots-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "paper-dots-data.txt"; sourceTree = "<group>"; };
+		FBFA065B276DF1B300FFEFCA /* test-hex-packet-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-hex-packet-data.txt"; sourceTree = "<group>"; };
+		FBFA065C276DF1FF00FFEFCA /* PacketDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketDecoder.swift; sourceTree = "<group>"; };
+		FBFA065E276DF21F00FFEFCA /* PacketDecoderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketDecoderTests.swift; sourceTree = "<group>"; };
+		FBFA0660276E8FB600FFEFCA /* PacketDecoderModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketDecoderModels.swift; sourceTree = "<group>"; };
+		FBFA0662276EAA7000FFEFCA /* HexMap.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexMap.swift; sourceTree = "<group>"; };
+		FBFA066A276FF0E000FFEFCA /* PacketDecoderStateMachine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketDecoderStateMachine.swift; sourceTree = "<group>"; };
+		FBFA066C276FFD9C00FFEFCA /* PacketBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -390,6 +413,7 @@
 				FB0EAF5B2767B57A0065BEE2 /* Day13-TransparentOrigami */,
 				FB0EAF702768C4790065BEE2 /* Day14-ExtendedPolymerization */,
 				FB0EAF7F276A502A0065BEE2 /* Day15-Chiton */,
+				FBFA0657276DEE9000FFEFCA /* Day16-PacketDecoder */,
 			);
 			path = aoc2021;
 			sourceTree = "<group>";
@@ -688,9 +712,9 @@
 			isa = PBXGroup;
 			children = (
 				FB0EAF5C2767B5AA0065BEE2 /* Day13-TransparentOrigami.txt */,
+				FBFA065A276DF13900FFEFCA /* paper-dots-data.txt */,
 				FB0EAF682767E34D0065BEE2 /* TransparentOrigamiModels.swift */,
 				FB0EAF642767E1E70065BEE2 /* TransparentOrigami.swift */,
-				FB0EAF5E2767B84E0065BEE2 /* paper-dots-data.txt */,
 				FB0EAF5D2767B5D80065BEE2 /* Test */,
 			);
 			path = "Day13-TransparentOrigami";
@@ -744,6 +768,30 @@
 			children = (
 				FB0EAF83276A50CE0065BEE2 /* test-chiton-risk-level-data.txt */,
 				FB0EAF86276A517C0065BEE2 /* ChitonPathCalculatorTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		FBFA0657276DEE9000FFEFCA /* Day16-PacketDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				FBFA0658276DEECC00FFEFCA /* Day16-PacketDecoder.txt */,
+				FBFA065C276DF1FF00FFEFCA /* PacketDecoder.swift */,
+				FBFA066A276FF0E000FFEFCA /* PacketDecoderStateMachine.swift */,
+				FBFA0660276E8FB600FFEFCA /* PacketDecoderModels.swift */,
+				FBFA066C276FFD9C00FFEFCA /* PacketBuilder.swift */,
+				FBFA0662276EAA7000FFEFCA /* HexMap.swift */,
+				FB0EAF5E2767B84E0065BEE2 /* hex-packet-data.txt */,
+				FBFA0659276DF11B00FFEFCA /* Test */,
+			);
+			path = "Day16-PacketDecoder";
+			sourceTree = "<group>";
+		};
+		FBFA0659276DF11B00FFEFCA /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FBFA065B276DF1B300FFEFCA /* test-hex-packet-data.txt */,
+				FBFA065E276DF21F00FFEFCA /* PacketDecoderTests.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -882,17 +930,19 @@
 				FB0EAF8B276A92200065BEE2 /* test-chiton-risk-level-data.txt in Resources */,
 				FB0EAEC7275C214B0065BEE2 /* bingo-data.txt in Resources */,
 				FB0EAF4F2766AE420065BEE2 /* cave-path-data.txt in Resources */,
-				FB0EAF6A2767E3520065BEE2 /* paper-dots-data.txt in Resources */,
+				FB0EAF6A2767E3520065BEE2 /* hex-packet-data.txt in Resources */,
 				FB0EAF7A2768C8E20065BEE2 /* test-polymer-data.txt in Resources */,
 				FB0EAF1A2762B42B0065BEE2 /* area-points-data.txt in Resources */,
 				FB0EAF3D27648F840065BEE2 /* energy-levels-data.txt in Resources */,
 				FB0EAF6B2767E3520065BEE2 /* test-paper-dots-data.txt in Resources */,
 				FB0EAF012760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
 				FB0EAE952758CE7F0065BEE2 /* test-navigation-data.txt in Resources */,
+				FBFA0667276EAA8700FFEFCA /* paper-dots-data.txt in Resources */,
 				FB0EAECF275CC51D0065BEE2 /* test-hydrothermal-lines-data.txt in Resources */,
 				FB0EAF282763F24C0065BEE2 /* syntax-data.txt in Resources */,
 				FB0EAF792768C8E20065BEE2 /* polymer-data.txt in Resources */,
 				FB0EAEBA275B73B70065BEE2 /* Day4-GiantSquid.txt in Resources */,
+				FBFA0664276EAA7800FFEFCA /* test-hex-packet-data.txt in Resources */,
 				FB0EAEE4275E0CD20065BEE2 /* lanternfish-spawn-data.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -904,8 +954,9 @@
 				FB0EAEAD275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
 				FB0EAF4E2766AE410065BEE2 /* test226-cave-path-data.txt in Resources */,
 				FB0EAF13276295410065BEE2 /* test-area-points-data.txt in Resources */,
-				FB0EAF6C2767E3540065BEE2 /* paper-dots-data.txt in Resources */,
+				FB0EAF6C2767E3540065BEE2 /* hex-packet-data.txt in Resources */,
 				FB0EAF4B2766AE410065BEE2 /* cave-path-data.txt in Resources */,
+				FBFA0666276EAA8700FFEFCA /* paper-dots-data.txt in Resources */,
 				FB0EAF772768C8E10065BEE2 /* polymer-data.txt in Resources */,
 				FB0EAEB9275B73B70065BEE2 /* Day4-GiantSquid.txt in Resources */,
 				FB0EAEC8275C214C0065BEE2 /* bingo-data.txt in Resources */,
@@ -913,6 +964,7 @@
 				FB0EAF89276A921F0065BEE2 /* test-chiton-risk-level-data.txt in Resources */,
 				FB0EAF6D2767E3540065BEE2 /* test-paper-dots-data.txt in Resources */,
 				FB0EAF3C27648F830065BEE2 /* energy-levels-data.txt in Resources */,
+				FBFA0665276EAA7900FFEFCA /* test-hex-packet-data.txt in Resources */,
 				FB0EAF272763F24B0065BEE2 /* syntax-data.txt in Resources */,
 				FB0EAEAE275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */,
 				FB0EAEBB275B73BB0065BEE2 /* test-bingo-data.txt in Resources */,
@@ -953,6 +1005,7 @@
 			files = (
 				FB0EAE8427581D3F0065BEE2 /* FileReader.swift in Sources */,
 				FB0EAED9275D71AD0065BEE2 /* HydrothermalDangerModels.swift in Sources */,
+				FBFA066B276FF0E000FFEFCA /* PacketDecoderStateMachine.swift in Sources */,
 				FB0EAF0E276293DB0065BEE2 /* SmokeBasin.swift in Sources */,
 				FB0EAF3B27648F780065BEE2 /* EnergyLevelCalculatorModels.swift in Sources */,
 				FB0EAF262763F2470065BEE2 /* SyntaxScoringModels.swift in Sources */,
@@ -965,8 +1018,11 @@
 				FB0EAF472766A8460065BEE2 /* PassagePathing.swift in Sources */,
 				FB0EAF85276A51580065BEE2 /* ChitonPathCalculator.swift in Sources */,
 				FB0EAED5275CC5850065BEE2 /* HydrothermalDanger.swift in Sources */,
+				FBFA0661276E8FB600FFEFCA /* PacketDecoderModels.swift in Sources */,
+				FBFA065D276DF1FF00FFEFCA /* PacketDecoder.swift in Sources */,
 				FB0EAEA9275A590C0065BEE2 /* BinaryDiagnosticModels.swift in Sources */,
 				FB0EAEA4275A179A0065BEE2 /* BinaryDiagnostic.swift in Sources */,
+				FBFA0663276EAA7000FFEFCA /* HexMap.swift in Sources */,
 				FB0EAF762768C8D70065BEE2 /* ExtendedPolymerization.swift in Sources */,
 				FB0EAF2127637D7F0065BEE2 /* SyntaxScoring.swift in Sources */,
 				FB0EAF692767E34D0065BEE2 /* TransparentOrigamiModels.swift in Sources */,
@@ -974,6 +1030,7 @@
 				FB0EAEEC275F594B0065BEE2 /* PositionAlign.swift in Sources */,
 				FB0EAF10276295370065BEE2 /* SmokeBasinModels.swift in Sources */,
 				FB0EAF582766B1E70065BEE2 /* PassagePathingModels.swift in Sources */,
+				FBFA066D276FFD9C00FFEFCA /* PacketBuilder.swift in Sources */,
 				FB240262276BE1110023BCCF /* Matrix.swift in Sources */,
 				FB0EAEB8275B73B20065BEE2 /* BingoCalculator.swift in Sources */,
 				FB240260276B6D190023BCCF /* ChitonPathCalculatorAlgos.swift in Sources */,
@@ -999,6 +1056,7 @@
 				FB0EAEAB275A63690065BEE2 /* BinaryDiagnosticTests.swift in Sources */,
 				FB0EAF2E2763F9920065BEE2 /* SyntaxScoringTests.swift in Sources */,
 				FB0EAF672767E2020065BEE2 /* TransparentOrigamiTests.swift in Sources */,
+				FBFA065F276DF21F00FFEFCA /* PacketDecoderTests.swift in Sources */,
 				FB0EAF3927648DC00065BEE2 /* EnergyLevelCalculatorTests.swift in Sources */,
 				FB0EAEEE275F59740065BEE2 /* PositionAlignTests.swift in Sources */,
 				FB0EAEE2275E09A40065BEE2 /* LanternFishTests.swift in Sources */,

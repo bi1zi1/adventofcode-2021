@@ -104,8 +104,13 @@ print("Hello, World!")
 //print("extendedPolymerization quantityDiff40stepsV2 = \(quantityDiff40stepsV2)")
 
 //DAY 15
-let chitonPathCalculator = ChitonPathCalculator()
-let lowestRiskPath = chitonPathCalculator.lowestRiskPath()
-print("chitonPathCalculator lowestRiskPath = \(lowestRiskPath)")
-let lowestRiskPath5x5 = chitonPathCalculator.lowestRiskPath5x5()
-print("chitonPathCalculator lowestRiskPath5x5 = \(lowestRiskPath5x5)")
+//let chitonPathCalculator = ChitonPathCalculator()
+//let lowestRiskPath = chitonPathCalculator.lowestRiskPath()
+//print("chitonPathCalculator lowestRiskPath = \(lowestRiskPath)")
+//let lowestRiskPath5x5 = chitonPathCalculator.lowestRiskPath5x5()
+//print("chitonPathCalculator lowestRiskPath5x5 = \(lowestRiskPath5x5)")
+
+//DAY 16
+let packetDecoder = PacketDecoder()
+let versionSummary = packetDecoder.versionSummary()
+print("packetDecoder versionSummary = \(versionSummary)")
