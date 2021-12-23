@@ -160,6 +160,8 @@
 		FB240268276C15070023BCCF /* chiton-risk-level-5x5-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */; };
 		FB240269276C15080023BCCF /* chiton-risk-level-5x5-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */; };
 		FB24026A276C15120023BCCF /* chiton-risk-level-5x5-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */; };
+		FB5CEDE52775250D003F8C8A /* TrickShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5CEDE0277524F9003F8C8A /* TrickShotTests.swift */; };
+		FB5CEDE627752518003F8C8A /* TrickShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5CEDE1277524F9003F8C8A /* TrickShot.swift */; };
 		FBFA065D276DF1FF00FFEFCA /* PacketDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA065C276DF1FF00FFEFCA /* PacketDecoder.swift */; };
 		FBFA065F276DF21F00FFEFCA /* PacketDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA065E276DF21F00FFEFCA /* PacketDecoderTests.swift */; };
 		FBFA0661276E8FB600FFEFCA /* PacketDecoderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA0660276E8FB600FFEFCA /* PacketDecoderModels.swift */; };
@@ -176,8 +178,6 @@
 		FBFA06712772A7EC00FFEFCA /* test-hex-packet-value-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FBFA066E2772A72900FFEFCA /* test-hex-packet-value-data.txt */; };
 		FBFA06722772A7F500FFEFCA /* test-hex-packet-value-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FBFA066E2772A72900FFEFCA /* test-hex-packet-value-data.txt */; };
 		FBFA06742773DA2100FFEFCA /* ArrayToVariadic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA06732773DA2100FFEFCA /* ArrayToVariadic.swift */; };
-		FBFA06802773F47200FFEFCA /* TrickShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA067F2773F47200FFEFCA /* TrickShot.swift */; };
-		FBFA06822773F4B800FFEFCA /* TrickShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA06812773F4B800FFEFCA /* TrickShotTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -342,6 +342,11 @@
 		FB240263276BE53D0023BCCF /* Matrix2DInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Matrix2DInt.swift; sourceTree = "<group>"; };
 		FB240265276BEDEA0023BCCF /* Extended5x5Matrix2DInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extended5x5Matrix2DInt.swift; sourceTree = "<group>"; };
 		FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "chiton-risk-level-5x5-data.txt"; sourceTree = "<group>"; };
+		FB5CEDDF277524F9003F8C8A /* test-target-area-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-target-area-data.txt"; sourceTree = "<group>"; };
+		FB5CEDE0277524F9003F8C8A /* TrickShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickShotTests.swift; sourceTree = "<group>"; };
+		FB5CEDE1277524F9003F8C8A /* TrickShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickShot.swift; sourceTree = "<group>"; };
+		FB5CEDE2277524F9003F8C8A /* target-area-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "target-area-data.txt"; sourceTree = "<group>"; };
+		FB5CEDE3277524F9003F8C8A /* Day17-TrickShot.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day17-TrickShot.txt"; sourceTree = "<group>"; };
 		FBFA0658276DEECC00FFEFCA /* Day16-PacketDecoder.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day16-PacketDecoder.txt"; sourceTree = "<group>"; };
 		FBFA065A276DF13900FFEFCA /* paper-dots-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "paper-dots-data.txt"; sourceTree = "<group>"; };
 		FBFA065B276DF1B300FFEFCA /* test-hex-packet-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-hex-packet-data.txt"; sourceTree = "<group>"; };
@@ -353,11 +358,6 @@
 		FBFA066C276FFD9C00FFEFCA /* PacketBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PacketBuilder.swift; sourceTree = "<group>"; };
 		FBFA066E2772A72900FFEFCA /* test-hex-packet-value-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-hex-packet-value-data.txt"; sourceTree = "<group>"; };
 		FBFA06732773DA2100FFEFCA /* ArrayToVariadic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayToVariadic.swift; sourceTree = "<group>"; };
-		FBFA06762773F15E00FFEFCA /* target-area-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "target-area-data.txt"; sourceTree = "<group>"; };
-		FBFA067B2773F15E00FFEFCA /* Day17-TrickShot.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day17-TrickShot.txt"; sourceTree = "<group>"; };
-		FBFA067E2773F15F00FFEFCA /* test-target-area-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-target-area-data.txt"; sourceTree = "<group>"; };
-		FBFA067F2773F47200FFEFCA /* TrickShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickShot.swift; sourceTree = "<group>"; };
-		FBFA06812773F4B800FFEFCA /* TrickShotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickShotTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -428,7 +428,8 @@
 				FB0EAF702768C4790065BEE2 /* Day14-ExtendedPolymerization */,
 				FB0EAF7F276A502A0065BEE2 /* Day15-Chiton */,
 				FBFA0657276DEE9000FFEFCA /* Day16-PacketDecoder */,
-				FBFA06752773F15E00FFEFCA /* Day17-TrickShot */,
+				FB5CEDDD277524F9003F8C8A /* Day17-TrickShot */,
+				FB5CEDDB27752488003F8C8A /* Day18-Snailfish */,
 			);
 			path = aoc2021;
 			sourceTree = "<group>";
@@ -787,6 +788,41 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		FB5CEDDB27752488003F8C8A /* Day18-Snailfish */ = {
+			isa = PBXGroup;
+			children = (
+				FB5CEDDC27752488003F8C8A /* Test */,
+			);
+			path = "Day18-Snailfish";
+			sourceTree = "<group>";
+		};
+		FB5CEDDC27752488003F8C8A /* Test */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		FB5CEDDD277524F9003F8C8A /* Day17-TrickShot */ = {
+			isa = PBXGroup;
+			children = (
+				FB5CEDE1277524F9003F8C8A /* TrickShot.swift */,
+				FB5CEDE2277524F9003F8C8A /* target-area-data.txt */,
+				FB5CEDE3277524F9003F8C8A /* Day17-TrickShot.txt */,
+				FB5CEDDE277524F9003F8C8A /* Test */,
+			);
+			path = "Day17-TrickShot";
+			sourceTree = "<group>";
+		};
+		FB5CEDDE277524F9003F8C8A /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				FB5CEDDF277524F9003F8C8A /* test-target-area-data.txt */,
+				FB5CEDE0277524F9003F8C8A /* TrickShotTests.swift */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		FBFA0657276DEE9000FFEFCA /* Day16-PacketDecoder */ = {
 			isa = PBXGroup;
 			children = (
@@ -809,27 +845,6 @@
 				FBFA065B276DF1B300FFEFCA /* test-hex-packet-data.txt */,
 				FBFA066E2772A72900FFEFCA /* test-hex-packet-value-data.txt */,
 				FBFA065E276DF21F00FFEFCA /* PacketDecoderTests.swift */,
-			);
-			path = Test;
-			sourceTree = "<group>";
-		};
-		FBFA06752773F15E00FFEFCA /* Day17-TrickShot */ = {
-			isa = PBXGroup;
-			children = (
-				FBFA067B2773F15E00FFEFCA /* Day17-TrickShot.txt */,
-				FBFA067F2773F47200FFEFCA /* TrickShot.swift */,
-				FBFA06762773F15E00FFEFCA /* target-area-data.txt */,
-				FBFA067C2773F15E00FFEFCA /* Test */,
-			);
-			name = "Day17-TrickShot";
-			path = "../Day17-TrickShot";
-			sourceTree = "<group>";
-		};
-		FBFA067C2773F15E00FFEFCA /* Test */ = {
-			isa = PBXGroup;
-			children = (
-				FBFA067E2773F15F00FFEFCA /* test-target-area-data.txt */,
-				FBFA06812773F4B800FFEFCA /* TrickShotTests.swift */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -1076,7 +1091,7 @@
 				FB0EAEB8275B73B20065BEE2 /* BingoCalculator.swift in Sources */,
 				FB240260276B6D190023BCCF /* ChitonPathCalculatorAlgos.swift in Sources */,
 				FB0EAE8D2758251F0065BEE2 /* SlidingWindow.swift in Sources */,
-				FBFA06802773F47200FFEFCA /* TrickShot.swift in Sources */,
+				FB5CEDE627752518003F8C8A /* TrickShot.swift in Sources */,
 				FB0EAF3727648DA30065BEE2 /* EnergyLevelCalculator.swift in Sources */,
 				FB0EAEE0275DF1540065BEE2 /* LanternFish.swift in Sources */,
 				FB0EAEC2275BC0EB0065BEE2 /* BingoFileReader.swift in Sources */,
@@ -1094,7 +1109,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBFA06822773F4B800FFEFCA /* TrickShotTests.swift in Sources */,
+				FB5CEDE52775250D003F8C8A /* TrickShotTests.swift in Sources */,
 				FB0EAED7275CC5AB0065BEE2 /* HydrothermalDangerTests.swift in Sources */,
 				FB0EAEAB275A63690065BEE2 /* BinaryDiagnosticTests.swift in Sources */,
 				FB0EAF2E2763F9920065BEE2 /* SyntaxScoringTests.swift in Sources */,
