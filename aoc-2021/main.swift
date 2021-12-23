@@ -111,8 +111,13 @@ print("Hello, World!")
 //print("chitonPathCalculator lowestRiskPath5x5 = \(lowestRiskPath5x5)")
 
 //DAY 16
-let packetDecoder = PacketDecoder()
-let versionSummary = packetDecoder.versionSummary()
-print("packetDecoder versionSummary = \(versionSummary)")
-let packetValue = packetDecoder.packetValue()
-print("packetDecoder packetValue = \(packetValue)")
+//let packetDecoder = PacketDecoder()
+//let versionSummary = packetDecoder.versionSummary()
+//print("packetDecoder versionSummary = \(versionSummary)")
+//let packetValue = packetDecoder.packetValue()
+//print("packetDecoder packetValue = \(packetValue)")
+
+//DAY 17
+let trickShot = TrickShot()
+let shootHighest = trickShot.shootHighest()
+print("trickShot shootHighest = \(shootHighest)")
