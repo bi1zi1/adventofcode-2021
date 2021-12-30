@@ -162,6 +162,19 @@
 		FB24026A276C15120023BCCF /* chiton-risk-level-5x5-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB240267276C147D0023BCCF /* chiton-risk-level-5x5-data.txt */; };
 		FB5CEDE52775250D003F8C8A /* TrickShotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5CEDE0277524F9003F8C8A /* TrickShotTests.swift */; };
 		FB5CEDE627752518003F8C8A /* TrickShot.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5CEDE1277524F9003F8C8A /* TrickShot.swift */; };
+		FB5CEDEC277540F5003F8C8A /* snailfish-number-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB5CEDEA27754022003F8C8A /* snailfish-number-data.txt */; };
+		FB5CEDED277540F5003F8C8A /* snailfish-number-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB5CEDEA27754022003F8C8A /* snailfish-number-data.txt */; };
+		FB5CEDEE277540F8003F8C8A /* test-snailfish-number-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB5CEDEB27754046003F8C8A /* test-snailfish-number-data.txt */; };
+		FB5CEDEF277540F9003F8C8A /* test-snailfish-number-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB5CEDEB27754046003F8C8A /* test-snailfish-number-data.txt */; };
+		FB5CEDF027754106003F8C8A /* snailfish-number-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB5CEDEA27754022003F8C8A /* snailfish-number-data.txt */; };
+		FB5CEDF127754106003F8C8A /* test-snailfish-number-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB5CEDEB27754046003F8C8A /* test-snailfish-number-data.txt */; };
+		FB5CEDF3277541A0003F8C8A /* BinaryTreeInt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5CEDF2277541A0003F8C8A /* BinaryTreeInt.swift */; };
+		FB5CEDF427768B89003F8C8A /* Snailfish.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5CEDE72775268E003F8C8A /* Snailfish.swift */; };
+		FB5CEDF527768B92003F8C8A /* SnailfishTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5CEDE92775269F003F8C8A /* SnailfishTests.swift */; };
+		FB5CEDF72777DF3F003F8C8A /* BinaryTreeInt+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5CEDF62777DF3F003F8C8A /* BinaryTreeInt+Operations.swift */; };
+		FB5CEDF927793C03003F8C8A /* test-print-snailfish-number-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB5CEDF827793BE1003F8C8A /* test-print-snailfish-number-data.txt */; };
+		FB5CEDFA27793C04003F8C8A /* test-print-snailfish-number-data.txt in Resources */ = {isa = PBXBuildFile; fileRef = FB5CEDF827793BE1003F8C8A /* test-print-snailfish-number-data.txt */; };
+		FB5CEDFB27793C12003F8C8A /* test-print-snailfish-number-data.txt in CopyFiles */ = {isa = PBXBuildFile; fileRef = FB5CEDF827793BE1003F8C8A /* test-print-snailfish-number-data.txt */; };
 		FBFA065D276DF1FF00FFEFCA /* PacketDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA065C276DF1FF00FFEFCA /* PacketDecoder.swift */; };
 		FBFA065F276DF21F00FFEFCA /* PacketDecoderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA065E276DF21F00FFEFCA /* PacketDecoderTests.swift */; };
 		FBFA0661276E8FB600FFEFCA /* PacketDecoderModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBFA0660276E8FB600FFEFCA /* PacketDecoderModels.swift */; };
@@ -197,6 +210,9 @@
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
+				FB5CEDFB27793C12003F8C8A /* test-print-snailfish-number-data.txt in CopyFiles */,
+				FB5CEDF027754106003F8C8A /* snailfish-number-data.txt in CopyFiles */,
+				FB5CEDF127754106003F8C8A /* test-snailfish-number-data.txt in CopyFiles */,
 				FBFA06722772A7F500FFEFCA /* test-hex-packet-value-data.txt in CopyFiles */,
 				FBFA0669276EAAA500FFEFCA /* test-hex-packet-data.txt in CopyFiles */,
 				FBFA0668276EAA9D00FFEFCA /* paper-dots-data.txt in CopyFiles */,
@@ -347,6 +363,14 @@
 		FB5CEDE1277524F9003F8C8A /* TrickShot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrickShot.swift; sourceTree = "<group>"; };
 		FB5CEDE2277524F9003F8C8A /* target-area-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "target-area-data.txt"; sourceTree = "<group>"; };
 		FB5CEDE3277524F9003F8C8A /* Day17-TrickShot.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day17-TrickShot.txt"; sourceTree = "<group>"; };
+		FB5CEDE72775268E003F8C8A /* Snailfish.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snailfish.swift; sourceTree = "<group>"; };
+		FB5CEDE827752699003F8C8A /* Day18-Snailfish.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day18-Snailfish.txt"; sourceTree = "<group>"; };
+		FB5CEDE92775269F003F8C8A /* SnailfishTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnailfishTests.swift; sourceTree = "<group>"; };
+		FB5CEDEA27754022003F8C8A /* snailfish-number-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "snailfish-number-data.txt"; sourceTree = "<group>"; };
+		FB5CEDEB27754046003F8C8A /* test-snailfish-number-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-snailfish-number-data.txt"; sourceTree = "<group>"; };
+		FB5CEDF2277541A0003F8C8A /* BinaryTreeInt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BinaryTreeInt.swift; sourceTree = "<group>"; };
+		FB5CEDF62777DF3F003F8C8A /* BinaryTreeInt+Operations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "BinaryTreeInt+Operations.swift"; sourceTree = "<group>"; };
+		FB5CEDF827793BE1003F8C8A /* test-print-snailfish-number-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-print-snailfish-number-data.txt"; sourceTree = "<group>"; };
 		FBFA0658276DEECC00FFEFCA /* Day16-PacketDecoder.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "Day16-PacketDecoder.txt"; sourceTree = "<group>"; };
 		FBFA065A276DF13900FFEFCA /* paper-dots-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "paper-dots-data.txt"; sourceTree = "<group>"; };
 		FBFA065B276DF1B300FFEFCA /* test-hex-packet-data.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = "test-hex-packet-data.txt"; sourceTree = "<group>"; };
@@ -655,6 +679,8 @@
 				FB0EAF1C2762BA8B0065BEE2 /* Point.swift */,
 				FB240261276BE1110023BCCF /* Matrix.swift */,
 				FB240263276BE53D0023BCCF /* Matrix2DInt.swift */,
+				FB5CEDF2277541A0003F8C8A /* BinaryTreeInt.swift */,
+				FB5CEDF62777DF3F003F8C8A /* BinaryTreeInt+Operations.swift */,
 			);
 			path = CommonModels;
 			sourceTree = "<group>";
@@ -791,6 +817,9 @@
 		FB5CEDDB27752488003F8C8A /* Day18-Snailfish */ = {
 			isa = PBXGroup;
 			children = (
+				FB5CEDE827752699003F8C8A /* Day18-Snailfish.txt */,
+				FB5CEDEA27754022003F8C8A /* snailfish-number-data.txt */,
+				FB5CEDE72775268E003F8C8A /* Snailfish.swift */,
 				FB5CEDDC27752488003F8C8A /* Test */,
 			);
 			path = "Day18-Snailfish";
@@ -799,6 +828,9 @@
 		FB5CEDDC27752488003F8C8A /* Test */ = {
 			isa = PBXGroup;
 			children = (
+				FB5CEDE92775269F003F8C8A /* SnailfishTests.swift */,
+				FB5CEDF827793BE1003F8C8A /* test-print-snailfish-number-data.txt */,
+				FB5CEDEB27754046003F8C8A /* test-snailfish-number-data.txt */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -963,11 +995,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB0EAF14276295420065BEE2 /* test-area-points-data.txt in Resources */,
+				FB5CEDFA27793C04003F8C8A /* test-print-snailfish-number-data.txt in Resources */,
 				FB0EAE9E27593E680065BEE2 /* navigation-data.txt in Resources */,
 				FB0EAE8127581CF40065BEE2 /* depth-measurements.txt in Resources */,
 				FB0EAEFF2760B7E40065BEE2 /* test-7segment-display-data.txt in Resources */,
 				FB0EAEAF275A63760065BEE2 /* binary-diagnostic-data.txt in Resources */,
+				FB5CEDEF277540F9003F8C8A /* test-snailfish-number-data.txt in Resources */,
 				FB0EAED0275CC5200065BEE2 /* test-lanternfish-spawn-data.txt in Resources */,
+				FB5CEDEC277540F5003F8C8A /* snailfish-number-data.txt in Resources */,
 				FB0EAEAC275A636F0065BEE2 /* test-binary-diagnostic-data.txt in Resources */,
 				FB0EAF3F27648F880065BEE2 /* test-energy-levels-data.txt in Resources */,
 				FBFA06712772A7EC00FFEFCA /* test-hex-packet-value-data.txt in Resources */,
@@ -1014,6 +1049,7 @@
 				FBFA0666276EAA8700FFEFCA /* paper-dots-data.txt in Resources */,
 				FB0EAF772768C8E10065BEE2 /* polymer-data.txt in Resources */,
 				FB0EAEB9275B73B70065BEE2 /* Day4-GiantSquid.txt in Resources */,
+				FB5CEDEE277540F8003F8C8A /* test-snailfish-number-data.txt in Resources */,
 				FB0EAEC8275C214C0065BEE2 /* bingo-data.txt in Resources */,
 				FB0EAEF1275F597E0065BEE2 /* horizontal-position-data.txt in Resources */,
 				FB0EAF89276A921F0065BEE2 /* test-chiton-risk-level-data.txt in Resources */,
@@ -1026,6 +1062,7 @@
 				FB0EAF002760B7EA0065BEE2 /* 7segment-display-data.txt in Resources */,
 				FB0EAF4C2766AE410065BEE2 /* test10-cave-path-data.txt in Resources */,
 				FB0EAF3E27648F870065BEE2 /* test-energy-levels-data.txt in Resources */,
+				FB5CEDED277540F5003F8C8A /* snailfish-number-data.txt in Resources */,
 				FB240269276C15080023BCCF /* chiton-risk-level-5x5-data.txt in Resources */,
 				FB0EAF782768C8E10065BEE2 /* test-polymer-data.txt in Resources */,
 				FB0EAED1275CC5200065BEE2 /* test-lanternfish-spawn-data.txt in Resources */,
@@ -1036,6 +1073,7 @@
 				FB0EAF88276A921F0065BEE2 /* chiton-risk-level-data.txt in Resources */,
 				FB0EAEEF275F59790065BEE2 /* test-horizontal-position-data.txt in Resources */,
 				FB0EAEE3275E0CD20065BEE2 /* lanternfish-spawn-data.txt in Resources */,
+				FB5CEDF927793C03003F8C8A /* test-print-snailfish-number-data.txt in Resources */,
 				FB0EAF192762B42A0065BEE2 /* area-points-data.txt in Resources */,
 				FB0EAF292763F2500065BEE2 /* test-syntax-data.txt in Resources */,
 				FB0EAF4D2766AE410065BEE2 /* test19-cave-path-data.txt in Resources */,
@@ -1062,11 +1100,13 @@
 				FB0EAED9275D71AD0065BEE2 /* HydrothermalDangerModels.swift in Sources */,
 				FBFA06742773DA2100FFEFCA /* ArrayToVariadic.swift in Sources */,
 				FBFA066B276FF0E000FFEFCA /* PacketDecoderStateMachine.swift in Sources */,
+				FB5CEDF72777DF3F003F8C8A /* BinaryTreeInt+Operations.swift in Sources */,
 				FB0EAF0E276293DB0065BEE2 /* SmokeBasin.swift in Sources */,
 				FB0EAF3B27648F780065BEE2 /* EnergyLevelCalculatorModels.swift in Sources */,
 				FB0EAF262763F2470065BEE2 /* SyntaxScoringModels.swift in Sources */,
 				FB0EAEC0275B74EC0065BEE2 /* BingoCalculatorModels.swift in Sources */,
 				FB0EAF052760F8C30065BEE2 /* SevenSegmentSearchModels.swift in Sources */,
+				FB5CEDF3277541A0003F8C8A /* BinaryTreeInt.swift in Sources */,
 				FB0EAE8527581D430065BEE2 /* Resources.swift in Sources */,
 				FB0EAE902758CD1C0065BEE2 /* DiveNavigation.swift in Sources */,
 				FB240266276BEDEA0023BCCF /* Extended5x5Matrix2DInt.swift in Sources */,
@@ -1092,6 +1132,7 @@
 				FB240260276B6D190023BCCF /* ChitonPathCalculatorAlgos.swift in Sources */,
 				FB0EAE8D2758251F0065BEE2 /* SlidingWindow.swift in Sources */,
 				FB5CEDE627752518003F8C8A /* TrickShot.swift in Sources */,
+				FB5CEDF427768B89003F8C8A /* Snailfish.swift in Sources */,
 				FB0EAF3727648DA30065BEE2 /* EnergyLevelCalculator.swift in Sources */,
 				FB0EAEE0275DF1540065BEE2 /* LanternFish.swift in Sources */,
 				FB0EAEC2275BC0EB0065BEE2 /* BingoFileReader.swift in Sources */,
@@ -1114,6 +1155,7 @@
 				FB0EAEAB275A63690065BEE2 /* BinaryDiagnosticTests.swift in Sources */,
 				FB0EAF2E2763F9920065BEE2 /* SyntaxScoringTests.swift in Sources */,
 				FB0EAF672767E2020065BEE2 /* TransparentOrigamiTests.swift in Sources */,
+				FB5CEDF527768B92003F8C8A /* SnailfishTests.swift in Sources */,
 				FBFA065F276DF21F00FFEFCA /* PacketDecoderTests.swift in Sources */,
 				FB0EAF3927648DC00065BEE2 /* EnergyLevelCalculatorTests.swift in Sources */,
 				FB0EAEEE275F59740065BEE2 /* PositionAlignTests.swift in Sources */,

@@ -118,8 +118,13 @@ print("Hello, World!")
 //print("packetDecoder packetValue = \(packetValue)")
 
 //DAY 17
-let trickShot = TrickShot()
-let shootHighest = trickShot.shootHighest()
-print("trickShot shootHighest = \(shootHighest)")
-let allShotsOnTarget = trickShot.allShotsOnTarget()
-print("trickShot allShotsOnTarget = \(allShotsOnTarget)")
+//let trickShot = TrickShot()
+//let shootHighest = trickShot.shootHighest()
+//print("trickShot shootHighest = \(shootHighest)")
+//let allShotsOnTarget = trickShot.allShotsOnTarget()
+//print("trickShot allShotsOnTarget = \(allShotsOnTarget)")
+
+//DAY 18
+let snailfish = Snailfish()
+let finalSumMagnitude = snailfish.finalSumMagnitude()
+print("snailfish finalSumMagnitude = \(finalSumMagnitude)")
