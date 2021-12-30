@@ -16,6 +16,18 @@ class SnailfishTests: XCTestCase {
         XCTAssertEqual(finalSumMagnitude, expectedFinalSumMagnitude)
     }
 
+    func testLargestSumMagnitudeOfTwo() throws {
+        // given
+        let snailfish = Snailfish(measurementsFile: .testSnailfishNumberData)
+
+        // when
+        let largestSumMagnitudeOfTwo = snailfish.largestSumMagnitudeOfTwo()
+
+        // then
+        let expectedLargestSumMagnitudeOfTwo = 3993
+        XCTAssertEqual(largestSumMagnitudeOfTwo, expectedLargestSumMagnitudeOfTwo)
+    }
+
     func testPerformanceExample() throws {
         let snailfish = Snailfish(measurementsFile: .testSnailfishNumberData)
         self.measure {

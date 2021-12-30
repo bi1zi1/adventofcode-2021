@@ -38,48 +38,121 @@ public final class Snailfish {
 //            number.displaySnailfishNumber()
 //            print("")
 //            print("=== SUM OF END ===")
-            partialResult = BinaryTreeInt(
-                node: .path(partialResultValue, number),
-                level: .zero,
-                parent: nil,
-                designation: ""
+            partialResult = normalize(
+                number: BinaryTreeInt(
+                    node: .path(partialResultValue, number),
+                    level: .zero,
+                    parent: nil,
+                    designation: ""
+                )
             )
-
-            partialResult?.reSyncLevels(with: .zero)
-
-            var hasErroneousLevels = partialResult?.findErroneousLevels()
-            var hasErroneousValues = partialResult?.findErroneousValues()
-
-            while
-                hasErroneousLevels != nil ||
-                hasErroneousValues != nil
-            {
-                if let erroneousLevels = hasErroneousLevels {
-                    erroneousLevels.explode()
-                } else if let erroneousValues = hasErroneousValues {
-                    erroneousValues.split()
-                }
-
-//                print("----------------------------------------")
-//                partialResult?.displaySnailfishNumber()
-//                print("")
-//                print("----------------------------------------")
-
-                partialResult?.reSyncLevels(with: .zero)
-                hasErroneousLevels = partialResult?.findErroneousLevels()
-                hasErroneousValues = partialResult?.findErroneousValues()
-            }
-
-//            print("========================================")
-//            partialResult?.displaySnailfishNumber()
-//            print("")
-//            print("========================================")
         }
 
         sumNumber?.displaySnailfishNumber()
         print("")
 
         return sumNumber?.magnitudeValue() ?? .zero
+    }
+
+    public func largestSumMagnitudeOfTwo() -> Int {
+        guard let data = try? fileReader.lines().filter({ !$0.isEmpty }) else {
+            assertionFailure("data missing")
+            return .zero
+        }
+
+        var maxSum = Int.zero
+        data.enumerated().forEach { itemLineOne in
+            data.enumerated().forEach { itemLineTwo in
+                if itemLineOne.offset == itemLineTwo.offset {
+                    return
+                }
+
+                var itemOneStartIndex = itemLineOne.element.startIndex
+                let itemOne = parseNumber(
+                    line: itemLineOne.element,
+                    level: .zero,
+                    readIndex: &itemOneStartIndex,
+                    parsingLeftNode: true
+                )
+
+                var itemTwoStartIndex = itemLineTwo.element.startIndex
+                let itemTwo = parseNumber(
+                    line: itemLineTwo.element,
+                    level: .zero,
+                    readIndex: &itemTwoStartIndex,
+                    parsingLeftNode: true
+                )
+
+                let sumNumberOneTwo = normalize(
+                    number: BinaryTreeInt(
+                        node: .path(itemOne, itemTwo),
+                        level: .zero,
+                        parent: nil,
+                        designation: ""
+                    )
+                )
+
+                maxSum = max(maxSum, sumNumberOneTwo.magnitudeValue())
+            }
+        }
+
+        return maxSum
+    }
+
+    func parseNumbers() -> [BinaryTreeInt] {
+        guard let data = try? fileReader.lines().filter({ !$0.isEmpty }) else {
+            assertionFailure("data missing")
+            return []
+        }
+
+        let numbers: [BinaryTreeInt] = data.map { line in
+            var startIndex = line.startIndex
+            return parseNumber(
+                line: line,
+                level: .zero,
+                readIndex: &startIndex,
+                parsingLeftNode: true
+            )
+        }
+
+        return numbers
+    }
+
+    private func normalize(number: BinaryTreeInt) -> BinaryTreeInt {
+        print("----------------------------------------")
+        number.displaySnailfishNumber()
+        let normalizedNumber = number
+
+        normalizedNumber.reSyncLevels(with: .zero)
+        var hasErroneousLevels = normalizedNumber.findErroneousLevels()
+        var hasErroneousValues = normalizedNumber.findErroneousValues()
+
+        while
+            hasErroneousLevels != nil ||
+            hasErroneousValues != nil
+        {
+            if let erroneousLevels = hasErroneousLevels {
+                erroneousLevels.explode()
+            } else if let erroneousValues = hasErroneousValues {
+                erroneousValues.split()
+            }
+
+//                print("----------------------------------------")
+//                partialResult?.displaySnailfishNumber()
+//                print("")
+//                print("----------------------------------------")
+
+            normalizedNumber.reSyncLevels(with: .zero)
+            hasErroneousLevels = normalizedNumber.findErroneousLevels()
+            hasErroneousValues = normalizedNumber.findErroneousValues()
+        }
+
+        print("")
+        normalizedNumber.displaySnailfishNumber()
+        print(" | magnitude: \(normalizedNumber.magnitudeValue())")
+        print("----------------------------------------")
+
+        return normalizedNumber
     }
 
     func parseNumber(
